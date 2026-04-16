@@ -65,6 +65,7 @@ New classes, properties, and individuals can be incorporated as the domain evolv
                                                                        <http://purl.org/dc/terms/creator> "Diana Socola"@en ,
                                                                                                           "Tomas Cuevas"@en ;
                                                                        <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
+                                                                       <http://schema.org/includedInDataCatalog> "https://tomascp-sudo.github.io/medical-device-ontology/" ;
                                                                        <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#vann:preferredNamespacePrefix> "mdcso" ;
                                                                        <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:abstract> """The Medical Devices Classification and Safety Ontology provides a framework for modeling key concepts, entities, and relationships within the domain of medical devices.
 It captures knowledge about device types, regulatory classes, manufacturers, and corrective actions.
@@ -113,6 +114,10 @@ Tomás Cuevas""" ;
 
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/includedInDataCatalog
+<http://schema.org/includedInDataCatalog> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionDate

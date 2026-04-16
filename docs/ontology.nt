@@ -9,6 +9,7 @@
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/creator> "Diana Socola"@en .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/creator> "Tomas Cuevas"@en .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" .
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://schema.org/includedInDataCatalog> "https://tomascp-sudo.github.io/medical-device-ontology/" .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#vann:preferredNamespacePrefix> "mdcso" .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:abstract> "The Medical Devices Classification and Safety Ontology provides a framework for modeling key concepts, entities, and relationships within the domain of medical devices.\nIt captures knowledge about device types, regulatory classes, manufacturers, and corrective actions.\nUsing OWL and SWRL, the ontology supports intelligent reasoning over safety-related data and facilitates interoperability, analysis, and querying within medical device information systems." .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:created> "2026-04-27"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -49,6 +50,9 @@
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/includedInDataCatalog
+<http://schema.org/includedInDataCatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionDate
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

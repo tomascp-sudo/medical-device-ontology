@@ -12,6 +12,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:"
      xmlns:vann2="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#vann:"
+     xmlns:schema="http://schema.org/"
      xmlns:terms1="http://purl.org/dc/terms/"
      xmlns:medicalDeviceOntology="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#">
     <owl:Ontology rdf:about="https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl">
@@ -73,6 +74,7 @@ New classes, properties, and individuals can be incorporated as the domain evolv
         <terms1:creator xml:lang="en">Diana Socola</terms1:creator>
         <terms1:creator xml:lang="en">Tomas Cuevas</terms1:creator>
         <terms1:license>https://creativecommons.org/licenses/by-sa/4.0/</terms1:license>
+        <schema:includedInDataCatalog>https://tomascp-sudo.github.io/medical-device-ontology/</schema:includedInDataCatalog>
         <vann:preferredNamespacePrefix>mdcso</vann:preferredNamespacePrefix>
         <terms:abstract>The Medical Devices Classification and Safety Ontology provides a framework for modeling key concepts, entities, and relationships within the domain of medical devices.
 It captures knowledge about device types, regulatory classes, manufacturers, and corrective actions.
@@ -152,6 +154,13 @@ Tomás Cuevas</rdfs:isDefinedBy>
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://schema.org/includedInDataCatalog -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/includedInDataCatalog"/>
     
 
 

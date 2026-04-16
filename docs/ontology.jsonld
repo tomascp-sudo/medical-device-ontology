@@ -318,6 +318,9 @@
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://schema.org/includedInDataCatalog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActionType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5003,6 +5006,9 @@
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "https://creativecommons.org/licenses/by-sa/4.0/"
+  } ],
+  "http://schema.org/includedInDataCatalog" : [ {
+    "@value" : "https://tomascp-sudo.github.io/medical-device-ontology/"
   } ],
   "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#vann:preferredNamespacePrefix" : [ {
     "@value" : "mdcso"
