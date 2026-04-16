@@ -1,14 +1,15 @@
-@prefix : <https://github.com/tomascp-sudo/medical-device-ontology/blob/0431bbbd04667cc086ef04475a4d6c7571256afd/onto_files/ontology.owl#> .
+@prefix : <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://github.com/tomascp-sudo/medical-device-ontology/blob/0431bbbd04667cc086ef04475a4d6c7571256afd/onto_files/ontology.owl#> .
+@base <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#> .
 
-<https://github.com/tomascp-sudo/medical-device-ontology/blob/0431bbbd04667cc086ef04475a4d6c7571256afd/onto_files/ontology.owl> rdf:type owl:Ontology ;
-                                                                                                                                 <http://purl.org/dc/elements/1.1/description> "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework."@en ,
-                                                                                                                                                                               """This ontology provides a semantic representation of the medical devices domain, with a focus on device classification, safety, incidents, and corrective actions.
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> rdf:type owl:Ontology ;
+                                                                       owl:versionIRI <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl/version1> ;
+                                                                       <http://purl.org/dc/elements/1.1/description> "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework."@en ,
+                                                                                                                     """This ontology provides a semantic representation of the medical devices domain, with a focus on device classification, safety, incidents, and corrective actions.
 It is built using OWL (Web Ontology Language) to ensure logical consistency and interoperability, and it incorporates SWRL rules to support inference and reasoning.
 
 Core Concepts
@@ -57,30 +58,30 @@ Inside Protégé, the reasoner used was Pellet.
 Extensibility
 The ontology is designed to be extensible and adaptable.
 New classes, properties, and individuals can be incorporated as the domain evolves.""" ;
-                                                                                                                                 <http://purl.org/dc/elements/1.1/title> "Ontology for High-Risk Medical Devices and IVDs"@en ,
-                                                                                                                                                                         "Medical Devices Classification and Safety Ontology" ;
-                                                                                                                                 <http://purl.org/dc/terms/abstract> "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks." ;
-                                                                                                                                 <http://purl.org/dc/terms/created> "2026-04-12"^^xsd:date ;
-                                                                                                                                 <http://purl.org/dc/terms/creator> "Diana Socola"@en ,
-                                                                                                                                                                    "Tomas Cuevas"@en ;
-                                                                                                                                 <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
-                                                                                                                                 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#vann:preferredNamespacePrefix> "mdcso" ;
-                                                                                                                                 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:abstract> """The Medical Devices Classification and Safety Ontology provides a framework for modeling key concepts, entities, and relationships within the domain of medical devices.
+                                                                       <http://purl.org/dc/elements/1.1/title> "Ontology for High-Risk Medical Devices and IVDs"@en ,
+                                                                                                               "Medical Devices Classification and Safety Ontology" ;
+                                                                       <http://purl.org/dc/terms/abstract> "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks." ;
+                                                                       <http://purl.org/dc/terms/created> "2026-04-12"^^xsd:date ;
+                                                                       <http://purl.org/dc/terms/creator> "Diana Socola"@en ,
+                                                                                                          "Tomas Cuevas"@en ;
+                                                                       <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
+                                                                       <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#vann:preferredNamespacePrefix> "mdcso" ;
+                                                                       <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:abstract> """The Medical Devices Classification and Safety Ontology provides a framework for modeling key concepts, entities, and relationships within the domain of medical devices.
 It captures knowledge about device types, regulatory classes, manufacturers, and corrective actions.
 Using OWL and SWRL, the ontology supports intelligent reasoning over safety-related data and facilitates interoperability, analysis, and querying within medical device information systems.""" ;
-                                                                                                                                 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:created> "2026-04-27"^^xsd:date ;
-                                                                                                                                 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
-                                                                                                                                 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#vann:preferredNamespacePrefix> "mdcso" ;
-                                                                                                                                 rdfs:comment "This ontology provides a formal and unified representation of the European catalogue of high-risk medical devices and in vitro diagnostic devices under the MDR and IVDR regulations."@en ,
-                                                                                                                                              "This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions." ;
-                                                                                                                                 rdfs:isDefinedBy """The authors of this ontology have been:
+                                                                       <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:created> "2026-04-27"^^xsd:date ;
+                                                                       <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
+                                                                       <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#vann:preferredNamespacePrefix> "mdcso" ;
+                                                                       rdfs:comment "This ontology provides a formal and unified representation of the European catalogue of high-risk medical devices and in vitro diagnostic devices under the MDR and IVDR regulations."@en ,
+                                                                                    "This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions." ;
+                                                                       rdfs:isDefinedBy """The authors of this ontology have been:
 
 Diana Alejandrina Socola
 
 Tomás Cuevas""" ;
-                                                                                                                                 rdfs:label "Ontology for High-Risk Medical Devices and IVDs"@en ;
-                                                                                                                                 owl:versionInfo "This is V1.0" ,
-                                                                                                                                                 "Version 1.0" .
+                                                                       rdfs:label "Ontology for High-Risk Medical Devices and IVDs"@en ;
+                                                                       owl:versionInfo "This is V1.0" ,
+                                                                                       "Version 1.0" .
 
 #################################################################
 #    Annotation properties

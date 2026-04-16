@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/tomascp-sudo/medical-device-ontology/blob/0431bbbd04667cc086ef04475a4d6c7571256afd/onto_files/ontology.owl#"
-     xml:base="https://github.com/tomascp-sudo/medical-device-ontology/blob/0431bbbd04667cc086ef04475a4d6c7571256afd/onto_files/ontology.owl"
+<rdf:RDF xmlns="https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#"
+     xml:base="https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -14,7 +14,8 @@
      xmlns:vann2="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#vann:"
      xmlns:terms1="http://purl.org/dc/terms/"
      xmlns:medicalDeviceOntology="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#">
-    <owl:Ontology rdf:about="https://github.com/tomascp-sudo/medical-device-ontology/blob/0431bbbd04667cc086ef04475a4d6c7571256afd/onto_files/ontology.owl">
+    <owl:Ontology rdf:about="https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl">
+        <owl:versionIRI rdf:resource="https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl/version1"/>
         <dc:description xml:lang="en">This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework.</dc:description>
         <dc:description>This ontology provides a semantic representation of the medical devices domain, with a focus on device classification, safety, incidents, and corrective actions.
 It is built using OWL (Web Ontology Language) to ensure logical consistency and interoperability, and it incorporates SWRL rules to support inference and reasoning.
