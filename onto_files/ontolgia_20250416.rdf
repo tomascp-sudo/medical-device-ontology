@@ -1,0 +1,1991 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#"
+     xml:base="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:abox="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#vann:"
+     xmlns:terms="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:"
+     xmlns:terms1="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox">
+        <owl:versionIRI rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox/1"/>
+        <owl:imports rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#"/>
+        <dc:description>This ontology provides a semantic representation of the medical devices domain, with a focus on device classification, safety, incidents, and corrective actions.
+It is built using OWL (Web Ontology Language) to ensure logical consistency and interoperability, and it incorporates SWRL rules to support inference and reasoning.
+
+Core Concepts
+
+MedicalDevice:
+Represents the general concept of a medical device. It is the superclass for more specific types such as ImplantableDevice or ActiveImplant.
+Each device can be described through properties such as name, manufacturer, classification, and device type.
+
+ImplantableDevice / ActiveImplant:
+These classes represent specific categories of medical devices, especially those that are placed inside the human body or require an energy source to function.
+They are relevant for determining risk level and regulatory classification.
+
+RiskClass:
+Represents the regulatory classification of the device, such as Class I, Class IIa, Class IIb, or Class III.
+These classes are used to organize devices according to their level of risk and control requirements.
+
+CorrectiveAction:
+Represents actions taken in response to incidents, defects, or safety issues related to a medical device.
+These actions help model post-market surveillance and device safety procedures.
+
+Properties
+
+Object Properties:
+Define relationships between instances of different classes. Examples include:
+
+hasClassification – connects a medical device to its regulatory class
+hasCorrectiveAction – connects a device or incident to a corrective action
+manufacturedBy – connects a medical device to its manufacturer
+
+Data Properties:
+Define literal attributes. Examples include:
+
+hasName – assigns a name to a medical device
+hasModel – represents the commercial or technical model of the device
+hasSerialNumber – identifies a specific device instance
+hasRiskLevel – expresses the level of risk associated with a device
+
+Individuals
+The ontology contains a set of individuals representing example devices, classifications, manufacturers, and corrective actions.
+These individuals allow reasoning engines to infer new facts and validate the consistency of the ontology.
+
+Rules and Inference
+Using SWRL rules, the ontology supports rule-based reasoning to infer classifications, detect relations between device types and risk classes, and support safety analysis.
+Inside Protégé, the reasoner used was Pellet.
+
+Extensibility
+The ontology is designed to be extensible and adaptable.
+New classes, properties, and individuals can be incorporated as the domain evolves.</dc:description>
+        <dc:title>Medical Devices Classification and Safety Ontology</dc:title>
+        <terms:abstract>The Medical Devices Classification and Safety Ontology provides a framework for modeling key concepts, entities, and relationships within the domain of medical devices.
+It captures knowledge about device types, regulatory classes, manufacturers, and corrective actions.
+Using OWL and SWRL, the ontology supports intelligent reasoning over safety-related data and facilitates interoperability, analysis, and querying within medical device information systems.</terms:abstract>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-27</terms:created>
+        <terms:license>https://creativecommons.org/licenses/by-sa/4.0/</terms:license>
+        <vann:preferredNamespacePrefix>mdcso</vann:preferredNamespacePrefix>
+        <rdfs:comment>This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions.</rdfs:comment>
+        <rdfs:isDefinedBy>The authors of this ontology have been:
+
+Diana Alejandrina Socola
+
+Tomás Cuevas</rdfs:isDefinedBy>
+        <owl:versionInfo>This is V1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionDate"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionDescription -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionDescription"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#affectedDeviceType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#affectedDeviceType"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#closureDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#closureDate"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#correctiveActionTaken -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#correctiveActionTaken"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#correspondsToIncident -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#correspondsToIncident"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#countriesAffected -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#countriesAffected"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#countryReported -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#countryReported"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#detectionDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#detectionDate"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#deviceName -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#deviceName"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#devicesAffected -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#devicesAffected"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedFSCARef -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedFSCARef"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedIncidentRef -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedIncidentRef"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedSRN -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedSRN"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eventDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eventDate"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasActionType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasActionType"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDevice -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDevice"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasManufacturer -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasManufacturer"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasProbability -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasProbability"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRegulatoryFramework -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRegulatoryFramework"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRisk -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRisk"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRiskClass -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRiskClass"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasSeverity -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasSeverity"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasStatus -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasStatus"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#imdrfCode -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#imdrfCode"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incidentDescription -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incidentDescription"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incidentType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incidentType"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#intendedPurpose -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#intendedPurpose"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isActive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isActive"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isIVD -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isIVD"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isImplantable -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isImplantable"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isReusable -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isReusable"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#locationCountry -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#locationCountry"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#outcome -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#outcome"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#patientAge -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#patientAge"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#patientSex -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#patientSex"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reportDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reportDate"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reportingEntity -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reportingEntity"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskCategory"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskDescription -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskDescription"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskName -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskName"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskType"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#scope -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#scope"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udiDI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udiDI"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:abstract"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:created -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:created"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:license -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#terms:license"/>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#vann:preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/abox#vann:preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction -->
+
+    <rdf:Description rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction">
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCorrective_and_preventive_action&amp;sid=7760</rdfs:seeAlso>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device -->
+
+    <rdf:Description rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device">
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/STY/T074</rdfs:seeAlso>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident -->
+
+    <rdf:Description rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident">
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/SNOMEDCT/405533003</rdfs:seeAlso>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer -->
+
+    <rdf:Description rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer">
+        <rdfs:seeAlso>https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43309009&amp;edition=MAIN&amp;release=&amp;languages=en</rdfs:seeAlso>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk -->
+
+    <rdf:Description rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk">
+        <rdfs:seeAlso>https://snomedsns.es/search/405142001</rdfs:seeAlso>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_001">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-01</actionDate>
+        <actionDescription>Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0.</actionDescription>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_001"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000001</eudamedFSCARef>
+        <scope>All HeartMate 3 LVAD units implanted since 2020</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_002">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-28</actionDate>
+        <actionDescription>Voluntary recall of affected Micra AV lots due to premature battery depletion. Replacement units provided. 97% of affected devices successfully replaced.</actionDescription>
+        <closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-31</closureDate>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_002"/>
+        <countriesAffected>EU-wide + UK</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000002</eudamedFSCARef>
+        <scope>Micra AV lots manufactured between 2022-09 and 2023-03</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_003">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-15</actionDate>
+        <actionDescription>Enhanced deployment training and updated IFU for Portico valve implantation technique. New implantation checklist mandatory for all TAVI centres.</actionDescription>
+        <closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-30</closureDate>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_003"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">320</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000003</eudamedFSCARef>
+        <scope>Portico THV sizes 23mm and 25mm from lots before 2023-11</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_004">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-10</actionDate>
+        <actionDescription>Safety communication to implanting cardiologists regarding optimal fixation technique for ACUITY X4 lead. Enhanced fluoroscopy verification protocol at implantation.</actionDescription>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_005"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2100</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000004</eudamedFSCARef>
+        <scope>All ACUITY X4 quadripolar LV leads</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_005">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-20</actionDate>
+        <actionDescription>Enhanced surveillance programme: annual DEXA scan and serum particle monitoring for patients with affected tibial inserts. Patients contacted individually.</actionDescription>
+        <closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-30</closureDate>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_007"/>
+        <countriesAffected>EU-wide + Switzerland</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">780</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000005</eudamedFSCARef>
+        <scope>Persona Knee tibial inserts with lot numbers PN-2019-* to PN-2021-*</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_006">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-30</actionDate>
+        <actionDescription>Urgent safety recall due to elevated metal ion levels. Revision surgery recommended for patients with serum cobalt &gt;7 ppb or symptomatic ALTR. Replacement implants provided.</actionDescription>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_008"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000006</eudamedFSCARef>
+        <scope>TRITON Total Hip ceramic-on-ceramic 28mm heads from lots TH-2020-* and TH-2021-*</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_007">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-25</actionDate>
+        <actionDescription>Urgent safety notice regarding MRI scanning protocol. Updated MRI-conditional guidelines issued. Mandatory reprogramming required before any MRI scan. Programmer software update v3.2 released.</actionDescription>
+        <closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-07-31</closureDate>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_009"/>
+        <countriesAffected>EU-wide + UK</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4300</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000007</eudamedFSCARef>
+        <scope>All Viva CRT-D devices</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_008">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-05</actionDate>
+        <actionDescription>Software recall: mandatory update to version 2.2.0 resolving FiO2 calibration error. Biomedical engineers visited all affected units within 14 days. Field service documentation required.</actionDescription>
+        <closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-15</closureDate>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_010"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000008</eudamedFSCARef>
+        <scope>ATERA ventilators with software version 2.1.3</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_009">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-20</actionDate>
+        <actionDescription>Customer field notification regarding biotin interference in TSH assay. Updated sample preparation protocol and interference screening algorithm released via software update 4.1.2.</actionDescription>
+        <closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-30</closureDate>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_011"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">620</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000009</eudamedFSCARef>
+        <scope>All cobas e 801 immunoassay analysers</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_010">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-30</actionDate>
+        <actionDescription>Immediate quarantine and replacement of affected reagent lots. Reflex testing protocol issued. All positive results from affected lots to be re-confirmed. New primer design covering BA.2.86 released.</actionDescription>
+        <closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-31</closureDate>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_012"/>
+        <countriesAffected>EU-wide + Norway + Iceland</countriesAffected>
+        <devicesAffected>12500 tests</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000010</eudamedFSCARef>
+        <scope>cobas SARS-CoV-2 RT-PCR reagent lot numbers CV-2024-0312 to CV-2024-0318</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_011">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-01</actionDate>
+        <actionDescription>Enhanced calibration protocol issued. Firmware update v1.8.5 mandatory improving temperature compensation algorithm. Patients instructed to perform confirmatory finger-stick at glucose readings &lt;4.5 or &gt;13.9 mmol/L.</actionDescription>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_014"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3200</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000011</eudamedFSCARef>
+        <scope>All OPTIGA CGM sensors from manufacturing site GE-SGP-2</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_012">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-20</actionDate>
+        <actionDescription>Urgent recall and remote software update. Drug library version 4.3.0 deployed correcting decimal point error. All units verified by biomedical engineering before return to clinical use.</actionDescription>
+        <closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-31</closureDate>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_015"/>
+        <countriesAffected>EU-wide + UK + Norway</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2870</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000012</eudamedFSCARef>
+        <scope>Plum 360 infusion pumps with drug library version 4.2.1</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_013">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-10</actionDate>
+        <actionDescription>Safety communication regarding outflow graft kinking risk. Updated surgical technique for graft routing issued. Mandatory follow-up CT at 6 months for patients with affected lot numbers.</actionDescription>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_016"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000013</eudamedFSCARef>
+        <scope>All HeartMate 3 LVAD units with outflow graft lot OG-2022-*</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_014">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-25</actionDate>
+        <actionDescription>Updated IFU regarding post-operative infection prophylaxis protocol. Extended topical antibiotic course (14 days) mandatory post-insertion. Healthcare professionals notified via direct mail and implanting centre visits.</actionDescription>
+        <closureDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-31</closureDate>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_017"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000014</eudamedFSCARef>
+        <scope>All Iluvien intravitreal implants</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_015">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction"/>
+        <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-01</actionDate>
+        <actionDescription>Security patch 3.0.1 mandatory deployment disabling unrestricted web interface access. Network segmentation guidance issued to hospital IT departments. Penetration test report provided to competent authorities.</actionDescription>
+        <correspondsToIncident rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_018"/>
+        <countriesAffected>EU-wide</countriesAffected>
+        <devicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">890</devicesAffected>
+        <eudamedFSCARef>EU-FSCA-2024-000015</eudamedFSCARef>
+        <scope>All 5008S hemodialysis machines with network connectivity module v2.x</scope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001"/>
+        <deviceName>HeartMate 3 LVAD</deviceName>
+        <intendedPurpose>Ventricular assist device for end-stage heart failure</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)00380740009095</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001"/>
+        <deviceName>Micra AV Transcatheter Pacing System</deviceName>
+        <intendedPurpose>Leadless cardiac pacemaker for atrioventricular synchrony</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)00380740009112</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002"/>
+        <deviceName>Portico Transcatheter Heart Valve</deviceName>
+        <intendedPurpose>Transcatheter aortic valve replacement (TAVI)</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)00800002222291</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006"/>
+        <deviceName>SYNERGY Stent System</deviceName>
+        <intendedPurpose>Drug-eluting coronary stent</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)08714729002817</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006"/>
+        <deviceName>ACUITY X4 Quadripolar LV Lead</deviceName>
+        <intendedPurpose>Cardiac resynchronization therapy lead</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)08714729004873</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004"/>
+        <deviceName>STELLAREX Drug-Coated Balloon</deviceName>
+        <intendedPurpose>Peripheral artery drug-coated angioplasty balloon</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)08718998000001</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003"/>
+        <deviceName>ACUSON Sequoia Ultrasound</deviceName>
+        <intendedPurpose>Diagnostic ultrasound imaging system</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isReusable>
+        <udiDI>(01)04054839450001</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003"/>
+        <deviceName>MAGNETOM Vida MRI System</deviceName>
+        <intendedPurpose>Magnetic resonance imaging system 3T</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isReusable>
+        <udiDI>(01)04054839460002</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010"/>
+        <deviceName>Persona Knee System</deviceName>
+        <intendedPurpose>Total knee arthroplasty implant system</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)07612345001001</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007"/>
+        <deviceName>TRITON Total Hip System</deviceName>
+        <intendedPurpose>Ceramic-on-ceramic total hip replacement</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)09876543002002</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011"/>
+        <deviceName>Iluvien Intravitreal Implant</deviceName>
+        <intendedPurpose>Sustained-release fluocinolone acetonide ocular implant</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)05391520001011</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008"/>
+        <deviceName>Viva Cardiac Resynchronization Defibrillator</deviceName>
+        <intendedPurpose>Cardiac resynchronization therapy with defibrillation</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)04012099001012</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012"/>
+        <deviceName>ATERA Mechanical Ventilator</deviceName>
+        <intendedPurpose>ICU mechanical ventilator with pressure and volume modes</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isReusable>
+        <udiDI>(01)04046539001013</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004"/>
+        <deviceName>Lumify Portable Ultrasound</deviceName>
+        <intendedPurpose>Handheld point-of-care ultrasound probe</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isReusable>
+        <udiDI>(01)08718998001014</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013"/>
+        <deviceName>Hemodialysis Machine 5008S</deviceName>
+        <intendedPurpose>High-volume online hemodiafiltration machine</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isReusable>
+        <udiDI>(01)04547597001015</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005"/>
+        <deviceName>cobas e 801 Immunoassay Analyzer</deviceName>
+        <intendedPurpose>Automated immunoassay analyzer for clinical laboratory</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isReusable>
+        <udiDI>(01)04015630001016</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005"/>
+        <deviceName>cobas SARS-CoV-2 RT-PCR Test</deviceName>
+        <intendedPurpose>Molecular diagnostic test for SARS-CoV-2 detection</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)04015630001017</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015"/>
+        <deviceName>VIDAS HIV DUO Ultra</deviceName>
+        <intendedPurpose>Combined HIV Ag/Ab detection assay</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)03760027001018</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014"/>
+        <deviceName>PROGENSA PCA3 Assay</deviceName>
+        <intendedPurpose>Urine-based prostate cancer diagnosis assay</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)07000087001019</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002"/>
+        <deviceName>Harmony Prenatal Test</deviceName>
+        <intendedPurpose>Non-invasive prenatal testing (NIPT) for aneuploidies</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)00800002001020</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009"/>
+        <deviceName>OPTIGA Glucose Monitoring System</deviceName>
+        <intendedPurpose>Continuous glucose monitor for patients with diabetes</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isReusable>
+        <udiDI>(01)07300000001021</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009"/>
+        <deviceName>BeneVision N1 Patient Monitor</deviceName>
+        <intendedPurpose>Portable patient monitor for vital signs</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isReusable>
+        <udiDI>(01)07300000001022</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008"/>
+        <deviceName>Tivoli II Cochlear Implant</deviceName>
+        <intendedPurpose>Active cochlear implant for sensorineural hearing loss</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)04012099001023</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002"/>
+        <deviceName>Infusion Pump Plum 360</deviceName>
+        <intendedPurpose>Large volume infusion pump with drug library</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isReusable>
+        <udiDI>(01)00800002001024</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011"/>
+        <deviceName>ValveXpert Transcatheter Mitral Valve</deviceName>
+        <intendedPurpose>Transcatheter mitral valve replacement system</intendedPurpose>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <udiDI>(01)05391520001025</udiDI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_001">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_003"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Germany</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-10</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000001</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-08</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001"/>
+        <incidentDescription>Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Serious patient injury - embolic stroke</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</patientAge>
+        <patientSex>Male</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-15</reportDate>
+        <reportingEntity>MAN-001</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_002">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_009"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>France</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-01</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000002</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-29</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002"/>
+        <incidentDescription>Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Device malfunction - premature battery depletion</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</patientAge>
+        <patientSex>Female</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-03</reportDate>
+        <reportingEntity>MAN-001</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_003">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_005"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Italy</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-18</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000003</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-15</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003"/>
+        <incidentDescription>Portico valve showed paravalvular leak grade III due to partial migration 2 weeks post-TAVI procedure.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Surgical intervention required - valve re-anchoring</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</patientAge>
+        <patientSex>Male</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-20</reportDate>
+        <reportingEntity>MAN-002</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_004">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_002"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</correctiveActionTaken>
+        <countryReported>Spain</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-03</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000004</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-28</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004"/>
+        <incidentDescription>SYNERGY stent fracture detected on angiography 18 months post-implant causing in-stent restenosis.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Device malfunction - stent fracture</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</patientAge>
+        <patientSex>Female</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-05</reportDate>
+        <reportingEntity>MAN-006</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_005">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_006"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Netherlands</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-16</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000005</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-12</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005"/>
+        <incidentDescription>ACUITY X4 lead dislodgement to right ventricle requiring fluoroscopy-guided repositioning.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Surgical intervention required - lead extraction</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</patientAge>
+        <patientSex>Male</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</reportDate>
+        <reportingEntity>MAN-006</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_006">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_001"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</correctiveActionTaken>
+        <countryReported>Belgium</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-01</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000006</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-01</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007"/>
+        <incidentDescription>ACUSON Sequoia ultrasound system froze mid-examination. Emergency shutdown required; patient examination incomplete.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Device malfunction - complete system failure</outcome>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-02</reportDate>
+        <reportingEntity>MAN-003</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_007">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_019"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Sweden</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-10</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000007</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-01</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009"/>
+        <incidentDescription>Persona knee tibial insert showing accelerated polyethylene wear with metallosis confirmed at 3-year revision surgery.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Patient harm - adverse tissue reaction</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</patientAge>
+        <patientSex>Male</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-14</reportDate>
+        <reportingEntity>MAN-010</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_008">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_020"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Denmark</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-25</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000008</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-20</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010"/>
+        <incidentDescription>TRITON hip patient presented with elevated serum cobalt (18 ppb). Adverse local tissue reaction (ALTR) confirmed by MRI.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Patient harm - cobalt toxicity</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</patientAge>
+        <patientSex>Female</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-28</reportDate>
+        <reportingEntity>MAN-007</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_009">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_013"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Poland</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-04</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000009</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-03</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012"/>
+        <incidentDescription>Viva CRT-D delivered inappropriate ICD therapy during MRI scan despite MRI-conditional programming. Patient experienced pain and syncope.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Inappropriate shock delivery</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</patientAge>
+        <patientSex>Male</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-06</reportDate>
+        <reportingEntity>MAN-008</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_010">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_010"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Germany</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-19</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000010</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-19</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013"/>
+        <incidentDescription>ATERA ventilator software version 2.1.3 delivered FiO2 6% lower than set value for patients in ARDS protocol. 3 patients affected.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Device malfunction - incorrect FiO2 delivery</outcome>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-20</reportDate>
+        <reportingEntity>MAN-012</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_011">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_014"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>France</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-01</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000011</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-28</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016"/>
+        <incidentDescription>cobas e 801 thyroid-stimulating hormone (TSH) assay reported false positive results (&gt;10 mIU/L) in 12 euthyroid patients due to biotin interference.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Diagnostic error - false positive TSH results</outcome>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-03</reportDate>
+        <reportingEntity>MAN-005</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_012">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_015"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Spain</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-13</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000012</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-10</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017"/>
+        <incidentDescription>cobas SARS-CoV-2 assay failed to detect Omicron BA.2.86 subvariant in 7 samples confirmed positive by sequencing. Lot-specific issue.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Diagnostic error - false negative SARS-CoV-2</outcome>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-15</reportDate>
+        <reportingEntity>MAN-005</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_013">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_015"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</correctiveActionTaken>
+        <countryReported>Germany</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-29</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000013</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-25</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018"/>
+        <incidentDescription>VIDAS HIV DUO Ultra failed to detect HIV-1 group O infection in seroconversion panel. Patient missed early treatment window.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Diagnostic error - false negative HIV</outcome>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-07-01</reportDate>
+        <reportingEntity>MAN-015</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_014">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_014"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Netherlands</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-07-15</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000014</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-07-10</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021"/>
+        <incidentDescription>OPTIGA CGM sensor reported glucose 3.8 mmol/L while laboratory reference showed 14.2 mmol/L. Patient delayed insulin administration.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Patient harm - hyperglycaemic event</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</patientAge>
+        <patientSex>Female</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-07-18</reportDate>
+        <reportingEntity>MAN-009</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_015">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_010"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Italy</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-04</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000015</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-04</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024"/>
+        <incidentDescription>Plum 360 infusion pump delivered 10x heparin dose due to software decimal point error in drug library version 4.2.1.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Patient harm - drug overdose</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</patientAge>
+        <patientSex>Female</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-05</reportDate>
+        <reportingEntity>MAN-002</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_016">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_004"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>United Kingdom</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-18</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000016</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-15</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001"/>
+        <incidentDescription>HeartMate 3 patient developed severe haemolysis (LDH &gt;2000 U/L) associated with outflow graft kinking confirmed by CT.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Patient harm - haemolytic anaemia</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</patientAge>
+        <patientSex>Male</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-20</reportDate>
+        <reportingEntity>MAN-001</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_017">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_007"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>France</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-30</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000017</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-25</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011"/>
+        <incidentDescription>Iluvien implant required surgical removal due to device-related endophthalmitis confirmed by vitreous culture.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Surgical intervention - implant removal</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</patientAge>
+        <patientSex>Female</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-02</reportDate>
+        <reportingEntity>MAN-011</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_018">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_018"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</correctiveActionTaken>
+        <countryReported>Germany</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-14</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000018</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-12</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015"/>
+        <incidentDescription>5008S hemodialysis machine web interface exposed to hospital internal network. Unauthorised session accessed alarm configuration.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Cybersecurity incident - unauthorised access</outcome>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-15</reportDate>
+        <reportingEntity>MAN-013</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_019">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_001"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</correctiveActionTaken>
+        <countryReported>Sweden</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-30</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000019</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-28</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023"/>
+        <incidentDescription>Tivoli II cochlear implant failed to respond to initial activation programming. Sound processor replacement resolved the issue.</incidentDescription>
+        <incidentType>NearMissIncident</incidentType>
+        <outcome>Near-miss - device not activated post-surgery</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</patientAge>
+        <patientSex>Male</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-01</reportDate>
+        <reportingEntity>MAN-008</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_020">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_011"/>
+        <correctiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</correctiveActionTaken>
+        <countryReported>Belgium</countryReported>
+        <detectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-12</detectionDate>
+        <eudamedIncidentRef>EU-INC-2024-000020</eudamedIncidentRef>
+        <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-10</eventDate>
+        <hasDevice rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008"/>
+        <incidentDescription>MAGNETOM Vida MRI caused localised skin burn (1st degree) at anterior electrode lead in patient with DBS system not declared prior to scan.</incidentDescription>
+        <incidentType>SeriousIncident</incidentType>
+        <outcome>Patient harm - SAR heating injury</outcome>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</patientAge>
+        <patientSex>Female</patientSex>
+        <reportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-14</reportDate>
+        <reportingEntity>MAN-003</reportingEntity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-IE-MED-0001</eudamedSRN>
+        <locationCountry>Ireland</locationCountry>
+        <name>Medtronic plc</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FMedtronic&amp;sid=7760</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-DE-MED-0002</eudamedSRN>
+        <locationCountry>Germany</locationCountry>
+        <name>Abbott Medical Devices</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAbbott_Laboratories&amp;sid=7760</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-DE-MED-0003</eudamedSRN>
+        <locationCountry>Germany</locationCountry>
+        <name>Siemens Healthineers AG</name>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/NCIT?p=classes&amp;conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C200140</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-NL-MED-0004</eudamedSRN>
+        <locationCountry>Netherlands</locationCountry>
+        <name>Philips Medical Systems</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-DE-MED-0005</eudamedSRN>
+        <locationCountry>Germany</locationCountry>
+        <name>Roche Diagnostics GmbH</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FRoche_Diagnostics&amp;sid=7760</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-IE-MED-0006</eudamedSRN>
+        <locationCountry>Ireland</locationCountry>
+        <name>Boston Scientific Corporation</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBoston_Scientific&amp;sid=7760</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-NL-MED-0007</eudamedSRN>
+        <locationCountry>Netherlands</locationCountry>
+        <name>Stryker Corporation</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FStryker_Corporation&amp;sid=7760</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-DE-MED-0008</eudamedSRN>
+        <locationCountry>Germany</locationCountry>
+        <name>Biotronik SE &amp; Co. KG</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBiotronik&amp;sid=7760</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-SE-MED-0009</eudamedSRN>
+        <locationCountry>Sweden</locationCountry>
+        <name>GE HealthCare Technologies</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-CH-MED-0010</eudamedSRN>
+        <locationCountry>Switzerland</locationCountry>
+        <name>Zimmer Biomet Holdings</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-UK-MED-0011</eudamedSRN>
+        <locationCountry>United Kingdom</locationCountry>
+        <name>LivaNova PLC</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-DE-MED-0012</eudamedSRN>
+        <locationCountry>Germany</locationCountry>
+        <name>Drägerwerk AG &amp; Co. KGaA</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-FR-MED-0013</eudamedSRN>
+        <locationCountry>France</locationCountry>
+        <name>Nipro Corporation</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-BE-MED-0014</eudamedSRN>
+        <locationCountry>Belgium</locationCountry>
+        <name>Hologic Inc.</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"/>
+        <eudamedSRN>SRN-FR-MED-0015</eudamedSRN>
+        <locationCountry>France</locationCountry>
+        <name>bioMérieux SA</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_001">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ActiveDevice</affectedDeviceType>
+        <imdrfCode>A0101</imdrfCode>
+        <riskCategory>Device Failure</riskCategory>
+        <riskDescription>Complete loss of electrical function leading to device shutdown</riskDescription>
+        <riskName>Device failure - electrical</riskName>
+        <riskType>MalfunctionRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_002">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ImplantableDevice</affectedDeviceType>
+        <imdrfCode>A0102</imdrfCode>
+        <riskCategory>Device Failure</riskCategory>
+        <riskDescription>Structural failure of mechanical components under physiological load</riskDescription>
+        <riskName>Device failure - mechanical</riskName>
+        <riskType>MalfunctionRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_003">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ImplantableActiveDevice</affectedDeviceType>
+        <imdrfCode>A0201</imdrfCode>
+        <riskCategory>Patient Harm</riskCategory>
+        <riskDescription>Thrombus formation on device surface causing embolic events</riskDescription>
+        <riskName>Thrombosis - device-related</riskName>
+        <riskType>InjuryRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_004">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ActiveImplant</affectedDeviceType>
+        <imdrfCode>A0202</imdrfCode>
+        <riskCategory>Patient Harm</riskCategory>
+        <riskDescription>Mechanical destruction of red blood cells by pump mechanism</riskDescription>
+        <riskName>Hemolysis - pump-induced</riskName>
+        <riskType>InjuryRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_005">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ImplantableDevice</affectedDeviceType>
+        <imdrfCode>A0301</imdrfCode>
+        <riskCategory>Device Performance</riskCategory>
+        <riskDescription>Unintended displacement of implant from intended anatomical position</riskDescription>
+        <riskName>Device migration - implant</riskName>
+        <riskType>MalfunctionRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_006">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ActiveImplant</affectedDeviceType>
+        <imdrfCode>A0302</imdrfCode>
+        <riskCategory>Device Performance</riskCategory>
+        <riskDescription>Cardiac lead displacement requiring repositioning or replacement</riskDescription>
+        <riskName>Lead dislodgement</riskName>
+        <riskType>MalfunctionRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_007">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ImplantableDevice</affectedDeviceType>
+        <imdrfCode>A0401</imdrfCode>
+        <riskCategory>Patient Harm</riskCategory>
+        <riskDescription>Device-related infection at implantation site or systemic sepsis</riskDescription>
+        <riskName>Infection - device-related</riskName>
+        <riskType>InfectionRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_008">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ImplantableDevice</affectedDeviceType>
+        <imdrfCode>A0402</imdrfCode>
+        <riskCategory>Patient Harm</riskCategory>
+        <riskDescription>Bacterial biofilm accumulation on implant surface resistant to antibiotics</riskDescription>
+        <riskName>Biofilm formation</riskName>
+        <riskType>InfectionRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_009">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ActiveImplant</affectedDeviceType>
+        <imdrfCode>A0501</imdrfCode>
+        <riskCategory>Device Failure</riskCategory>
+        <riskDescription>Battery end-of-life earlier than specified, risking therapy interruption</riskDescription>
+        <riskName>Battery depletion - premature</riskName>
+        <riskType>MalfunctionRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_010">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ActiveDevice</affectedDeviceType>
+        <imdrfCode>A0502</imdrfCode>
+        <riskCategory>Device Failure</riskCategory>
+        <riskDescription>Software bug causing incorrect dosing, alarming, or therapy delivery</riskDescription>
+        <riskName>Software malfunction</riskName>
+        <riskType>SoftwareRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_011">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ActiveDevice</affectedDeviceType>
+        <imdrfCode>A0601</imdrfCode>
+        <riskCategory>Patient Harm</riskCategory>
+        <riskDescription>Unintended ionising radiation exposure exceeding therapeutic dose</riskDescription>
+        <riskName>Radiation overdose</riskName>
+        <riskType>RadiationRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_012">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ImplantableDevice</affectedDeviceType>
+        <imdrfCode>A0701</imdrfCode>
+        <riskCategory>Device Performance</riskCategory>
+        <riskDescription>Metallic implant causing MRI image artifacts compromising diagnostics</riskDescription>
+        <riskName>Metallic artifact - MRI</riskName>
+        <riskType>InterferenceRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_013">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ActiveImplant</affectedDeviceType>
+        <imdrfCode>A0702</imdrfCode>
+        <riskCategory>Device Performance</riskCategory>
+        <riskDescription>External EMI affecting pacemaker/ICD sensing and pacing functions</riskDescription>
+        <riskName>Electromagnetic interference</riskName>
+        <riskType>InterferenceRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_014">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>InVitroDiagnosticDevice</affectedDeviceType>
+        <imdrfCode>B0101</imdrfCode>
+        <riskCategory>Diagnostic Error</riskCategory>
+        <riskDescription>IVD test returns positive result in absence of target condition</riskDescription>
+        <riskName>False positive result</riskName>
+        <riskType>DiagnosticRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_015">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>InVitroDiagnosticDevice</affectedDeviceType>
+        <imdrfCode>B0102</imdrfCode>
+        <riskCategory>Diagnostic Error</riskCategory>
+        <riskDescription>IVD test fails to detect target condition in affected individual</riskDescription>
+        <riskName>False negative result</riskName>
+        <riskType>DiagnosticRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_016">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>InVitroDiagnosticDevice</affectedDeviceType>
+        <imdrfCode>B0201</imdrfCode>
+        <riskCategory>Diagnostic Error</riskCategory>
+        <riskDescription>Reagent reacts with non-target analyte producing incorrect result</riskDescription>
+        <riskName>Cross-reactivity</riskName>
+        <riskType>DiagnosticRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_017">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>InVitroDiagnosticDevice</affectedDeviceType>
+        <imdrfCode>B0301</imdrfCode>
+        <riskCategory>Product Quality</riskCategory>
+        <riskDescription>Reagent lot contamination leading to systematic diagnostic errors</riskDescription>
+        <riskName>Contamination - reagent</riskName>
+        <riskType>ContaminationRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_018">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ActiveDevice</affectedDeviceType>
+        <imdrfCode>B0401</imdrfCode>
+        <riskCategory>Device Safety</riskCategory>
+        <riskDescription>Exploitable software vulnerability enabling unauthorized device access</riskDescription>
+        <riskName>Cybersecurity vulnerability</riskName>
+        <riskType>CybersecurityRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_019">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ImplantableDevice</affectedDeviceType>
+        <imdrfCode>C0101</imdrfCode>
+        <riskCategory>Patient Harm</riskCategory>
+        <riskDescription>Particulate debris from bearing surfaces causing adverse tissue reaction</riskDescription>
+        <riskName>Wear debris - joint implant</riskName>
+        <riskType>MaterialRisk</riskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_020">
+        <rdf:type rdf:resource="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"/>
+        <affectedDeviceType>ImplantableDevice</affectedDeviceType>
+        <imdrfCode>C0201</imdrfCode>
+        <riskCategory>Patient Harm</riskCategory>
+        <riskDescription>Metallic ion release from corrosion causing local or systemic toxicity</riskDescription>
+        <riskName>Corrosion - metallic implant</riskName>
+        <riskType>MaterialRisk</riskType>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

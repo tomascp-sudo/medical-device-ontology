@@ -1,0 +1,972 @@
+@prefix : <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix medicalDeviceOntology: <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#> .
+@base <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#> .
+
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#> rdf:type owl:Ontology ;
+                                                                 owl:versionIRI <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology/1.0> ;
+                                                                 dc:description "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework."@en ;
+                                                                 dc:title "Ontology for High-Risk Medical Devices and IVDs"@en ;
+                                                                 dcterms:abstract "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks." ;
+                                                                 dcterms:created "2026-04-12"^^xsd:date ;
+                                                                 dcterms:creator "Diana Socola"@en ,
+                                                                                 "Tomas Cuevas"@en ;
+                                                                 dcterms:license "https://creativecommons.org/licenses/by-sa/4.0/" ;
+                                                                 medicalDeviceOntology:vann:preferredNamespacePrefix "mdcso" ;
+                                                                 rdfs:comment "This ontology provides a formal and unified representation of the European catalogue of high-risk medical devices and in vitro diagnostic devices under the MDR and IVDR regulations."@en ;
+                                                                 rdfs:label "Ontology for High-Risk Medical Devices and IVDs"@en ;
+                                                                 owl:versionInfo "Version 1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+dcterms:abstract rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#license
+medicalDeviceOntology:license rdf:type owl:AnnotationProperty .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#vann:preferredNamespacePrefix
+medicalDeviceOntology:vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#addressesIncident
+medicalDeviceOntology:addressesIncident rdf:type owl:ObjectProperty ;
+                                        rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                        rdfs:range medicalDeviceOntology:Incident ;
+                                        rdfs:comment "Relates a corrective action to the incident it addresses."@en ;
+                                        rdfs:label "addresses incident"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#affectsDevice
+medicalDeviceOntology:affectsDevice rdf:type owl:ObjectProperty ;
+                                    rdfs:domain medicalDeviceOntology:Incident ;
+                                    rdfs:range medicalDeviceOntology:Device ;
+                                    rdfs:comment "Relates an incident to the device involved."@en ;
+                                    rdfs:label "affects device"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasActionType
+medicalDeviceOntology:hasActionType rdf:type owl:ObjectProperty ;
+                                    rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                    rdfs:range medicalDeviceOntology:ActionType ;
+                                    rdfs:comment "Relates a corrective action to its action type."@en ;
+                                    rdfs:label "has action type"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType
+medicalDeviceOntology:hasDeviceType rdf:type owl:ObjectProperty ;
+                                    rdfs:domain medicalDeviceOntology:Device ;
+                                    rdfs:range medicalDeviceOntology:DeviceType ;
+                                    rdfs:comment "Relates a device to its device type."@en ;
+                                    rdfs:label "has device type"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasIncidentType
+medicalDeviceOntology:hasIncidentType rdf:type owl:ObjectProperty ;
+                                      rdfs:domain medicalDeviceOntology:Incident ;
+                                      rdfs:range medicalDeviceOntology:IncidentType ;
+                                      rdfs:comment "Relates an incident to its incident type."@en ;
+                                      rdfs:label "has incident type"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasManufacturer
+medicalDeviceOntology:hasManufacturer rdf:type owl:ObjectProperty ;
+                                      rdfs:domain medicalDeviceOntology:Device ;
+                                      rdfs:range medicalDeviceOntology:Manufacturer ;
+                                      rdfs:comment "Relates a device to its manufacturer."@en ;
+                                      rdfs:label "has manufacturer"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasProbability
+medicalDeviceOntology:hasProbability rdf:type owl:ObjectProperty ;
+                                     rdfs:domain medicalDeviceOntology:Risk ;
+                                     rdfs:range medicalDeviceOntology:Probability ;
+                                     rdfs:comment "Relates a risk to its probability level."@en ;
+                                     rdfs:label "has probability"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRegulatoryFramework
+medicalDeviceOntology:hasRegulatoryFramework rdf:type owl:ObjectProperty ;
+                                             rdfs:domain medicalDeviceOntology:Device ;
+                                             rdfs:range medicalDeviceOntology:RegulatoryFramework ;
+                                             rdfs:comment "Relates a device to its regulatory framework."@en ;
+                                             rdfs:label "has regulatory framework"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRisk
+medicalDeviceOntology:hasRisk rdf:type owl:ObjectProperty ;
+                              rdfs:domain medicalDeviceOntology:Incident ;
+                              rdfs:range medicalDeviceOntology:Risk ;
+                              rdfs:comment "Relates an incident to an identified risk"@en ;
+                              rdfs:label "has risk"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRiskClass
+medicalDeviceOntology:hasRiskClass rdf:type owl:ObjectProperty ;
+                                   rdfs:domain medicalDeviceOntology:Device ;
+                                   rdfs:range medicalDeviceOntology:RiskClass ;
+                                   rdfs:comment "Relates a device to its risk classification."@en ;
+                                   rdfs:label "has risk class"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasSeverity
+medicalDeviceOntology:hasSeverity rdf:type owl:ObjectProperty ;
+                                  rdfs:domain medicalDeviceOntology:Risk ;
+                                  rdfs:range medicalDeviceOntology:Severity ;
+                                  rdfs:comment "Relates a risk to its severity level."@en ;
+                                  rdfs:label "has severity"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasStatus
+medicalDeviceOntology:hasStatus rdf:type owl:ObjectProperty ;
+                                rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                rdfs:range medicalDeviceOntology:Status ;
+                                rdfs:comment "Relates a corrective action to its current status."@en ;
+                                rdfs:label "has status"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionDate
+medicalDeviceOntology:actionDate rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf medicalDeviceOntology:correctiveActionDataProperty ;
+                                 rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                 rdfs:range xsd:date ;
+                                 rdfs:comment "Specifies the date on which a corrective action was initiated."@en ;
+                                 rdfs:label "action date"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionDescription
+medicalDeviceOntology:actionDescription rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf medicalDeviceOntology:correctiveActionDataProperty ;
+                                        rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "Provides a textual description of the corrective action."@en ;
+                                        rdfs:label "action description"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#authorizationNumber
+medicalDeviceOntology:authorizationNumber rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf medicalDeviceOntology:manufacturerDataProperty ;
+                                          rdfs:domain medicalDeviceOntology:Manufacturer ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "Specifies the authorization number assigned to a manufacturer."@en ;
+                                          rdfs:label "authorization number"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#closureDate
+medicalDeviceOntology:closureDate rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf medicalDeviceOntology:correctiveActionDataProperty ;
+                                  rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                  rdfs:range xsd:date ;
+                                  rdfs:comment "Specifies the date on which a corrective action was closed."@en ;
+                                  rdfs:label "closure date"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#competentAuthority
+medicalDeviceOntology:competentAuthority rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf medicalDeviceOntology:manufacturerDataProperty ;
+                                         rdfs:domain medicalDeviceOntology:Manufacturer ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "Specifies the competent authority responsible for a manufacturer."@en ;
+                                         rdfs:label "competent authority"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#contactEmail
+medicalDeviceOntology:contactEmail rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf medicalDeviceOntology:manufacturerDataProperty ;
+                                   rdfs:domain medicalDeviceOntology:Manufacturer ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:comment "Specifies the contact email address of a manufacturer."@en ;
+                                   rdfs:label "contact email"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#correctiveActionDataProperty
+medicalDeviceOntology:correctiveActionDataProperty rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                                   rdfs:range rdfs:Literal ;
+                                                   rdfs:comment "Groups data properties used to describe corrective actions."@en ;
+                                                   rdfs:label "corrective action data property"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#correctiveActionTaken
+medicalDeviceOntology:correctiveActionTaken rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                                            rdfs:domain medicalDeviceOntology:Incident ;
+                                            rdfs:range xsd:boolean ;
+                                            rdfs:comment "Indicates whether a corrective action has been taken for an incident."@en ;
+                                            rdfs:label "corrective action taken"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#countriesAffected
+medicalDeviceOntology:countriesAffected rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf medicalDeviceOntology:correctiveActionDataProperty ;
+                                        rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "Specifies the countries affected by a corrective action."@en ;
+                                        rdfs:label "countries affected"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#country
+medicalDeviceOntology:country rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf medicalDeviceOntology:manufacturerDataProperty ;
+                              rdfs:domain medicalDeviceOntology:Manufacturer ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "Specifies the country where a manufacturer is located."@en ;
+                              rdfs:label "country"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#countryReported
+medicalDeviceOntology:countryReported rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                                      rdfs:domain medicalDeviceOntology:Incident ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "Specifies the country in which an incident was reported."@en ;
+                                      rdfs:label "country reported"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#detectionDate
+medicalDeviceOntology:detectionDate rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                                    rdfs:domain medicalDeviceOntology:Incident ;
+                                    rdfs:range xsd:date ;
+                                    rdfs:comment "Specifies the date on which an incident was detected."@en ;
+                                    rdfs:label "detection date"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#deviceDataProperty
+medicalDeviceOntology:deviceDataProperty rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                         rdfs:domain medicalDeviceOntology:Device ;
+                                         rdfs:range rdfs:Literal ;
+                                         rdfs:comment "Groups data properties used to describe medical devices."@en ;
+                                         rdfs:label "device data property" .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#deviceName
+medicalDeviceOntology:deviceName rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf medicalDeviceOntology:deviceDataProperty ;
+                                 rdfs:domain medicalDeviceOntology:Device ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:comment "Specifies the commercial name of a device."@en ;
+                                 rdfs:label "device name"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#devicesAffected
+medicalDeviceOntology:devicesAffected rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf medicalDeviceOntology:correctiveActionDataProperty ;
+                                      rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                      rdfs:range xsd:integer ;
+                                      rdfs:comment "Specifies the number of devices affected by a corrective action."@en ;
+                                      rdfs:label "devices affected"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedFSCARef
+medicalDeviceOntology:eudamedFSCARef rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf medicalDeviceOntology:correctiveActionDataProperty ;
+                                     rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "Specifies the EUDAMED reference identifier of a field safety corrective action."@en ;
+                                     rdfs:label "EUDAMED FSCA reference"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedIncidentRef
+medicalDeviceOntology:eudamedIncidentRef rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                                         rdfs:domain medicalDeviceOntology:Incident ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "Specifies the EUDAMED reference identifier of an incident."@en ;
+                                         rdfs:label "EUDAMED incident ref"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedSRN
+medicalDeviceOntology:eudamedSRN rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf medicalDeviceOntology:manufacturerDataProperty ;
+                                 rdfs:domain medicalDeviceOntology:Manufacturer ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:comment "Specifies the Single Registration Number assigned in EUDAMED."@en ;
+                                 rdfs:label "EUDAMED SRN"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eventDate
+medicalDeviceOntology:eventDate rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                                rdfs:domain medicalDeviceOntology:Incident ;
+                                rdfs:range xsd:date ;
+                                rdfs:comment "Specifies the date on which an incident occurred."@en ;
+                                rdfs:label "event date"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#imdrfCode
+medicalDeviceOntology:imdrfCode rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf medicalDeviceOntology:riskDataProperty ;
+                                rdfs:domain medicalDeviceOntology:Risk ;
+                                rdfs:range xsd:string ;
+                                rdfs:comment "Specifies the IMDRF code assigned to a risk."@en ;
+                                rdfs:label "IMDRF code"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incidentDataProperty
+medicalDeviceOntology:incidentDataProperty rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain medicalDeviceOntology:Incident ;
+                                           rdfs:range rdfs:Literal ;
+                                           rdfs:comment "Groups data properties used to describe incidents associated with medical devices."@en ;
+                                           rdfs:label "incident data property"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incidentDescription
+medicalDeviceOntology:incidentDescription rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                                          rdfs:domain medicalDeviceOntology:Incident ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "Provides a textual description of an incident."@en ;
+                                          rdfs:label "incident description"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#intendedPurpose
+medicalDeviceOntology:intendedPurpose rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf medicalDeviceOntology:deviceDataProperty ;
+                                      rdfs:domain medicalDeviceOntology:Device ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "Specifies the intended purpose of a medical device."@en ;
+                                      rdfs:label "intented purpose"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isActive
+medicalDeviceOntology:isActive rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf medicalDeviceOntology:deviceDataProperty ;
+                               rdfs:domain medicalDeviceOntology:Device ;
+                               rdfs:range xsd:boolean ;
+                               rdfs:comment "Indicates whether a medical device is active."@en ;
+                               rdfs:label "is active"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isIVD
+medicalDeviceOntology:isIVD rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf medicalDeviceOntology:deviceDataProperty ;
+                            rdfs:domain medicalDeviceOntology:Device ;
+                            rdfs:range xsd:boolean ;
+                            rdfs:comment "Indicates whether a medical device is an in vitro diagnostic device."@en ;
+                            rdfs:label "is IVD"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isImplantable
+medicalDeviceOntology:isImplantable rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf medicalDeviceOntology:deviceDataProperty ;
+                                    rdfs:domain medicalDeviceOntology:Device ;
+                                    rdfs:range xsd:boolean ;
+                                    rdfs:comment "Indicates whether a medical device is implantable."@en ;
+                                    rdfs:label "is implantable"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isReusable
+medicalDeviceOntology:isReusable rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf medicalDeviceOntology:deviceDataProperty ;
+                                 rdfs:domain medicalDeviceOntology:Device ;
+                                 rdfs:range xsd:boolean ;
+                                 rdfs:comment "Indicates whether a medical device is reusable."@en ;
+                                 rdfs:label "is reusable"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturerDataProperty
+medicalDeviceOntology:manufacturerDataProperty rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain medicalDeviceOntology:Manufacturer ;
+                                               rdfs:range rdfs:Literal ;
+                                               rdfs:comment "Groups data properties used to describe manufacturers."@en ;
+                                               rdfs:label "manufacturer data property"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturerName
+medicalDeviceOntology:manufacturerName rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf medicalDeviceOntology:manufacturerDataProperty ;
+                                       rdfs:domain medicalDeviceOntology:Manufacturer ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "Specifies the name of a manufacturer."@en ;
+                                       rdfs:label "manufacturer name"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#outcome
+medicalDeviceOntology:outcome rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                              rdfs:domain medicalDeviceOntology:Incident ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "Specifies the outcome of an incident."@en ;
+                              rdfs:label "outcome"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#patientAge
+medicalDeviceOntology:patientAge rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                                 rdfs:domain medicalDeviceOntology:Incident ;
+                                 rdfs:range xsd:integer ;
+                                 rdfs:comment "Specifies the age of the patient involved in an incident."@en ;
+                                 rdfs:label "patient age"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#patientSex
+medicalDeviceOntology:patientSex rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                                 rdfs:domain medicalDeviceOntology:Incident ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:comment "Specifies the sex of the patient involved in an incident."@en ;
+                                 rdfs:label "patient sex"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reportDate
+medicalDeviceOntology:reportDate rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf medicalDeviceOntology:incidentDataProperty ;
+                                 rdfs:domain medicalDeviceOntology:Incident ;
+                                 rdfs:range xsd:date ;
+                                 rdfs:comment "Specifies the date on which an incident was reported"@en ;
+                                 rdfs:label "report date"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskDataProperty
+medicalDeviceOntology:riskDataProperty rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain medicalDeviceOntology:Risk ;
+                                       rdfs:range rdfs:Literal ;
+                                       rdfs:comment "Groups data properties used to describe identified risks."@en ;
+                                       rdfs:label "risk data property"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskDescription
+medicalDeviceOntology:riskDescription rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf medicalDeviceOntology:riskDataProperty ;
+                                      rdfs:domain medicalDeviceOntology:Risk ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "Provides a textual description of a risk."@en ;
+                                      rdfs:label "risk description"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskName
+medicalDeviceOntology:riskName rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf medicalDeviceOntology:riskDataProperty ;
+                               rdfs:domain medicalDeviceOntology:Risk ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "Specifies the name of a risk."@en ;
+                               rdfs:label "risk name"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#scope
+medicalDeviceOntology:scope rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf medicalDeviceOntology:correctiveActionDataProperty ;
+                            rdfs:domain medicalDeviceOntology:CorrectiveAction ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Specifies the scope of a corrective action."@en ;
+                            rdfs:label "scope"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udiDI
+medicalDeviceOntology:udiDI rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf medicalDeviceOntology:deviceDataProperty ;
+                            rdfs:domain medicalDeviceOntology:Device ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Specifies the Device Identifier part of the Unique Device Identification code"@en ;
+                            rdfs:label "UDI DI"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActionType
+medicalDeviceOntology:ActionType rdf:type owl:Class ;
+                                 rdfs:comment "Represents the type of corrective action associated with a medical device incident."@en ;
+                                 rdfs:label "Action type"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActiveDevice
+medicalDeviceOntology:ActiveDevice rdf:type owl:Class ;
+                                   rdfs:subClassOf medicalDeviceOntology:DeviceType ;
+                                   rdfs:comment "Represents an active medical device type."@en ;
+                                   rdfs:label "Active device"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActiveImplant
+medicalDeviceOntology:ActiveImplant rdf:type owl:Class ;
+                                    rdfs:subClassOf medicalDeviceOntology:DeviceType ;
+                                    rdfs:comment "Represents an active implant medical device type."@en ;
+                                    rdfs:label "Active implant"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassC
+medicalDeviceOntology:ClassC rdf:type owl:Class ;
+                             rdfs:subClassOf medicalDeviceOntology:RiskClass ;
+                             rdfs:comment "represents class C for in vitro diagnostic medical devices"@en ;
+                             rdfs:label "ClassC"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassD
+medicalDeviceOntology:ClassD rdf:type owl:Class ;
+                             rdfs:subClassOf medicalDeviceOntology:RiskClass ;
+                             rdfs:comment "represents class D for in vitro diagnostic medical devices"@en ;
+                             rdfs:label "ClassD"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIII
+medicalDeviceOntology:ClassIII rdf:type owl:Class ;
+                               rdfs:subClassOf medicalDeviceOntology:RiskClass ;
+                               rdfs:comment "represents risk class III for medical devices"@en ;
+                               rdfs:label "ClassIII"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIIa
+medicalDeviceOntology:ClassIIa rdf:type owl:Class ;
+                               rdfs:subClassOf medicalDeviceOntology:RiskClass ;
+                               rdfs:comment "Represents the Class IIa risk classification for medical devices."@en ;
+                               rdfs:label "Class IIa"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIIb
+medicalDeviceOntology:ClassIIb rdf:type owl:Class ;
+                               rdfs:subClassOf medicalDeviceOntology:RiskClass ;
+                               rdfs:comment "represents risk class IIb for medical devices"@en ;
+                               rdfs:label "ClassIIb"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction
+medicalDeviceOntology:CorrectiveAction rdf:type owl:Class ;
+                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty medicalDeviceOntology:addressesIncident ;
+                                                         owl:someValuesFrom medicalDeviceOntology:Incident
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty medicalDeviceOntology:hasActionType ;
+                                                         owl:someValuesFrom medicalDeviceOntology:ActionType
+                                                       ] ;
+                                       rdfs:comment "A field safety corrective action associated with an incident."@en ;
+                                       rdfs:label "Corrective action"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Critical
+medicalDeviceOntology:Critical rdf:type owl:Class ;
+                               rdfs:subClassOf medicalDeviceOntology:Serious ;
+                               rdfs:comment "Represents a critical severity level for a medical device risk."@en ;
+                               rdfs:label "Critical severity"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device
+medicalDeviceOntology:Device rdf:type owl:Class ;
+                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty medicalDeviceOntology:hasDeviceType ;
+                                               owl:someValuesFrom medicalDeviceOntology:DeviceType
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty medicalDeviceOntology:hasManufacturer ;
+                                               owl:someValuesFrom medicalDeviceOntology:Manufacturer
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty medicalDeviceOntology:hasRegulatoryFramework ;
+                                               owl:someValuesFrom medicalDeviceOntology:RegulatoryFramework
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty medicalDeviceOntology:hasRiskClass ;
+                                               owl:someValuesFrom medicalDeviceOntology:RiskClass
+                                             ] ;
+                             rdfs:comment "A medical device registered within the ontology model."@en ;
+                             rdfs:label "Device"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DeviceType
+medicalDeviceOntology:DeviceType rdf:type owl:Class ;
+                                 rdfs:comment "Represents the type of medical device."@en ;
+                                 rdfs:label "Device type"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#High
+medicalDeviceOntology:High rdf:type owl:Class ;
+                           rdfs:subClassOf medicalDeviceOntology:Probability ;
+                           rdfs:comment "Represents a high probability level for a medical device risk"@en ;
+                           rdfs:label "High probability"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#HighRiskImplantableDevice
+medicalDeviceOntology:HighRiskImplantableDevice rdf:type owl:Class ;
+                                                rdfs:subClassOf medicalDeviceOntology:Device ;
+                                                rdfs:comment "Represents an implantable medical device classified as Class III."@en ;
+                                                rdfs:label "High-risk implantable device"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#HighRiskIncident
+medicalDeviceOntology:HighRiskIncident rdf:type owl:Class ;
+                                       rdfs:subClassOf medicalDeviceOntology:Incident ;
+                                       rdfs:comment "Represents an incident associated with a high-probability and serious risk."@en ;
+                                       rdfs:label "High-risk incident"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#IVDR
+medicalDeviceOntology:IVDR rdf:type owl:Class ;
+                           rdfs:subClassOf medicalDeviceOntology:RegulatoryFramework ;
+                           rdfs:comment "represents the In Vitro Diagnostic Medical Device Regulation applicable in the European Union"@en ;
+                           rdfs:label "IVDR"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ImplantableActiveDevice
+medicalDeviceOntology:ImplantableActiveDevice rdf:type owl:Class ;
+                                              rdfs:subClassOf medicalDeviceOntology:DeviceType ;
+                                              rdfs:comment "Represents an implantable active medical device type."@en ;
+                                              rdfs:label "Implantable active device"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ImplantableDevice
+medicalDeviceOntology:ImplantableDevice rdf:type owl:Class ;
+                                        rdfs:subClassOf medicalDeviceOntology:DeviceType ;
+                                        rdfs:comment "Represents an implantable medical device type."@en ;
+                                        rdfs:label "Implantable device"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InSituCorrection
+medicalDeviceOntology:InSituCorrection rdf:type owl:Class ;
+                                       rdfs:subClassOf medicalDeviceOntology:ActionType ;
+                                       rdfs:comment "Represents an in situ correction corrective action type."@en ;
+                                       rdfs:label "In situ correction"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InVitroDiagnosticDevice
+medicalDeviceOntology:InVitroDiagnosticDevice rdf:type owl:Class ;
+                                              rdfs:subClassOf medicalDeviceOntology:DeviceType ;
+                                              rdfs:comment "Represents an in vitro diagnostic medical device type."@en ;
+                                              rdfs:label "In vitro diagnostic device"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident
+medicalDeviceOntology:Incident rdf:type owl:Class ;
+                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                 owl:onProperty medicalDeviceOntology:affectsDevice ;
+                                                 owl:someValuesFrom medicalDeviceOntology:Device
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty medicalDeviceOntology:hasIncidentType ;
+                                                 owl:someValuesFrom medicalDeviceOntology:IncidentType
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty medicalDeviceOntology:hasRisk ;
+                                                 owl:someValuesFrom medicalDeviceOntology:Risk
+                                               ] ;
+                               rdfs:comment "A reported adverse event or malfunction associated with a medical device."@en ;
+                               rdfs:label "Incident"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#IncidentType
+medicalDeviceOntology:IncidentType rdf:type owl:Class ;
+                                   rdfs:comment "Represents the type of incident associated with a medical device."@en ;
+                                   rdfs:label "Incident type"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Low
+medicalDeviceOntology:Low rdf:type owl:Class ;
+                          rdfs:subClassOf medicalDeviceOntology:Probability ;
+                          rdfs:comment "Represents a low probability level for a medical device risk."@en ;
+                          rdfs:label "Low probability"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MDR
+medicalDeviceOntology:MDR rdf:type owl:Class ;
+                          rdfs:subClassOf medicalDeviceOntology:RegulatoryFramework ;
+                          rdfs:comment "represents the Medical Device Regulation applicable in the European Union"@en ;
+                          rdfs:label "MDR"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer
+medicalDeviceOntology:Manufacturer rdf:type owl:Class ;
+                                   rdfs:comment "An organization responsible for manufacturing a medical device."@en ;
+                                   rdfs:label "Manufacturer"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Medium
+medicalDeviceOntology:Medium rdf:type owl:Class ;
+                             rdfs:subClassOf medicalDeviceOntology:Probability ;
+                             rdfs:comment "Represents a medium probability level for a medical device risk."@en ;
+                             rdfs:label "Medium probability"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Moderate
+medicalDeviceOntology:Moderate rdf:type owl:Class ;
+                               rdfs:subClassOf medicalDeviceOntology:Severity ;
+                               rdfs:comment "Represents a moderate severity level for a medical device risk"@en ;
+                               rdfs:label "Moderate severity"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#NearMissIncident
+medicalDeviceOntology:NearMissIncident rdf:type owl:Class ;
+                                       rdfs:subClassOf medicalDeviceOntology:IncidentType ;
+                                       rdfs:comment "Represents a near miss incident associated with a medical device."@en ;
+                                       rdfs:label "Near miss incident"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Probability
+medicalDeviceOntology:Probability rdf:type owl:Class ;
+                                  rdfs:comment "Represents the probability level associated with a medical device risk."@en ;
+                                  rdfs:label "Probability"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Recall
+medicalDeviceOntology:Recall rdf:type owl:Class ;
+                             rdfs:subClassOf medicalDeviceOntology:ActionType ;
+                             rdfs:comment "Represents a recall corrective action type."@en ;
+                             rdfs:label "Recall"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#RecallCorrectiveAction
+medicalDeviceOntology:RecallCorrectiveAction rdf:type owl:Class ;
+                                             rdfs:subClassOf medicalDeviceOntology:CorrectiveAction ;
+                                             rdfs:comment "Represents a corrective action categorized as a recall."@en ;
+                                             rdfs:label "Recall corrective action"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#RegulatoryFramework
+medicalDeviceOntology:RegulatoryFramework rdf:type owl:Class ;
+                                          rdfs:comment "represents the regulatory framework applicable to a medical device"@en ;
+                                          rdfs:label "Regulatory framework" .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk
+medicalDeviceOntology:Risk rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty medicalDeviceOntology:hasProbability ;
+                                             owl:someValuesFrom medicalDeviceOntology:Probability
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty medicalDeviceOntology:hasSeverity ;
+                                             owl:someValuesFrom medicalDeviceOntology:Severity
+                                           ] ;
+                           rdfs:comment "A risk identified for a medical device or incident."@en ;
+                           rdfs:label "Risk"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#RiskClass
+medicalDeviceOntology:RiskClass rdf:type owl:Class ;
+                                rdfs:comment "Represents the regulatory risk classification associated with a medical device."@en ;
+                                rdfs:label "Risk class"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SafetyAlert
+medicalDeviceOntology:SafetyAlert rdf:type owl:Class ;
+                                  rdfs:subClassOf medicalDeviceOntology:ActionType ;
+                                  rdfs:comment "Represents a safety alert corrective action type."@en ;
+                                  rdfs:label "Safety alert"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SelfTestDevice
+medicalDeviceOntology:SelfTestDevice rdf:type owl:Class ;
+                                     rdfs:subClassOf medicalDeviceOntology:DeviceType ;
+                                     rdfs:comment "Represents a self-test medical device type."@en ;
+                                     rdfs:label "Self-test device"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Serious
+medicalDeviceOntology:Serious rdf:type owl:Class ;
+                              rdfs:subClassOf medicalDeviceOntology:Severity ;
+                              rdfs:comment "Represents a serious severity level for a medical device risk."@en ;
+                              rdfs:label "Serious severity"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SeriousIncident
+medicalDeviceOntology:SeriousIncident rdf:type owl:Class ;
+                                      rdfs:subClassOf medicalDeviceOntology:IncidentType ;
+                                      rdfs:comment "Represents a serious incident associated with a medical device."@en ;
+                                      rdfs:label "Serious incident"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Severity
+medicalDeviceOntology:Severity rdf:type owl:Class ;
+                               rdfs:comment "Represents the severity level associated with a medical device risk."@en ;
+                               rdfs:label "Severity"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SingleUseDevice
+medicalDeviceOntology:SingleUseDevice rdf:type owl:Class ;
+                                      rdfs:subClassOf medicalDeviceOntology:DeviceType ;
+                                      rdfs:comment "Represents a single-use medical device type."@en ;
+                                      rdfs:label "Single-use device"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Status
+medicalDeviceOntology:Status rdf:type owl:Class ;
+                             rdfs:comment "Represents the current status of a corrective action."@en ;
+                             rdfs:label "Status"@en .
+
+
+###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#UserNotice
+medicalDeviceOntology:UserNotice rdf:type owl:Class ;
+                                 rdfs:subClassOf medicalDeviceOntology:ActionType ;
+                                 rdfs:comment "Represents a user notice corrective action type."@en ;
+                                 rdfs:label "User notice"@en .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#d> rdf:type swrl:Variable .
+
+<urn:swrl:var#t> rdf:type swrl:Variable .
+
+<urn:swrl:var#c> rdf:type swrl:Variable .
+
+<urn:swrl:var#i> rdf:type swrl:Variable .
+
+<urn:swrl:var#r> rdf:type swrl:Variable .
+
+<urn:swrl:var#p> rdf:type swrl:Variable .
+
+<urn:swrl:var#s> rdf:type swrl:Variable .
+
+<urn:swrl:var#ca> rdf:type swrl:Variable .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate medicalDeviceOntology:hasDeviceType ;
+                           swrl:argument1 <urn:swrl:var#d> ;
+                           swrl:argument2 <urn:swrl:var#t>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate medicalDeviceOntology:ImplantableDevice ;
+                                      swrl:argument1 <urn:swrl:var#t>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate medicalDeviceOntology:hasRiskClass ;
+                                                 swrl:argument1 <urn:swrl:var#d> ;
+                                                 swrl:argument2 <urn:swrl:var#c>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate medicalDeviceOntology:ClassIII ;
+                                                            swrl:argument1 <urn:swrl:var#c>
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate medicalDeviceOntology:HighRiskImplantableDevice ;
+                           swrl:argument1 <urn:swrl:var#d>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate medicalDeviceOntology:hasRisk ;
+                           swrl:argument1 <urn:swrl:var#i> ;
+                           swrl:argument2 <urn:swrl:var#r>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate medicalDeviceOntology:hasProbability ;
+                                      swrl:argument1 <urn:swrl:var#r> ;
+                                      swrl:argument2 <urn:swrl:var#p>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate medicalDeviceOntology:High ;
+                                                 swrl:argument1 <urn:swrl:var#p>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate medicalDeviceOntology:hasSeverity ;
+                                                            swrl:argument1 <urn:swrl:var#r> ;
+                                                            swrl:argument2 <urn:swrl:var#s>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate medicalDeviceOntology:Serious ;
+                                                                       swrl:argument1 <urn:swrl:var#s>
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate medicalDeviceOntology:HighRiskIncident ;
+                           swrl:argument1 <urn:swrl:var#i>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate medicalDeviceOntology:hasActionType ;
+                           swrl:argument1 <urn:swrl:var#ca> ;
+                           swrl:argument2 <urn:swrl:var#t>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate medicalDeviceOntology:Recall ;
+                                      swrl:argument1 <urn:swrl:var#t>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate medicalDeviceOntology:RecallCorrectiveAction ;
+                           swrl:argument1 <urn:swrl:var#ca>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
