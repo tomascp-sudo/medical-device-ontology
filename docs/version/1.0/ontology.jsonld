@@ -4994,8 +4994,7 @@
     "@value" : "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks."
   } ],
   "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-04-12"
+    "@value" : "2026-04-18T14:30:00"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "en",

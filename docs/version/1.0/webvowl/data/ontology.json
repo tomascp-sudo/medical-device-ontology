@@ -8,7 +8,7 @@
       "undefined" : "Medical Devices Classification and Safety Ontology"
     },
     "iri" : "https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl",
-    "version" : "This is V1.0",
+    "version" : "Version 1.0",
     "author" : [ "Diana Socola", "Tomas Cuevas" ],
     "description" : {
       "en" : "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework.",
@@ -36,12 +36,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Tomas Cuevas",
+        "value" : "Diana Socola",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Diana Socola",
+        "value" : "Tomas Cuevas",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -59,12 +59,12 @@
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "2026-04-12",
+        "value" : "2026-04-27",
         "type" : "label"
       }, {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "2026-04-27",
+        "value" : "2026-04-18T14:30:00",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -78,6 +78,17 @@
         "value" : "https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#",
         "type" : "label"
       } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "Version 1.0",
+        "type" : "label"
+      }, {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "This is V1.0",
+        "type" : "label"
+      } ],
       "abstract" : [ {
         "identifier" : "abstract",
         "language" : "undefined",
@@ -89,26 +100,15 @@
         "value" : "The Medical Devices Classification and Safety Ontology provides a framework for modeling key concepts, entities, and relationships within the domain of medical devices.\nIt captures knowledge about device types, regulatory classes, manufacturers, and corrective actions.\nUsing OWL and SWRL, the ontology supports intelligent reasoning over safety-related data and facilitates interoperability, analysis, and querying within medical device information systems.",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "This is V1.0",
-        "type" : "label"
-      }, {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "Version 1.0",
-        "type" : "label"
-      } ],
       "title" : [ {
-        "identifier" : "title",
-        "language" : "undefined",
-        "value" : "Medical Devices Classification and Safety Ontology",
-        "type" : "label"
-      }, {
         "identifier" : "title",
         "language" : "en",
         "value" : "Ontology for High-Risk Medical Devices and IVDs",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Medical Devices Classification and Safety Ontology",
         "type" : "label"
       } ]
     }
@@ -169,10 +169,10 @@
     "id" : "39",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "37",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "52",
@@ -202,7 +202,7 @@
     "id" : "8",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "31",
+    "id" : "29",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "43",
@@ -214,41 +214,38 @@
     "id" : "66",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "69",
+    "id" : "70",
     "type" : "owl:Class"
   }, {
     "id" : "10",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "70",
+    "id" : "71",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "71",
+    "id" : "72",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "72",
+    "id" : "73",
     "type" : "owl:Class"
   }, {
-    "id" : "73",
+    "id" : "74",
     "type" : "rdfs:Literal"
   }, {
     "id" : "68",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
+    "id" : "77",
     "type" : "owl:Thing"
   }, {
     "id" : "56",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
+    "id" : "86",
     "type" : "owl:Class"
-  }, {
-    "id" : "88",
-    "type" : "rdfs:Literal"
   }, {
     "id" : "89",
     "type" : "rdfs:Literal"
@@ -259,28 +256,31 @@
     "id" : "91",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "87",
+    "id" : "92",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "94",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "93",
+    "id" : "88",
     "type" : "rdfs:Literal"
   }, {
     "id" : "95",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "83",
+    "id" : "94",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "29",
+    "id" : "96",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "80",
+    "id" : "81",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "99",
+    "id" : "100",
     "type" : "owl:Class"
   }, {
     "id" : "103",
@@ -289,7 +289,7 @@
     "id" : "106",
     "type" : "owl:Class"
   }, {
-    "id" : "78",
+    "id" : "79",
     "type" : "owl:Thing"
   }, {
     "id" : "18",
@@ -304,7 +304,7 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "75",
+    "id" : "76",
     "type" : "rdfs:Literal"
   }, {
     "id" : "115",
@@ -331,7 +331,7 @@
     "id" : "120",
     "type" : "owl:Class"
   }, {
-    "id" : "100",
+    "id" : "69",
     "type" : "owl:Class"
   }, {
     "id" : "138",
@@ -343,7 +343,7 @@
     "id" : "141",
     "type" : "owl:Class"
   }, {
-    "id" : "96",
+    "id" : "97",
     "type" : "owl:Class"
   }, {
     "id" : "118",
@@ -695,32 +695,6 @@
         "IRI-based" : "Manufacturer_MAN_013"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "eudamedSRN" : [ {
-          "identifier" : "eudamedSRN",
-          "language" : "undefined",
-          "value" : "SRN-BE-MED-0014",
-          "type" : "label"
-        } ],
-        "locationCountry" : [ {
-          "identifier" : "locationCountry",
-          "language" : "undefined",
-          "value" : "Belgium",
-          "type" : "label"
-        } ],
-        "name" : [ {
-          "identifier" : "name",
-          "language" : "undefined",
-          "value" : "Hologic Inc.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Manufacturer_MAN_014"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
@@ -753,30 +727,30 @@
         "IRI-based" : "Manufacturer_MAN_003"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004",
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
         "eudamedSRN" : [ {
           "identifier" : "eudamedSRN",
           "language" : "undefined",
-          "value" : "SRN-NL-MED-0004",
+          "value" : "SRN-BE-MED-0014",
           "type" : "label"
         } ],
         "locationCountry" : [ {
           "identifier" : "locationCountry",
           "language" : "undefined",
-          "value" : "Netherlands",
+          "value" : "Belgium",
           "type" : "label"
         } ],
         "name" : [ {
           "identifier" : "name",
           "language" : "undefined",
-          "value" : "Philips Medical Systems",
+          "value" : "Hologic Inc.",
           "type" : "label"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Manufacturer_MAN_004"
+        "IRI-based" : "Manufacturer_MAN_014"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015",
@@ -803,6 +777,32 @@
       },
       "labels" : {
         "IRI-based" : "Manufacturer_MAN_015"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "eudamedSRN" : [ {
+          "identifier" : "eudamedSRN",
+          "language" : "undefined",
+          "value" : "SRN-NL-MED-0004",
+          "type" : "label"
+        } ],
+        "locationCountry" : [ {
+          "identifier" : "locationCountry",
+          "language" : "undefined",
+          "value" : "Netherlands",
+          "type" : "label"
+        } ],
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Philips Medical Systems",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Manufacturer_MAN_004"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010",
@@ -990,20 +990,6 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#High",
-    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "High",
-      "en" : "High probability"
-    },
-    "comment" : {
-      "en" : "Represents a high probability level for a medical device risk"
-    },
-    "attributes" : [ "external" ],
-    "id" : "37",
-    "superClasses" : [ "35" ]
-  }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActiveImplant",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
     "instances" : 0,
@@ -1017,6 +1003,20 @@
     "attributes" : [ "external" ],
     "id" : "48",
     "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#High",
+    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "High",
+      "en" : "High probability"
+    },
+    "comment" : {
+      "en" : "Represents a high probability level for a medical device risk"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassC",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -1121,7 +1121,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "31",
+    "id" : "29",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1166,7 +1166,7 @@
       "en" : "Represents an active medical device type."
     },
     "attributes" : [ "external" ],
-    "id" : "69",
+    "id" : "70",
     "superClasses" : [ "49" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1178,7 +1178,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "70",
+    "id" : "71",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1198,7 +1198,7 @@
     "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "71",
+    "id" : "72",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1215,11 +1215,11 @@
       "en" : "Represents a corrective action categorized as a recall."
     },
     "attributes" : [ "external" ],
-    "id" : "72",
+    "id" : "73",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "73",
+    "id" : "74",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1241,50 +1241,6 @@
       "en" : "Risk"
     },
     "individuals" : [ {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_008",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "riskName" : [ {
-          "identifier" : "riskName",
-          "language" : "undefined",
-          "value" : "Biofilm formation",
-          "type" : "label"
-        } ],
-        "affectedDeviceType" : [ {
-          "identifier" : "affectedDeviceType",
-          "language" : "undefined",
-          "value" : "ImplantableDevice",
-          "type" : "label"
-        } ],
-        "riskCategory" : [ {
-          "identifier" : "riskCategory",
-          "language" : "undefined",
-          "value" : "Patient Harm",
-          "type" : "label"
-        } ],
-        "riskType" : [ {
-          "identifier" : "riskType",
-          "language" : "undefined",
-          "value" : "InfectionRisk",
-          "type" : "label"
-        } ],
-        "riskDescription" : [ {
-          "identifier" : "riskDescription",
-          "language" : "undefined",
-          "value" : "Bacterial biofilm accumulation on implant surface resistant to antibiotics",
-          "type" : "label"
-        } ],
-        "imdrfCode" : [ {
-          "identifier" : "imdrfCode",
-          "language" : "undefined",
-          "value" : "A0402",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Risk_RSK_008"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_019",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
@@ -1327,6 +1283,50 @@
       },
       "labels" : {
         "IRI-based" : "Risk_RSK_019"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_008",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "riskName" : [ {
+          "identifier" : "riskName",
+          "language" : "undefined",
+          "value" : "Biofilm formation",
+          "type" : "label"
+        } ],
+        "affectedDeviceType" : [ {
+          "identifier" : "affectedDeviceType",
+          "language" : "undefined",
+          "value" : "ImplantableDevice",
+          "type" : "label"
+        } ],
+        "riskCategory" : [ {
+          "identifier" : "riskCategory",
+          "language" : "undefined",
+          "value" : "Patient Harm",
+          "type" : "label"
+        } ],
+        "riskType" : [ {
+          "identifier" : "riskType",
+          "language" : "undefined",
+          "value" : "InfectionRisk",
+          "type" : "label"
+        } ],
+        "riskDescription" : [ {
+          "identifier" : "riskDescription",
+          "language" : "undefined",
+          "value" : "Bacterial biofilm accumulation on implant surface resistant to antibiotics",
+          "type" : "label"
+        } ],
+        "imdrfCode" : [ {
+          "identifier" : "imdrfCode",
+          "language" : "undefined",
+          "value" : "A0402",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Risk_RSK_008"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_007",
@@ -1637,50 +1637,6 @@
         "IRI-based" : "Risk_RSK_003"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_006",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "riskName" : [ {
-          "identifier" : "riskName",
-          "language" : "undefined",
-          "value" : "Lead dislodgement",
-          "type" : "label"
-        } ],
-        "affectedDeviceType" : [ {
-          "identifier" : "affectedDeviceType",
-          "language" : "undefined",
-          "value" : "ActiveImplant",
-          "type" : "label"
-        } ],
-        "riskCategory" : [ {
-          "identifier" : "riskCategory",
-          "language" : "undefined",
-          "value" : "Device Performance",
-          "type" : "label"
-        } ],
-        "riskType" : [ {
-          "identifier" : "riskType",
-          "language" : "undefined",
-          "value" : "MalfunctionRisk",
-          "type" : "label"
-        } ],
-        "riskDescription" : [ {
-          "identifier" : "riskDescription",
-          "language" : "undefined",
-          "value" : "Cardiac lead displacement requiring repositioning or replacement",
-          "type" : "label"
-        } ],
-        "imdrfCode" : [ {
-          "identifier" : "imdrfCode",
-          "language" : "undefined",
-          "value" : "A0302",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Risk_RSK_006"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_017",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
@@ -1723,6 +1679,50 @@
       },
       "labels" : {
         "IRI-based" : "Risk_RSK_017"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_006",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "riskName" : [ {
+          "identifier" : "riskName",
+          "language" : "undefined",
+          "value" : "Lead dislodgement",
+          "type" : "label"
+        } ],
+        "affectedDeviceType" : [ {
+          "identifier" : "affectedDeviceType",
+          "language" : "undefined",
+          "value" : "ActiveImplant",
+          "type" : "label"
+        } ],
+        "riskCategory" : [ {
+          "identifier" : "riskCategory",
+          "language" : "undefined",
+          "value" : "Device Performance",
+          "type" : "label"
+        } ],
+        "riskType" : [ {
+          "identifier" : "riskType",
+          "language" : "undefined",
+          "value" : "MalfunctionRisk",
+          "type" : "label"
+        } ],
+        "riskDescription" : [ {
+          "identifier" : "riskDescription",
+          "language" : "undefined",
+          "value" : "Cardiac lead displacement requiring repositioning or replacement",
+          "type" : "label"
+        } ],
+        "imdrfCode" : [ {
+          "identifier" : "imdrfCode",
+          "language" : "undefined",
+          "value" : "A0302",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Risk_RSK_006"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_005",
@@ -2129,7 +2129,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "76",
+    "id" : "77",
     "label" : {
       "undefined" : "Thing"
     }
@@ -2159,15 +2159,8 @@
       "en" : "Represents a single-use medical device type."
     },
     "attributes" : [ "external" ],
-    "id" : "85",
+    "id" : "86",
     "superClasses" : [ "49" ]
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "88",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "89",
@@ -2191,21 +2184,14 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "87",
+    "id" : "92",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "94",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "93",
+    "id" : "88",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2219,7 +2205,21 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "83",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "84",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2244,16 +2244,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
           "value" : "(01)07300000001021",
+          "type" : "label"
+        } ],
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "true",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2362,16 +2362,16 @@
           "value" : "false",
           "type" : "label"
         } ],
-        "isActive" : [ {
-          "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "intendedPurpose" : [ {
           "identifier" : "intendedPurpose",
           "language" : "undefined",
           "value" : "Non-invasive prenatal testing (NIPT) for aneuploidies",
+          "type" : "label"
+        } ],
+        "isActive" : [ {
+          "identifier" : "isActive",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2394,16 +2394,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
           "value" : "(01)08718998001014",
+          "type" : "label"
+        } ],
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2412,16 +2412,16 @@
           "value" : "true",
           "type" : "label"
         } ],
-        "intendedPurpose" : [ {
-          "identifier" : "intendedPurpose",
-          "language" : "undefined",
-          "value" : "Handheld point-of-care ultrasound probe",
-          "type" : "label"
-        } ],
         "isActive" : [ {
           "identifier" : "isActive",
           "language" : "undefined",
           "value" : "true",
+          "type" : "label"
+        } ],
+        "intendedPurpose" : [ {
+          "identifier" : "intendedPurpose",
+          "language" : "undefined",
+          "value" : "Handheld point-of-care ultrasound probe",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2444,16 +2444,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "udiDI" : [ {
-          "identifier" : "udiDI",
-          "language" : "undefined",
-          "value" : "(01)04547597001015",
-          "type" : "label"
-        } ],
         "isIVD" : [ {
           "identifier" : "isIVD",
           "language" : "undefined",
           "value" : "false",
+          "type" : "label"
+        } ],
+        "udiDI" : [ {
+          "identifier" : "udiDI",
+          "language" : "undefined",
+          "value" : "(01)04547597001015",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2462,16 +2462,16 @@
           "value" : "true",
           "type" : "label"
         } ],
-        "intendedPurpose" : [ {
-          "identifier" : "intendedPurpose",
-          "language" : "undefined",
-          "value" : "High-volume online hemodiafiltration machine",
-          "type" : "label"
-        } ],
         "isActive" : [ {
           "identifier" : "isActive",
           "language" : "undefined",
           "value" : "true",
+          "type" : "label"
+        } ],
+        "intendedPurpose" : [ {
+          "identifier" : "intendedPurpose",
+          "language" : "undefined",
+          "value" : "High-volume online hemodiafiltration machine",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2494,16 +2494,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
           "value" : "(01)04012099001012",
+          "type" : "label"
+        } ],
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2512,16 +2512,16 @@
           "value" : "false",
           "type" : "label"
         } ],
-        "intendedPurpose" : [ {
-          "identifier" : "intendedPurpose",
-          "language" : "undefined",
-          "value" : "Cardiac resynchronization therapy with defibrillation",
-          "type" : "label"
-        } ],
         "isActive" : [ {
           "identifier" : "isActive",
           "language" : "undefined",
           "value" : "true",
+          "type" : "label"
+        } ],
+        "intendedPurpose" : [ {
+          "identifier" : "intendedPurpose",
+          "language" : "undefined",
+          "value" : "Cardiac resynchronization therapy with defibrillation",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2544,16 +2544,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
           "value" : "(01)04046539001013",
+          "type" : "label"
+        } ],
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2562,16 +2562,16 @@
           "value" : "true",
           "type" : "label"
         } ],
-        "isActive" : [ {
-          "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
         "intendedPurpose" : [ {
           "identifier" : "intendedPurpose",
           "language" : "undefined",
           "value" : "ICU mechanical ventilator with pressure and volume modes",
+          "type" : "label"
+        } ],
+        "isActive" : [ {
+          "identifier" : "isActive",
+          "language" : "undefined",
+          "value" : "true",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2612,16 +2612,16 @@
           "value" : "false",
           "type" : "label"
         } ],
-        "intendedPurpose" : [ {
-          "identifier" : "intendedPurpose",
-          "language" : "undefined",
-          "value" : "Combined HIV Ag/Ab detection assay",
-          "type" : "label"
-        } ],
         "isActive" : [ {
           "identifier" : "isActive",
           "language" : "undefined",
           "value" : "false",
+          "type" : "label"
+        } ],
+        "intendedPurpose" : [ {
+          "identifier" : "intendedPurpose",
+          "language" : "undefined",
+          "value" : "Combined HIV Ag/Ab detection assay",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2644,16 +2644,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "udiDI" : [ {
-          "identifier" : "udiDI",
-          "language" : "undefined",
-          "value" : "(01)07000087001019",
-          "type" : "label"
-        } ],
         "isIVD" : [ {
           "identifier" : "isIVD",
           "language" : "undefined",
           "value" : "true",
+          "type" : "label"
+        } ],
+        "udiDI" : [ {
+          "identifier" : "udiDI",
+          "language" : "undefined",
+          "value" : "(01)07000087001019",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2694,16 +2694,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "udiDI" : [ {
-          "identifier" : "udiDI",
-          "language" : "undefined",
-          "value" : "(01)04015630001016",
-          "type" : "label"
-        } ],
         "isIVD" : [ {
           "identifier" : "isIVD",
           "language" : "undefined",
           "value" : "true",
+          "type" : "label"
+        } ],
+        "udiDI" : [ {
+          "identifier" : "udiDI",
+          "language" : "undefined",
+          "value" : "(01)04015630001016",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2712,16 +2712,16 @@
           "value" : "true",
           "type" : "label"
         } ],
-        "isActive" : [ {
-          "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
         "intendedPurpose" : [ {
           "identifier" : "intendedPurpose",
           "language" : "undefined",
           "value" : "Automated immunoassay analyzer for clinical laboratory",
+          "type" : "label"
+        } ],
+        "isActive" : [ {
+          "identifier" : "isActive",
+          "language" : "undefined",
+          "value" : "true",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2744,16 +2744,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
           "value" : "(01)04015630001017",
+          "type" : "label"
+        } ],
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "true",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2762,16 +2762,16 @@
           "value" : "false",
           "type" : "label"
         } ],
-        "isActive" : [ {
-          "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "intendedPurpose" : [ {
           "identifier" : "intendedPurpose",
           "language" : "undefined",
           "value" : "Molecular diagnostic test for SARS-CoV-2 detection",
+          "type" : "label"
+        } ],
+        "isActive" : [ {
+          "identifier" : "isActive",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2794,16 +2794,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
           "value" : "(01)09876543002002",
+          "type" : "label"
+        } ],
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2844,16 +2844,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "udiDI" : [ {
-          "identifier" : "udiDI",
-          "language" : "undefined",
-          "value" : "(01)05391520001011",
-          "type" : "label"
-        } ],
         "isIVD" : [ {
           "identifier" : "isIVD",
           "language" : "undefined",
           "value" : "false",
+          "type" : "label"
+        } ],
+        "udiDI" : [ {
+          "identifier" : "udiDI",
+          "language" : "undefined",
+          "value" : "(01)05391520001011",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2862,16 +2862,16 @@
           "value" : "false",
           "type" : "label"
         } ],
-        "isActive" : [ {
-          "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "intendedPurpose" : [ {
           "identifier" : "intendedPurpose",
           "language" : "undefined",
           "value" : "Sustained-release fluocinolone acetonide ocular implant",
+          "type" : "label"
+        } ],
+        "isActive" : [ {
+          "identifier" : "isActive",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2894,16 +2894,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
           "value" : "(01)07612345001001",
+          "type" : "label"
+        } ],
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -2912,16 +2912,16 @@
           "value" : "false",
           "type" : "label"
         } ],
-        "intendedPurpose" : [ {
-          "identifier" : "intendedPurpose",
-          "language" : "undefined",
-          "value" : "Total knee arthroplasty implant system",
-          "type" : "label"
-        } ],
         "isActive" : [ {
           "identifier" : "isActive",
           "language" : "undefined",
           "value" : "false",
+          "type" : "label"
+        } ],
+        "intendedPurpose" : [ {
+          "identifier" : "intendedPurpose",
+          "language" : "undefined",
+          "value" : "Total knee arthroplasty implant system",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -2941,13 +2941,13 @@
         "IRI-based" : "Device_DEV_009"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025",
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
-          "value" : "(01)05391520001025",
+          "value" : "(01)00800002222291",
           "type" : "label"
         } ],
         "isIVD" : [ {
@@ -2964,50 +2964,6 @@
         } ],
         "isActive" : [ {
           "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
-        "intendedPurpose" : [ {
-          "identifier" : "intendedPurpose",
-          "language" : "undefined",
-          "value" : "Transcatheter mitral valve replacement system",
-          "type" : "label"
-        } ],
-        "deviceName" : [ {
-          "identifier" : "deviceName",
-          "language" : "undefined",
-          "value" : "ValveXpert Transcatheter Mitral Valve",
-          "type" : "label"
-        } ],
-        "isImplantable" : [ {
-          "identifier" : "isImplantable",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Device_DEV_025"
-      }
-    }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
-        "udiDI" : [ {
-          "identifier" : "udiDI",
-          "language" : "undefined",
-          "value" : "(01)00800002222291",
-          "type" : "label"
-        } ],
-        "isReusable" : [ {
-          "identifier" : "isReusable",
           "language" : "undefined",
           "value" : "false",
           "type" : "label"
@@ -3016,12 +2972,6 @@
           "identifier" : "intendedPurpose",
           "language" : "undefined",
           "value" : "Transcatheter aortic valve replacement (TAVI)",
-          "type" : "label"
-        } ],
-        "isActive" : [ {
-          "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "false",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -3039,6 +2989,56 @@
       },
       "labels" : {
         "IRI-based" : "Device_DEV_003"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "false",
+          "type" : "label"
+        } ],
+        "udiDI" : [ {
+          "identifier" : "udiDI",
+          "language" : "undefined",
+          "value" : "(01)05391520001025",
+          "type" : "label"
+        } ],
+        "isReusable" : [ {
+          "identifier" : "isReusable",
+          "language" : "undefined",
+          "value" : "false",
+          "type" : "label"
+        } ],
+        "intendedPurpose" : [ {
+          "identifier" : "intendedPurpose",
+          "language" : "undefined",
+          "value" : "Transcatheter mitral valve replacement system",
+          "type" : "label"
+        } ],
+        "isActive" : [ {
+          "identifier" : "isActive",
+          "language" : "undefined",
+          "value" : "false",
+          "type" : "label"
+        } ],
+        "deviceName" : [ {
+          "identifier" : "deviceName",
+          "language" : "undefined",
+          "value" : "ValveXpert Transcatheter Mitral Valve",
+          "type" : "label"
+        } ],
+        "isImplantable" : [ {
+          "identifier" : "isImplantable",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Device_DEV_025"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004",
@@ -3091,6 +3091,56 @@
         "IRI-based" : "Device_DEV_004"
       }
     }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "udiDI" : [ {
+          "identifier" : "udiDI",
+          "language" : "undefined",
+          "value" : "(01)04012099001023",
+          "type" : "label"
+        } ],
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "false",
+          "type" : "label"
+        } ],
+        "isReusable" : [ {
+          "identifier" : "isReusable",
+          "language" : "undefined",
+          "value" : "false",
+          "type" : "label"
+        } ],
+        "isActive" : [ {
+          "identifier" : "isActive",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ],
+        "intendedPurpose" : [ {
+          "identifier" : "intendedPurpose",
+          "language" : "undefined",
+          "value" : "Active cochlear implant for sensorineural hearing loss",
+          "type" : "label"
+        } ],
+        "deviceName" : [ {
+          "identifier" : "deviceName",
+          "language" : "undefined",
+          "value" : "Tivoli II Cochlear Implant",
+          "type" : "label"
+        } ],
+        "isImplantable" : [ {
+          "identifier" : "isImplantable",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Device_DEV_023"
+      }
+    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
@@ -3141,69 +3191,19 @@
         "IRI-based" : "Device_DEV_001"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023",
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "udiDI" : [ {
-          "identifier" : "udiDI",
-          "language" : "undefined",
-          "value" : "(01)04012099001023",
-          "type" : "label"
-        } ],
         "isIVD" : [ {
           "identifier" : "isIVD",
           "language" : "undefined",
           "value" : "false",
           "type" : "label"
         } ],
-        "isReusable" : [ {
-          "identifier" : "isReusable",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
-        "intendedPurpose" : [ {
-          "identifier" : "intendedPurpose",
-          "language" : "undefined",
-          "value" : "Active cochlear implant for sensorineural hearing loss",
-          "type" : "label"
-        } ],
-        "isActive" : [ {
-          "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
-        "deviceName" : [ {
-          "identifier" : "deviceName",
-          "language" : "undefined",
-          "value" : "Tivoli II Cochlear Implant",
-          "type" : "label"
-        } ],
-        "isImplantable" : [ {
-          "identifier" : "isImplantable",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Device_DEV_023"
-      }
-    }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
           "value" : "(01)00800002001024",
-          "type" : "label"
-        } ],
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "false",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -3244,16 +3244,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "isIVD" : [ {
-          "identifier" : "isIVD",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "udiDI" : [ {
           "identifier" : "udiDI",
           "language" : "undefined",
           "value" : "(01)00380740009112",
+          "type" : "label"
+        } ],
+        "isIVD" : [ {
+          "identifier" : "isIVD",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -3294,16 +3294,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "udiDI" : [ {
-          "identifier" : "udiDI",
-          "language" : "undefined",
-          "value" : "(01)04054839450001",
-          "type" : "label"
-        } ],
         "isIVD" : [ {
           "identifier" : "isIVD",
           "language" : "undefined",
           "value" : "false",
+          "type" : "label"
+        } ],
+        "udiDI" : [ {
+          "identifier" : "udiDI",
+          "language" : "undefined",
+          "value" : "(01)04054839450001",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -3312,16 +3312,16 @@
           "value" : "true",
           "type" : "label"
         } ],
-        "isActive" : [ {
-          "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
         "intendedPurpose" : [ {
           "identifier" : "intendedPurpose",
           "language" : "undefined",
           "value" : "Diagnostic ultrasound imaging system",
+          "type" : "label"
+        } ],
+        "isActive" : [ {
+          "identifier" : "isActive",
+          "language" : "undefined",
+          "value" : "true",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -3344,16 +3344,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "udiDI" : [ {
-          "identifier" : "udiDI",
-          "language" : "undefined",
-          "value" : "(01)04054839460002",
-          "type" : "label"
-        } ],
         "isIVD" : [ {
           "identifier" : "isIVD",
           "language" : "undefined",
           "value" : "false",
+          "type" : "label"
+        } ],
+        "udiDI" : [ {
+          "identifier" : "udiDI",
+          "language" : "undefined",
+          "value" : "(01)04054839460002",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -3444,16 +3444,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "udiDI" : [ {
-          "identifier" : "udiDI",
-          "language" : "undefined",
-          "value" : "(01)08718998000001",
-          "type" : "label"
-        } ],
         "isIVD" : [ {
           "identifier" : "isIVD",
           "language" : "undefined",
           "value" : "false",
+          "type" : "label"
+        } ],
+        "udiDI" : [ {
+          "identifier" : "udiDI",
+          "language" : "undefined",
+          "value" : "(01)08718998000001",
           "type" : "label"
         } ],
         "isReusable" : [ {
@@ -3462,16 +3462,16 @@
           "value" : "false",
           "type" : "label"
         } ],
-        "isActive" : [ {
-          "identifier" : "isActive",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
         "intendedPurpose" : [ {
           "identifier" : "intendedPurpose",
           "language" : "undefined",
           "value" : "Peripheral artery drug-coated angioplasty balloon",
+          "type" : "label"
+        } ],
+        "isActive" : [ {
+          "identifier" : "isActive",
+          "language" : "undefined",
+          "value" : "false",
           "type" : "label"
         } ],
         "deviceName" : [ {
@@ -3491,15 +3491,15 @@
         "IRI-based" : "Device_DEV_006"
       }
     } ],
-    "subClasses" : [ "96" ],
+    "subClasses" : [ "97" ],
     "comment" : {
       "en" : "A medical device registered within the ontology model."
     },
     "attributes" : [ "external" ],
-    "id" : "29"
+    "id" : "31"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "80",
+    "id" : "81",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3516,8 +3516,8 @@
       "en" : "Represents a moderate severity level for a medical device risk"
     },
     "attributes" : [ "external" ],
-    "id" : "99",
-    "superClasses" : [ "100" ]
+    "id" : "100",
+    "superClasses" : [ "69" ]
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Status",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -3548,7 +3548,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "78",
+    "id" : "79",
     "label" : {
       "undefined" : "Thing"
     }
@@ -3596,7 +3596,7 @@
     "superClasses" : [ "35" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "75",
+    "id" : "76",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3637,7 +3637,7 @@
       "IRI-based" : "DeviceType",
       "en" : "Device type"
     },
-    "subClasses" : [ "85", "119", "106", "48", "65", "69", "120" ],
+    "subClasses" : [ "86", "119", "106", "48", "65", "70", "120" ],
     "comment" : {
       "en" : "Represents the type of medical device."
     },
@@ -3664,7 +3664,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "1",
-    "superClasses" : [ "100" ]
+    "superClasses" : [ "69" ]
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SelfTestDevice",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -3687,12 +3687,12 @@
       "IRI-based" : "Severity",
       "en" : "Severity"
     },
-    "subClasses" : [ "1", "99" ],
+    "subClasses" : [ "1", "100" ],
     "comment" : {
       "en" : "Represents the severity level associated with a medical device risk."
     },
     "attributes" : [ "external" ],
-    "id" : "100"
+    "id" : "69"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SeriousIncident",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -3724,6 +3724,92 @@
       "en" : "Incident"
     },
     "individuals" : [ {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_017",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "patientSex" : [ {
+          "identifier" : "patientSex",
+          "language" : "undefined",
+          "value" : "Female",
+          "type" : "label"
+        } ],
+        "correctiveActionTaken" : [ {
+          "identifier" : "correctiveActionTaken",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ],
+        "countryReported" : [ {
+          "identifier" : "countryReported",
+          "language" : "undefined",
+          "value" : "France",
+          "type" : "label"
+        } ],
+        "incidentType" : [ {
+          "identifier" : "incidentType",
+          "language" : "undefined",
+          "value" : "SeriousIncident",
+          "type" : "label"
+        } ],
+        "hasDevice" : [ {
+          "identifier" : "hasDevice",
+          "language" : "undefined",
+          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011",
+          "type" : "iri"
+        } ],
+        "reportDate" : [ {
+          "identifier" : "reportDate",
+          "language" : "undefined",
+          "value" : "2024-09-02",
+          "type" : "label"
+        } ],
+        "reportingEntity" : [ {
+          "identifier" : "reportingEntity",
+          "language" : "undefined",
+          "value" : "MAN-011",
+          "type" : "label"
+        } ],
+        "detectionDate" : [ {
+          "identifier" : "detectionDate",
+          "language" : "undefined",
+          "value" : "2024-08-30",
+          "type" : "label"
+        } ],
+        "patientAge" : [ {
+          "identifier" : "patientAge",
+          "language" : "undefined",
+          "value" : "54",
+          "type" : "label"
+        } ],
+        "eudamedIncidentRef" : [ {
+          "identifier" : "eudamedIncidentRef",
+          "language" : "undefined",
+          "value" : "EU-INC-2024-000017",
+          "type" : "label"
+        } ],
+        "incidentDescription" : [ {
+          "identifier" : "incidentDescription",
+          "language" : "undefined",
+          "value" : "Iluvien implant required surgical removal due to device-related endophthalmitis confirmed by vitreous culture.",
+          "type" : "label"
+        } ],
+        "outcome" : [ {
+          "identifier" : "outcome",
+          "language" : "undefined",
+          "value" : "Surgical intervention - implant removal",
+          "type" : "label"
+        } ],
+        "eventDate" : [ {
+          "identifier" : "eventDate",
+          "language" : "undefined",
+          "value" : "2024-08-25",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Incident_INC_017"
+      }
+    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_006",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
@@ -3796,166 +3882,6 @@
       },
       "labels" : {
         "IRI-based" : "Incident_INC_006"
-      }
-    }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_017",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "correctiveActionTaken" : [ {
-          "identifier" : "correctiveActionTaken",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
-        "patientSex" : [ {
-          "identifier" : "patientSex",
-          "language" : "undefined",
-          "value" : "Female",
-          "type" : "label"
-        } ],
-        "countryReported" : [ {
-          "identifier" : "countryReported",
-          "language" : "undefined",
-          "value" : "France",
-          "type" : "label"
-        } ],
-        "incidentType" : [ {
-          "identifier" : "incidentType",
-          "language" : "undefined",
-          "value" : "SeriousIncident",
-          "type" : "label"
-        } ],
-        "hasDevice" : [ {
-          "identifier" : "hasDevice",
-          "language" : "undefined",
-          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011",
-          "type" : "iri"
-        } ],
-        "reportingEntity" : [ {
-          "identifier" : "reportingEntity",
-          "language" : "undefined",
-          "value" : "MAN-011",
-          "type" : "label"
-        } ],
-        "reportDate" : [ {
-          "identifier" : "reportDate",
-          "language" : "undefined",
-          "value" : "2024-09-02",
-          "type" : "label"
-        } ],
-        "detectionDate" : [ {
-          "identifier" : "detectionDate",
-          "language" : "undefined",
-          "value" : "2024-08-30",
-          "type" : "label"
-        } ],
-        "patientAge" : [ {
-          "identifier" : "patientAge",
-          "language" : "undefined",
-          "value" : "54",
-          "type" : "label"
-        } ],
-        "eudamedIncidentRef" : [ {
-          "identifier" : "eudamedIncidentRef",
-          "language" : "undefined",
-          "value" : "EU-INC-2024-000017",
-          "type" : "label"
-        } ],
-        "incidentDescription" : [ {
-          "identifier" : "incidentDescription",
-          "language" : "undefined",
-          "value" : "Iluvien implant required surgical removal due to device-related endophthalmitis confirmed by vitreous culture.",
-          "type" : "label"
-        } ],
-        "outcome" : [ {
-          "identifier" : "outcome",
-          "language" : "undefined",
-          "value" : "Surgical intervention - implant removal",
-          "type" : "label"
-        } ],
-        "eventDate" : [ {
-          "identifier" : "eventDate",
-          "language" : "undefined",
-          "value" : "2024-08-25",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Incident_INC_017"
-      }
-    }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_018",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "correctiveActionTaken" : [ {
-          "identifier" : "correctiveActionTaken",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
-        "reportingEntity" : [ {
-          "identifier" : "reportingEntity",
-          "language" : "undefined",
-          "value" : "MAN-013",
-          "type" : "label"
-        } ],
-        "reportDate" : [ {
-          "identifier" : "reportDate",
-          "language" : "undefined",
-          "value" : "2024-09-15",
-          "type" : "label"
-        } ],
-        "countryReported" : [ {
-          "identifier" : "countryReported",
-          "language" : "undefined",
-          "value" : "Germany",
-          "type" : "label"
-        } ],
-        "detectionDate" : [ {
-          "identifier" : "detectionDate",
-          "language" : "undefined",
-          "value" : "2024-09-14",
-          "type" : "label"
-        } ],
-        "incidentType" : [ {
-          "identifier" : "incidentType",
-          "language" : "undefined",
-          "value" : "SeriousIncident",
-          "type" : "label"
-        } ],
-        "eudamedIncidentRef" : [ {
-          "identifier" : "eudamedIncidentRef",
-          "language" : "undefined",
-          "value" : "EU-INC-2024-000018",
-          "type" : "label"
-        } ],
-        "hasDevice" : [ {
-          "identifier" : "hasDevice",
-          "language" : "undefined",
-          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015",
-          "type" : "iri"
-        } ],
-        "incidentDescription" : [ {
-          "identifier" : "incidentDescription",
-          "language" : "undefined",
-          "value" : "5008S hemodialysis machine web interface exposed to hospital internal network. Unauthorised session accessed alarm configuration.",
-          "type" : "label"
-        } ],
-        "outcome" : [ {
-          "identifier" : "outcome",
-          "language" : "undefined",
-          "value" : "Cybersecurity incident - unauthorised access",
-          "type" : "label"
-        } ],
-        "eventDate" : [ {
-          "identifier" : "eventDate",
-          "language" : "undefined",
-          "value" : "2024-09-12",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Incident_INC_018"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_007",
@@ -4044,19 +3970,93 @@
         "IRI-based" : "Incident_INC_007"
       }
     }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_018",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "correctiveActionTaken" : [ {
+          "identifier" : "correctiveActionTaken",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ],
+        "reportingEntity" : [ {
+          "identifier" : "reportingEntity",
+          "language" : "undefined",
+          "value" : "MAN-013",
+          "type" : "label"
+        } ],
+        "reportDate" : [ {
+          "identifier" : "reportDate",
+          "language" : "undefined",
+          "value" : "2024-09-15",
+          "type" : "label"
+        } ],
+        "detectionDate" : [ {
+          "identifier" : "detectionDate",
+          "language" : "undefined",
+          "value" : "2024-09-14",
+          "type" : "label"
+        } ],
+        "countryReported" : [ {
+          "identifier" : "countryReported",
+          "language" : "undefined",
+          "value" : "Germany",
+          "type" : "label"
+        } ],
+        "incidentType" : [ {
+          "identifier" : "incidentType",
+          "language" : "undefined",
+          "value" : "SeriousIncident",
+          "type" : "label"
+        } ],
+        "eudamedIncidentRef" : [ {
+          "identifier" : "eudamedIncidentRef",
+          "language" : "undefined",
+          "value" : "EU-INC-2024-000018",
+          "type" : "label"
+        } ],
+        "hasDevice" : [ {
+          "identifier" : "hasDevice",
+          "language" : "undefined",
+          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015",
+          "type" : "iri"
+        } ],
+        "incidentDescription" : [ {
+          "identifier" : "incidentDescription",
+          "language" : "undefined",
+          "value" : "5008S hemodialysis machine web interface exposed to hospital internal network. Unauthorised session accessed alarm configuration.",
+          "type" : "label"
+        } ],
+        "outcome" : [ {
+          "identifier" : "outcome",
+          "language" : "undefined",
+          "value" : "Cybersecurity incident - unauthorised access",
+          "type" : "label"
+        } ],
+        "eventDate" : [ {
+          "identifier" : "eventDate",
+          "language" : "undefined",
+          "value" : "2024-09-12",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Incident_INC_018"
+      }
+    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_004",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "patientSex" : [ {
-          "identifier" : "patientSex",
-          "language" : "undefined",
-          "value" : "Female",
-          "type" : "label"
-        } ],
         "correctiveActionTaken" : [ {
           "identifier" : "correctiveActionTaken",
           "language" : "undefined",
           "value" : "false",
+          "type" : "label"
+        } ],
+        "patientSex" : [ {
+          "identifier" : "patientSex",
+          "language" : "undefined",
+          "value" : "Female",
           "type" : "label"
         } ],
         "countryReported" : [ {
@@ -4163,16 +4163,16 @@
           "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024",
           "type" : "iri"
         } ],
-        "reportDate" : [ {
-          "identifier" : "reportDate",
-          "language" : "undefined",
-          "value" : "2024-08-05",
-          "type" : "label"
-        } ],
         "reportingEntity" : [ {
           "identifier" : "reportingEntity",
           "language" : "undefined",
           "value" : "MAN-002",
+          "type" : "label"
+        } ],
+        "reportDate" : [ {
+          "identifier" : "reportDate",
+          "language" : "undefined",
+          "value" : "2024-08-05",
           "type" : "label"
         } ],
         "detectionDate" : [ {
@@ -4216,92 +4216,6 @@
         "IRI-based" : "Incident_INC_015"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_016",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "correctiveActionTaken" : [ {
-          "identifier" : "correctiveActionTaken",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
-        "patientSex" : [ {
-          "identifier" : "patientSex",
-          "language" : "undefined",
-          "value" : "Male",
-          "type" : "label"
-        } ],
-        "countryReported" : [ {
-          "identifier" : "countryReported",
-          "language" : "undefined",
-          "value" : "United Kingdom",
-          "type" : "label"
-        } ],
-        "incidentType" : [ {
-          "identifier" : "incidentType",
-          "language" : "undefined",
-          "value" : "SeriousIncident",
-          "type" : "label"
-        } ],
-        "hasDevice" : [ {
-          "identifier" : "hasDevice",
-          "language" : "undefined",
-          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001",
-          "type" : "iri"
-        } ],
-        "reportDate" : [ {
-          "identifier" : "reportDate",
-          "language" : "undefined",
-          "value" : "2024-08-20",
-          "type" : "label"
-        } ],
-        "reportingEntity" : [ {
-          "identifier" : "reportingEntity",
-          "language" : "undefined",
-          "value" : "MAN-001",
-          "type" : "label"
-        } ],
-        "detectionDate" : [ {
-          "identifier" : "detectionDate",
-          "language" : "undefined",
-          "value" : "2024-08-18",
-          "type" : "label"
-        } ],
-        "patientAge" : [ {
-          "identifier" : "patientAge",
-          "language" : "undefined",
-          "value" : "52",
-          "type" : "label"
-        } ],
-        "eudamedIncidentRef" : [ {
-          "identifier" : "eudamedIncidentRef",
-          "language" : "undefined",
-          "value" : "EU-INC-2024-000016",
-          "type" : "label"
-        } ],
-        "incidentDescription" : [ {
-          "identifier" : "incidentDescription",
-          "language" : "undefined",
-          "value" : "HeartMate 3 patient developed severe haemolysis (LDH >2000 U/L) associated with outflow graft kinking confirmed by CT.",
-          "type" : "label"
-        } ],
-        "outcome" : [ {
-          "identifier" : "outcome",
-          "language" : "undefined",
-          "value" : "Patient harm - haemolytic anaemia",
-          "type" : "label"
-        } ],
-        "eventDate" : [ {
-          "identifier" : "eventDate",
-          "language" : "undefined",
-          "value" : "2024-08-15",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Incident_INC_016"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_005",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
@@ -4335,16 +4249,16 @@
           "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005",
           "type" : "iri"
         } ],
-        "reportingEntity" : [ {
-          "identifier" : "reportingEntity",
-          "language" : "undefined",
-          "value" : "MAN-006",
-          "type" : "label"
-        } ],
         "reportDate" : [ {
           "identifier" : "reportDate",
           "language" : "undefined",
           "value" : "2024-03-18",
+          "type" : "label"
+        } ],
+        "reportingEntity" : [ {
+          "identifier" : "reportingEntity",
+          "language" : "undefined",
+          "value" : "MAN-006",
           "type" : "label"
         } ],
         "detectionDate" : [ {
@@ -4388,19 +4302,191 @@
         "IRI-based" : "Incident_INC_005"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_008",
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_016",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "correctiveActionTaken" : [ {
+          "identifier" : "correctiveActionTaken",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ],
+        "patientSex" : [ {
+          "identifier" : "patientSex",
+          "language" : "undefined",
+          "value" : "Male",
+          "type" : "label"
+        } ],
+        "countryReported" : [ {
+          "identifier" : "countryReported",
+          "language" : "undefined",
+          "value" : "United Kingdom",
+          "type" : "label"
+        } ],
+        "incidentType" : [ {
+          "identifier" : "incidentType",
+          "language" : "undefined",
+          "value" : "SeriousIncident",
+          "type" : "label"
+        } ],
+        "hasDevice" : [ {
+          "identifier" : "hasDevice",
+          "language" : "undefined",
+          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001",
+          "type" : "iri"
+        } ],
+        "reportingEntity" : [ {
+          "identifier" : "reportingEntity",
+          "language" : "undefined",
+          "value" : "MAN-001",
+          "type" : "label"
+        } ],
+        "reportDate" : [ {
+          "identifier" : "reportDate",
+          "language" : "undefined",
+          "value" : "2024-08-20",
+          "type" : "label"
+        } ],
+        "detectionDate" : [ {
+          "identifier" : "detectionDate",
+          "language" : "undefined",
+          "value" : "2024-08-18",
+          "type" : "label"
+        } ],
+        "patientAge" : [ {
+          "identifier" : "patientAge",
+          "language" : "undefined",
+          "value" : "52",
+          "type" : "label"
+        } ],
+        "eudamedIncidentRef" : [ {
+          "identifier" : "eudamedIncidentRef",
+          "language" : "undefined",
+          "value" : "EU-INC-2024-000016",
+          "type" : "label"
+        } ],
+        "incidentDescription" : [ {
+          "identifier" : "incidentDescription",
+          "language" : "undefined",
+          "value" : "HeartMate 3 patient developed severe haemolysis (LDH >2000 U/L) associated with outflow graft kinking confirmed by CT.",
+          "type" : "label"
+        } ],
+        "outcome" : [ {
+          "identifier" : "outcome",
+          "language" : "undefined",
+          "value" : "Patient harm - haemolytic anaemia",
+          "type" : "label"
+        } ],
+        "eventDate" : [ {
+          "identifier" : "eventDate",
+          "language" : "undefined",
+          "value" : "2024-08-15",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Incident_INC_016"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_019",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
         "patientSex" : [ {
           "identifier" : "patientSex",
           "language" : "undefined",
-          "value" : "Female",
+          "value" : "Male",
           "type" : "label"
         } ],
         "correctiveActionTaken" : [ {
           "identifier" : "correctiveActionTaken",
           "language" : "undefined",
+          "value" : "false",
+          "type" : "label"
+        } ],
+        "countryReported" : [ {
+          "identifier" : "countryReported",
+          "language" : "undefined",
+          "value" : "Sweden",
+          "type" : "label"
+        } ],
+        "incidentType" : [ {
+          "identifier" : "incidentType",
+          "language" : "undefined",
+          "value" : "NearMissIncident",
+          "type" : "label"
+        } ],
+        "hasDevice" : [ {
+          "identifier" : "hasDevice",
+          "language" : "undefined",
+          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023",
+          "type" : "iri"
+        } ],
+        "reportingEntity" : [ {
+          "identifier" : "reportingEntity",
+          "language" : "undefined",
+          "value" : "MAN-008",
+          "type" : "label"
+        } ],
+        "reportDate" : [ {
+          "identifier" : "reportDate",
+          "language" : "undefined",
+          "value" : "2024-10-01",
+          "type" : "label"
+        } ],
+        "detectionDate" : [ {
+          "identifier" : "detectionDate",
+          "language" : "undefined",
+          "value" : "2024-09-30",
+          "type" : "label"
+        } ],
+        "patientAge" : [ {
+          "identifier" : "patientAge",
+          "language" : "undefined",
+          "value" : "71",
+          "type" : "label"
+        } ],
+        "eudamedIncidentRef" : [ {
+          "identifier" : "eudamedIncidentRef",
+          "language" : "undefined",
+          "value" : "EU-INC-2024-000019",
+          "type" : "label"
+        } ],
+        "incidentDescription" : [ {
+          "identifier" : "incidentDescription",
+          "language" : "undefined",
+          "value" : "Tivoli II cochlear implant failed to respond to initial activation programming. Sound processor replacement resolved the issue.",
+          "type" : "label"
+        } ],
+        "outcome" : [ {
+          "identifier" : "outcome",
+          "language" : "undefined",
+          "value" : "Near-miss - device not activated post-surgery",
+          "type" : "label"
+        } ],
+        "eventDate" : [ {
+          "identifier" : "eventDate",
+          "language" : "undefined",
+          "value" : "2024-09-28",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Incident_INC_019"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_008",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "correctiveActionTaken" : [ {
+          "identifier" : "correctiveActionTaken",
+          "language" : "undefined",
           "value" : "true",
+          "type" : "label"
+        } ],
+        "patientSex" : [ {
+          "identifier" : "patientSex",
+          "language" : "undefined",
+          "value" : "Female",
           "type" : "label"
         } ],
         "countryReported" : [ {
@@ -4474,105 +4560,19 @@
         "IRI-based" : "Incident_INC_008"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_019",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "patientSex" : [ {
-          "identifier" : "patientSex",
-          "language" : "undefined",
-          "value" : "Male",
-          "type" : "label"
-        } ],
-        "correctiveActionTaken" : [ {
-          "identifier" : "correctiveActionTaken",
-          "language" : "undefined",
-          "value" : "false",
-          "type" : "label"
-        } ],
-        "countryReported" : [ {
-          "identifier" : "countryReported",
-          "language" : "undefined",
-          "value" : "Sweden",
-          "type" : "label"
-        } ],
-        "incidentType" : [ {
-          "identifier" : "incidentType",
-          "language" : "undefined",
-          "value" : "NearMissIncident",
-          "type" : "label"
-        } ],
-        "hasDevice" : [ {
-          "identifier" : "hasDevice",
-          "language" : "undefined",
-          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023",
-          "type" : "iri"
-        } ],
-        "reportDate" : [ {
-          "identifier" : "reportDate",
-          "language" : "undefined",
-          "value" : "2024-10-01",
-          "type" : "label"
-        } ],
-        "reportingEntity" : [ {
-          "identifier" : "reportingEntity",
-          "language" : "undefined",
-          "value" : "MAN-008",
-          "type" : "label"
-        } ],
-        "detectionDate" : [ {
-          "identifier" : "detectionDate",
-          "language" : "undefined",
-          "value" : "2024-09-30",
-          "type" : "label"
-        } ],
-        "patientAge" : [ {
-          "identifier" : "patientAge",
-          "language" : "undefined",
-          "value" : "71",
-          "type" : "label"
-        } ],
-        "eudamedIncidentRef" : [ {
-          "identifier" : "eudamedIncidentRef",
-          "language" : "undefined",
-          "value" : "EU-INC-2024-000019",
-          "type" : "label"
-        } ],
-        "incidentDescription" : [ {
-          "identifier" : "incidentDescription",
-          "language" : "undefined",
-          "value" : "Tivoli II cochlear implant failed to respond to initial activation programming. Sound processor replacement resolved the issue.",
-          "type" : "label"
-        } ],
-        "outcome" : [ {
-          "identifier" : "outcome",
-          "language" : "undefined",
-          "value" : "Near-miss - device not activated post-surgery",
-          "type" : "label"
-        } ],
-        "eventDate" : [ {
-          "identifier" : "eventDate",
-          "language" : "undefined",
-          "value" : "2024-09-28",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Incident_INC_019"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_009",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "patientSex" : [ {
-          "identifier" : "patientSex",
-          "language" : "undefined",
-          "value" : "Male",
-          "type" : "label"
-        } ],
         "correctiveActionTaken" : [ {
           "identifier" : "correctiveActionTaken",
           "language" : "undefined",
           "value" : "true",
+          "type" : "label"
+        } ],
+        "patientSex" : [ {
+          "identifier" : "patientSex",
+          "language" : "undefined",
+          "value" : "Male",
           "type" : "label"
         } ],
         "countryReported" : [ {
@@ -4741,16 +4741,16 @@
           "value" : "true",
           "type" : "label"
         } ],
-        "reportingEntity" : [ {
-          "identifier" : "reportingEntity",
-          "language" : "undefined",
-          "value" : "MAN-012",
-          "type" : "label"
-        } ],
         "reportDate" : [ {
           "identifier" : "reportDate",
           "language" : "undefined",
           "value" : "2024-05-20",
+          "type" : "label"
+        } ],
+        "reportingEntity" : [ {
+          "identifier" : "reportingEntity",
+          "language" : "undefined",
+          "value" : "MAN-012",
           "type" : "label"
         } ],
         "countryReported" : [ {
@@ -4806,92 +4806,6 @@
         "IRI-based" : "Incident_INC_010"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_002",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "patientSex" : [ {
-          "identifier" : "patientSex",
-          "language" : "undefined",
-          "value" : "Female",
-          "type" : "label"
-        } ],
-        "correctiveActionTaken" : [ {
-          "identifier" : "correctiveActionTaken",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
-        "countryReported" : [ {
-          "identifier" : "countryReported",
-          "language" : "undefined",
-          "value" : "France",
-          "type" : "label"
-        } ],
-        "incidentType" : [ {
-          "identifier" : "incidentType",
-          "language" : "undefined",
-          "value" : "SeriousIncident",
-          "type" : "label"
-        } ],
-        "hasDevice" : [ {
-          "identifier" : "hasDevice",
-          "language" : "undefined",
-          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002",
-          "type" : "iri"
-        } ],
-        "reportingEntity" : [ {
-          "identifier" : "reportingEntity",
-          "language" : "undefined",
-          "value" : "MAN-001",
-          "type" : "label"
-        } ],
-        "reportDate" : [ {
-          "identifier" : "reportDate",
-          "language" : "undefined",
-          "value" : "2024-02-03",
-          "type" : "label"
-        } ],
-        "detectionDate" : [ {
-          "identifier" : "detectionDate",
-          "language" : "undefined",
-          "value" : "2024-02-01",
-          "type" : "label"
-        } ],
-        "patientAge" : [ {
-          "identifier" : "patientAge",
-          "language" : "undefined",
-          "value" : "72",
-          "type" : "label"
-        } ],
-        "eudamedIncidentRef" : [ {
-          "identifier" : "eudamedIncidentRef",
-          "language" : "undefined",
-          "value" : "EU-INC-2024-000002",
-          "type" : "label"
-        } ],
-        "incidentDescription" : [ {
-          "identifier" : "incidentDescription",
-          "language" : "undefined",
-          "value" : "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification.",
-          "type" : "label"
-        } ],
-        "outcome" : [ {
-          "identifier" : "outcome",
-          "language" : "undefined",
-          "value" : "Device malfunction - premature battery depletion",
-          "type" : "label"
-        } ],
-        "eventDate" : [ {
-          "identifier" : "eventDate",
-          "language" : "undefined",
-          "value" : "2024-01-29",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Incident_INC_002"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_013",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
@@ -4913,16 +4827,16 @@
           "value" : "MAN-015",
           "type" : "label"
         } ],
-        "detectionDate" : [ {
-          "identifier" : "detectionDate",
-          "language" : "undefined",
-          "value" : "2024-06-29",
-          "type" : "label"
-        } ],
         "countryReported" : [ {
           "identifier" : "countryReported",
           "language" : "undefined",
           "value" : "Germany",
+          "type" : "label"
+        } ],
+        "detectionDate" : [ {
+          "identifier" : "detectionDate",
+          "language" : "undefined",
+          "value" : "2024-06-29",
           "type" : "label"
         } ],
         "incidentType" : [ {
@@ -4966,7 +4880,7 @@
         "IRI-based" : "Incident_INC_013"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_014",
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_002",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
         "correctiveActionTaken" : [ {
@@ -4979,6 +4893,92 @@
           "identifier" : "patientSex",
           "language" : "undefined",
           "value" : "Female",
+          "type" : "label"
+        } ],
+        "countryReported" : [ {
+          "identifier" : "countryReported",
+          "language" : "undefined",
+          "value" : "France",
+          "type" : "label"
+        } ],
+        "incidentType" : [ {
+          "identifier" : "incidentType",
+          "language" : "undefined",
+          "value" : "SeriousIncident",
+          "type" : "label"
+        } ],
+        "hasDevice" : [ {
+          "identifier" : "hasDevice",
+          "language" : "undefined",
+          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002",
+          "type" : "iri"
+        } ],
+        "reportDate" : [ {
+          "identifier" : "reportDate",
+          "language" : "undefined",
+          "value" : "2024-02-03",
+          "type" : "label"
+        } ],
+        "reportingEntity" : [ {
+          "identifier" : "reportingEntity",
+          "language" : "undefined",
+          "value" : "MAN-001",
+          "type" : "label"
+        } ],
+        "detectionDate" : [ {
+          "identifier" : "detectionDate",
+          "language" : "undefined",
+          "value" : "2024-02-01",
+          "type" : "label"
+        } ],
+        "patientAge" : [ {
+          "identifier" : "patientAge",
+          "language" : "undefined",
+          "value" : "72",
+          "type" : "label"
+        } ],
+        "eudamedIncidentRef" : [ {
+          "identifier" : "eudamedIncidentRef",
+          "language" : "undefined",
+          "value" : "EU-INC-2024-000002",
+          "type" : "label"
+        } ],
+        "incidentDescription" : [ {
+          "identifier" : "incidentDescription",
+          "language" : "undefined",
+          "value" : "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification.",
+          "type" : "label"
+        } ],
+        "outcome" : [ {
+          "identifier" : "outcome",
+          "language" : "undefined",
+          "value" : "Device malfunction - premature battery depletion",
+          "type" : "label"
+        } ],
+        "eventDate" : [ {
+          "identifier" : "eventDate",
+          "language" : "undefined",
+          "value" : "2024-01-29",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Incident_INC_002"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_014",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "patientSex" : [ {
+          "identifier" : "patientSex",
+          "language" : "undefined",
+          "value" : "Female",
+          "type" : "label"
+        } ],
+        "correctiveActionTaken" : [ {
+          "identifier" : "correctiveActionTaken",
+          "language" : "undefined",
+          "value" : "true",
           "type" : "label"
         } ],
         "countryReported" : [ {
@@ -4999,16 +4999,16 @@
           "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021",
           "type" : "iri"
         } ],
-        "reportingEntity" : [ {
-          "identifier" : "reportingEntity",
-          "language" : "undefined",
-          "value" : "MAN-009",
-          "type" : "label"
-        } ],
         "reportDate" : [ {
           "identifier" : "reportDate",
           "language" : "undefined",
           "value" : "2024-07-18",
+          "type" : "label"
+        } ],
+        "reportingEntity" : [ {
+          "identifier" : "reportingEntity",
+          "language" : "undefined",
+          "value" : "MAN-009",
           "type" : "label"
         } ],
         "detectionDate" : [ {
@@ -5055,16 +5055,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_003",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "correctiveActionTaken" : [ {
-          "identifier" : "correctiveActionTaken",
-          "language" : "undefined",
-          "value" : "true",
-          "type" : "label"
-        } ],
         "patientSex" : [ {
           "identifier" : "patientSex",
           "language" : "undefined",
           "value" : "Male",
+          "type" : "label"
+        } ],
+        "correctiveActionTaken" : [ {
+          "identifier" : "correctiveActionTaken",
+          "language" : "undefined",
+          "value" : "true",
           "type" : "label"
         } ],
         "countryReported" : [ {
@@ -5159,16 +5159,16 @@
           "value" : "MAN-005",
           "type" : "label"
         } ],
-        "countryReported" : [ {
-          "identifier" : "countryReported",
-          "language" : "undefined",
-          "value" : "France",
-          "type" : "label"
-        } ],
         "detectionDate" : [ {
           "identifier" : "detectionDate",
           "language" : "undefined",
           "value" : "2024-06-01",
+          "type" : "label"
+        } ],
+        "countryReported" : [ {
+          "identifier" : "countryReported",
+          "language" : "undefined",
+          "value" : "France",
           "type" : "label"
         } ],
         "incidentType" : [ {
@@ -5289,16 +5289,16 @@
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_001",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
-        "patientSex" : [ {
-          "identifier" : "patientSex",
-          "language" : "undefined",
-          "value" : "Male",
-          "type" : "label"
-        } ],
         "correctiveActionTaken" : [ {
           "identifier" : "correctiveActionTaken",
           "language" : "undefined",
           "value" : "true",
+          "type" : "label"
+        } ],
+        "patientSex" : [ {
+          "identifier" : "patientSex",
+          "language" : "undefined",
+          "value" : "Male",
           "type" : "label"
         } ],
         "countryReported" : [ {
@@ -5404,8 +5404,8 @@
       "en" : "Represents an implantable medical device classified as Class III."
     },
     "attributes" : [ "external" ],
-    "id" : "96",
-    "superClasses" : [ "29" ]
+    "id" : "97",
+    "superClasses" : [ "31" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "118",
@@ -5552,16 +5552,16 @@
           "value" : "12500 tests",
           "type" : "label"
         } ],
-        "scope" : [ {
-          "identifier" : "scope",
-          "language" : "undefined",
-          "value" : "cobas SARS-CoV-2 RT-PCR reagent lot numbers CV-2024-0312 to CV-2024-0318",
-          "type" : "label"
-        } ],
         "eudamedFSCARef" : [ {
           "identifier" : "eudamedFSCARef",
           "language" : "undefined",
           "value" : "EU-FSCA-2024-000010",
+          "type" : "label"
+        } ],
+        "scope" : [ {
+          "identifier" : "scope",
+          "language" : "undefined",
+          "value" : "cobas SARS-CoV-2 RT-PCR reagent lot numbers CV-2024-0312 to CV-2024-0318",
           "type" : "label"
         } ],
         "closureDate" : [ {
@@ -5664,16 +5664,16 @@
           "value" : "420",
           "type" : "label"
         } ],
-        "eudamedFSCARef" : [ {
-          "identifier" : "eudamedFSCARef",
-          "language" : "undefined",
-          "value" : "EU-FSCA-2024-000013",
-          "type" : "label"
-        } ],
         "scope" : [ {
           "identifier" : "scope",
           "language" : "undefined",
           "value" : "All HeartMate 3 LVAD units with outflow graft lot OG-2022-*",
+          "type" : "label"
+        } ],
+        "eudamedFSCARef" : [ {
+          "identifier" : "eudamedFSCARef",
+          "language" : "undefined",
+          "value" : "EU-FSCA-2024-000013",
           "type" : "label"
         } ],
         "correspondsToIncident" : [ {
@@ -5703,6 +5703,62 @@
       },
       "labels" : {
         "IRI-based" : "CorrectiveAction_FSCA_013"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_012",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "annotations" : {
+        "devicesAffected" : [ {
+          "identifier" : "devicesAffected",
+          "language" : "undefined",
+          "value" : "2870",
+          "type" : "label"
+        } ],
+        "eudamedFSCARef" : [ {
+          "identifier" : "eudamedFSCARef",
+          "language" : "undefined",
+          "value" : "EU-FSCA-2024-000012",
+          "type" : "label"
+        } ],
+        "scope" : [ {
+          "identifier" : "scope",
+          "language" : "undefined",
+          "value" : "Plum 360 infusion pumps with drug library version 4.2.1",
+          "type" : "label"
+        } ],
+        "closureDate" : [ {
+          "identifier" : "closureDate",
+          "language" : "undefined",
+          "value" : "2024-10-31",
+          "type" : "label"
+        } ],
+        "correspondsToIncident" : [ {
+          "identifier" : "correspondsToIncident",
+          "language" : "undefined",
+          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_015",
+          "type" : "iri"
+        } ],
+        "actionDescription" : [ {
+          "identifier" : "actionDescription",
+          "language" : "undefined",
+          "value" : "Urgent recall and remote software update. Drug library version 4.3.0 deployed correcting decimal point error. All units verified by biomedical engineering before return to clinical use.",
+          "type" : "label"
+        } ],
+        "actionDate" : [ {
+          "identifier" : "actionDate",
+          "language" : "undefined",
+          "value" : "2024-08-20",
+          "type" : "label"
+        } ],
+        "countriesAffected" : [ {
+          "identifier" : "countriesAffected",
+          "language" : "undefined",
+          "value" : "EU-wide + UK + Norway",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CorrectiveAction_FSCA_012"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_001",
@@ -5755,60 +5811,54 @@
         "IRI-based" : "CorrectiveAction_FSCA_001"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_012",
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_004",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
         "devicesAffected" : [ {
           "identifier" : "devicesAffected",
           "language" : "undefined",
-          "value" : "2870",
-          "type" : "label"
-        } ],
-        "scope" : [ {
-          "identifier" : "scope",
-          "language" : "undefined",
-          "value" : "Plum 360 infusion pumps with drug library version 4.2.1",
+          "value" : "2100",
           "type" : "label"
         } ],
         "eudamedFSCARef" : [ {
           "identifier" : "eudamedFSCARef",
           "language" : "undefined",
-          "value" : "EU-FSCA-2024-000012",
+          "value" : "EU-FSCA-2024-000004",
+          "type" : "label"
+        } ],
+        "scope" : [ {
+          "identifier" : "scope",
+          "language" : "undefined",
+          "value" : "All ACUITY X4 quadripolar LV leads",
           "type" : "label"
         } ],
         "correspondsToIncident" : [ {
           "identifier" : "correspondsToIncident",
           "language" : "undefined",
-          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_015",
+          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_005",
           "type" : "iri"
-        } ],
-        "closureDate" : [ {
-          "identifier" : "closureDate",
-          "language" : "undefined",
-          "value" : "2024-10-31",
-          "type" : "label"
         } ],
         "actionDescription" : [ {
           "identifier" : "actionDescription",
           "language" : "undefined",
-          "value" : "Urgent recall and remote software update. Drug library version 4.3.0 deployed correcting decimal point error. All units verified by biomedical engineering before return to clinical use.",
+          "value" : "Safety communication to implanting cardiologists regarding optimal fixation technique for ACUITY X4 lead. Enhanced fluoroscopy verification protocol at implantation.",
           "type" : "label"
         } ],
         "actionDate" : [ {
           "identifier" : "actionDate",
           "language" : "undefined",
-          "value" : "2024-08-20",
+          "value" : "2024-04-10",
           "type" : "label"
         } ],
         "countriesAffected" : [ {
           "identifier" : "countriesAffected",
           "language" : "undefined",
-          "value" : "EU-wide + UK + Norway",
+          "value" : "EU-wide",
           "type" : "label"
         } ]
       },
       "labels" : {
-        "IRI-based" : "CorrectiveAction_FSCA_012"
+        "IRI-based" : "CorrectiveAction_FSCA_004"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_015",
@@ -5861,56 +5911,6 @@
         "IRI-based" : "CorrectiveAction_FSCA_015"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_004",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "annotations" : {
-        "devicesAffected" : [ {
-          "identifier" : "devicesAffected",
-          "language" : "undefined",
-          "value" : "2100",
-          "type" : "label"
-        } ],
-        "scope" : [ {
-          "identifier" : "scope",
-          "language" : "undefined",
-          "value" : "All ACUITY X4 quadripolar LV leads",
-          "type" : "label"
-        } ],
-        "eudamedFSCARef" : [ {
-          "identifier" : "eudamedFSCARef",
-          "language" : "undefined",
-          "value" : "EU-FSCA-2024-000004",
-          "type" : "label"
-        } ],
-        "correspondsToIncident" : [ {
-          "identifier" : "correspondsToIncident",
-          "language" : "undefined",
-          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_005",
-          "type" : "iri"
-        } ],
-        "actionDescription" : [ {
-          "identifier" : "actionDescription",
-          "language" : "undefined",
-          "value" : "Safety communication to implanting cardiologists regarding optimal fixation technique for ACUITY X4 lead. Enhanced fluoroscopy verification protocol at implantation.",
-          "type" : "label"
-        } ],
-        "actionDate" : [ {
-          "identifier" : "actionDate",
-          "language" : "undefined",
-          "value" : "2024-04-10",
-          "type" : "label"
-        } ],
-        "countriesAffected" : [ {
-          "identifier" : "countriesAffected",
-          "language" : "undefined",
-          "value" : "EU-wide",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "CorrectiveAction_FSCA_004"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_014",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
@@ -5920,22 +5920,16 @@
           "value" : "1100",
           "type" : "label"
         } ],
-        "eudamedFSCARef" : [ {
-          "identifier" : "eudamedFSCARef",
-          "language" : "undefined",
-          "value" : "EU-FSCA-2024-000014",
-          "type" : "label"
-        } ],
         "scope" : [ {
           "identifier" : "scope",
           "language" : "undefined",
           "value" : "All Iluvien intravitreal implants",
           "type" : "label"
         } ],
-        "closureDate" : [ {
-          "identifier" : "closureDate",
+        "eudamedFSCARef" : [ {
+          "identifier" : "eudamedFSCARef",
           "language" : "undefined",
-          "value" : "2024-12-31",
+          "value" : "EU-FSCA-2024-000014",
           "type" : "label"
         } ],
         "correspondsToIncident" : [ {
@@ -5943,6 +5937,12 @@
           "language" : "undefined",
           "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_017",
           "type" : "iri"
+        } ],
+        "closureDate" : [ {
+          "identifier" : "closureDate",
+          "language" : "undefined",
+          "value" : "2024-12-31",
+          "type" : "label"
         } ],
         "actionDescription" : [ {
           "identifier" : "actionDescription",
@@ -5988,17 +5988,17 @@
           "value" : "EU-FSCA-2024-000003",
           "type" : "label"
         } ],
-        "closureDate" : [ {
-          "identifier" : "closureDate",
-          "language" : "undefined",
-          "value" : "2024-06-30",
-          "type" : "label"
-        } ],
         "correspondsToIncident" : [ {
           "identifier" : "correspondsToIncident",
           "language" : "undefined",
           "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_003",
           "type" : "iri"
+        } ],
+        "closureDate" : [ {
+          "identifier" : "closureDate",
+          "language" : "undefined",
+          "value" : "2024-06-30",
+          "type" : "label"
         } ],
         "actionDescription" : [ {
           "identifier" : "actionDescription",
@@ -6082,22 +6082,16 @@
           "value" : "780",
           "type" : "label"
         } ],
-        "eudamedFSCARef" : [ {
-          "identifier" : "eudamedFSCARef",
-          "language" : "undefined",
-          "value" : "EU-FSCA-2024-000005",
-          "type" : "label"
-        } ],
         "scope" : [ {
           "identifier" : "scope",
           "language" : "undefined",
           "value" : "Persona Knee tibial inserts with lot numbers PN-2019-* to PN-2021-*",
           "type" : "label"
         } ],
-        "closureDate" : [ {
-          "identifier" : "closureDate",
+        "eudamedFSCARef" : [ {
+          "identifier" : "eudamedFSCARef",
           "language" : "undefined",
-          "value" : "2024-09-30",
+          "value" : "EU-FSCA-2024-000005",
           "type" : "label"
         } ],
         "correspondsToIncident" : [ {
@@ -6105,6 +6099,12 @@
           "language" : "undefined",
           "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_007",
           "type" : "iri"
+        } ],
+        "closureDate" : [ {
+          "identifier" : "closureDate",
+          "language" : "undefined",
+          "value" : "2024-09-30",
+          "type" : "label"
         } ],
         "actionDescription" : [ {
           "identifier" : "actionDescription",
@@ -6138,22 +6138,16 @@
           "value" : "180",
           "type" : "label"
         } ],
-        "eudamedFSCARef" : [ {
-          "identifier" : "eudamedFSCARef",
-          "language" : "undefined",
-          "value" : "EU-FSCA-2024-000008",
-          "type" : "label"
-        } ],
         "scope" : [ {
           "identifier" : "scope",
           "language" : "undefined",
           "value" : "ATERA ventilators with software version 2.1.3",
           "type" : "label"
         } ],
-        "closureDate" : [ {
-          "identifier" : "closureDate",
+        "eudamedFSCARef" : [ {
+          "identifier" : "eudamedFSCARef",
           "language" : "undefined",
-          "value" : "2024-08-15",
+          "value" : "EU-FSCA-2024-000008",
           "type" : "label"
         } ],
         "correspondsToIncident" : [ {
@@ -6161,6 +6155,12 @@
           "language" : "undefined",
           "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_010",
           "type" : "iri"
+        } ],
+        "closureDate" : [ {
+          "identifier" : "closureDate",
+          "language" : "undefined",
+          "value" : "2024-08-15",
+          "type" : "label"
         } ],
         "actionDescription" : [ {
           "identifier" : "actionDescription",
@@ -6194,16 +6194,16 @@
           "value" : "4300",
           "type" : "label"
         } ],
-        "scope" : [ {
-          "identifier" : "scope",
-          "language" : "undefined",
-          "value" : "All Viva CRT-D devices",
-          "type" : "label"
-        } ],
         "eudamedFSCARef" : [ {
           "identifier" : "eudamedFSCARef",
           "language" : "undefined",
           "value" : "EU-FSCA-2024-000007",
+          "type" : "label"
+        } ],
+        "scope" : [ {
+          "identifier" : "scope",
+          "language" : "undefined",
+          "value" : "All Viva CRT-D devices",
           "type" : "label"
         } ],
         "correspondsToIncident" : [ {
@@ -6262,17 +6262,17 @@
           "value" : "All cobas e 801 immunoassay analysers",
           "type" : "label"
         } ],
-        "correspondsToIncident" : [ {
-          "identifier" : "correspondsToIncident",
-          "language" : "undefined",
-          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_011",
-          "type" : "iri"
-        } ],
         "closureDate" : [ {
           "identifier" : "closureDate",
           "language" : "undefined",
           "value" : "2024-09-30",
           "type" : "label"
+        } ],
+        "correspondsToIncident" : [ {
+          "identifier" : "correspondsToIncident",
+          "language" : "undefined",
+          "value" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_011",
+          "type" : "iri"
         } ],
         "actionDescription" : [ {
           "identifier" : "actionDescription",
@@ -6297,7 +6297,7 @@
         "IRI-based" : "CorrectiveAction_FSCA_009"
       }
     } ],
-    "subClasses" : [ "72" ],
+    "subClasses" : [ "73" ],
     "comment" : {
       "en" : "A field safety corrective action associated with an incident."
     },
@@ -6384,34 +6384,34 @@
     "id" : "67",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "74",
+    "id" : "75",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "77",
+    "id" : "78",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "79",
+    "id" : "80",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "81",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "82",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "84",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "86",
+    "id" : "83",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "92",
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "97",
+    "id" : "93",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "101",
@@ -6677,23 +6677,9 @@
     "attributes" : [ "external", "datatype" ],
     "id" : "21"
   }, {
-    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#deviceName",
-    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "deviceName",
-      "en" : "device name"
-    },
-    "domain" : "29",
-    "comment" : {
-      "en" : "Specifies the commercial name of a device."
-    },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "28"
-  }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#contactEmail",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "31",
+    "range" : "29",
     "label" : {
       "IRI-based" : "contactEmail",
       "en" : "contact email"
@@ -6701,6 +6687,20 @@
     "domain" : "5",
     "comment" : {
       "en" : "Specifies the contact email address of a manufacturer."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#deviceName",
+    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "deviceName",
+      "en" : "device name"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Specifies the commercial name of a device."
     },
     "attributes" : [ "external", "datatype" ],
     "id" : "30"
@@ -6712,7 +6712,7 @@
       "IRI-based" : "isImplantable",
       "en" : "is implantable"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Indicates whether a medical device is implantable."
     },
@@ -6740,7 +6740,7 @@
       "IRI-based" : "deviceDataProperty",
       "undefined" : "device data property"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Groups data properties used to describe medical devices."
     },
@@ -6758,7 +6758,7 @@
     "comment" : {
       "en" : "Relates a corrective action to its current status."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "44"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedIncidentRef",
@@ -6786,7 +6786,7 @@
     "comment" : {
       "en" : "Relates an incident to its incident type."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "50"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRegulatoryFramework",
@@ -6796,11 +6796,11 @@
       "IRI-based" : "hasRegulatoryFramework",
       "en" : "has regulatory framework"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Relates a device to its regulatory framework."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "58"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturerName",
@@ -6824,30 +6824,30 @@
       "IRI-based" : "hasRiskClass",
       "en" : "has risk class"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Relates a device to its risk classification."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "64"
   }, {
-    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasProbability",
+    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasSeverity",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "35",
+    "range" : "69",
     "label" : {
-      "IRI-based" : "hasProbability",
-      "en" : "has probability"
+      "IRI-based" : "hasSeverity",
+      "en" : "has severity"
     },
     "domain" : "68",
     "comment" : {
-      "en" : "Relates a risk to its probability level."
+      "en" : "Relates a risk to its severity level."
     },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "67"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#outcome",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "75",
+    "range" : "76",
     "label" : {
       "IRI-based" : "outcome",
       "en" : "outcome"
@@ -6857,11 +6857,11 @@
       "en" : "Specifies the outcome of an incident."
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "74"
+    "id" : "75"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasSeverity",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "78",
+    "range" : "79",
     "label" : {
       "IRI-based" : "hasSeverity",
       "en" : "has severity"
@@ -6870,22 +6870,22 @@
     "comment" : {
       "en" : "Relates a risk to its severity level."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "77"
+    "attributes" : [ "object", "external" ],
+    "id" : "78"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isIVD",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "80",
+    "range" : "81",
     "label" : {
       "IRI-based" : "isIVD",
       "en" : "is IVD"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Indicates whether a medical device is an in vitro diagnostic device."
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "79"
+    "id" : "80"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasActionType",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -6898,12 +6898,12 @@
     "comment" : {
       "en" : "Relates a corrective action to its action type."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "81"
+    "attributes" : [ "object", "external" ],
+    "id" : "82"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedSRN",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "83",
+    "range" : "84",
     "label" : {
       "IRI-based" : "eudamedSRN",
       "en" : "EUDAMED SRN"
@@ -6913,7 +6913,7 @@
       "en" : "Specifies the Single Registration Number assigned in EUDAMED."
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "82"
+    "id" : "83"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#addressesIncident",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -6926,12 +6926,12 @@
     "comment" : {
       "en" : "Relates a corrective action to the incident it addresses."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "84"
+    "attributes" : [ "object", "external" ],
+    "id" : "85"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamedFSCARef",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "87",
+    "range" : "88",
     "label" : {
       "IRI-based" : "eudamedFSCARef",
       "en" : "EUDAMED FSCA reference"
@@ -6941,11 +6941,11 @@
       "en" : "Specifies the EUDAMED reference identifier of a field safety corrective action."
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "86"
+    "id" : "87"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskDescription",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "93",
+    "range" : "94",
     "label" : {
       "IRI-based" : "riskDescription",
       "en" : "risk description"
@@ -6955,11 +6955,11 @@
       "en" : "Provides a textual description of a risk."
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "92"
+    "id" : "93"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#detectionDate",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "89",
+    "range" : "90",
     "label" : {
       "IRI-based" : "detectionDate",
       "en" : "detection date"
@@ -6969,11 +6969,11 @@
       "en" : "Specifies the date on which an incident was detected."
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "97"
+    "id" : "98"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reportDate",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "88",
+    "range" : "89",
     "label" : {
       "IRI-based" : "reportDate",
       "en" : "report date"
@@ -6983,7 +6983,7 @@
       "en" : "Specifies the date on which an incident was reported"
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "98"
+    "id" : "99"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturerDataProperty",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -7001,7 +7001,7 @@
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasProbability",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "78",
+    "range" : "79",
     "label" : {
       "IRI-based" : "hasProbability",
       "en" : "has probability"
@@ -7010,17 +7010,17 @@
     "comment" : {
       "en" : "Relates a risk to its probability level."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "102"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#isReusable",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "91",
+    "range" : "92",
     "label" : {
       "IRI-based" : "isReusable",
       "en" : "is reusable"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Indicates whether a medical device is reusable."
     },
@@ -7029,7 +7029,7 @@
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#imdrfCode",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "90",
+    "range" : "91",
     "label" : {
       "IRI-based" : "imdrfCode",
       "en" : "IMDRF code"
@@ -7040,6 +7040,20 @@
     },
     "attributes" : [ "external", "datatype" ],
     "id" : "105"
+  }, {
+    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#closureDate",
+    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "closureDate",
+      "en" : "closure date"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Specifies the date on which a corrective action was closed."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "107"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incidentDataProperty",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -7053,35 +7067,21 @@
       "en" : "Groups data properties used to describe incidents associated with medical devices."
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "107"
-  }, {
-    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#closureDate",
-    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "closureDate",
-      "en" : "closure date"
-    },
-    "domain" : "7",
-    "comment" : {
-      "en" : "Specifies the date on which a corrective action was closed."
-    },
-    "attributes" : [ "external", "datatype" ],
     "id" : "108"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "73",
+    "range" : "74",
     "label" : {
       "IRI-based" : "topDataProperty"
     },
-    "domain" : "76",
+    "domain" : "77",
     "attributes" : [ "external", "datatype" ],
     "id" : "109"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#authorizationNumber",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "70",
+    "range" : "71",
     "label" : {
       "IRI-based" : "authorizationNumber",
       "en" : "authorization number"
@@ -7100,7 +7100,7 @@
       "IRI-based" : "isActive",
       "en" : "is active"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Indicates whether a medical device is active."
     },
@@ -7109,7 +7109,7 @@
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#affectsDevice",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "29",
+    "range" : "31",
     "label" : {
       "IRI-based" : "affectsDevice",
       "en" : "affects device"
@@ -7118,7 +7118,7 @@
     "comment" : {
       "en" : "Relates an incident to the device involved."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "114"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#intendedPurpose",
@@ -7128,7 +7128,7 @@
       "IRI-based" : "intendedPurpose",
       "en" : "intented purpose"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Specifies the intended purpose of a medical device."
     },
@@ -7156,7 +7156,7 @@
     "id" : "124"
   }, {
     "range" : "49",
-    "domain" : "85",
+    "domain" : "86",
     "attributes" : [ "object", "anonymous" ],
     "id" : "125"
   }, {
@@ -7244,8 +7244,8 @@
     "attributes" : [ "external", "datatype" ],
     "id" : "131"
   }, {
-    "range" : "29",
-    "domain" : "96",
+    "range" : "31",
+    "domain" : "97",
     "attributes" : [ "object", "anonymous" ],
     "id" : "132"
   }, {
@@ -7275,7 +7275,7 @@
     "comment" : {
       "en" : "Relates an incident to an identified risk"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "136"
   }, {
     "range" : "53",
@@ -7315,7 +7315,7 @@
       "IRI-based" : "udiDI",
       "en" : "UDI DI"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Specifies the Device Identifier part of the Unique Device Identification code"
     },
@@ -7329,11 +7329,11 @@
       "IRI-based" : "hasManufacturer",
       "en" : "has manufacturer"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Relates a device to its manufacturer."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "146"
   }, {
     "range" : "4",
@@ -7375,18 +7375,18 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "152"
   }, {
-    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRegulatoryFramework",
+    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRiskClass",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "20",
+    "range" : "53",
     "label" : {
-      "IRI-based" : "hasRegulatoryFramework",
-      "en" : "has regulatory framework"
+      "IRI-based" : "hasRiskClass",
+      "en" : "has risk class"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
-      "en" : "Relates a device to its regulatory framework."
+      "en" : "Relates a device to its risk classification."
     },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "153"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType",
@@ -7396,12 +7396,26 @@
       "IRI-based" : "hasDeviceType",
       "en" : "has device type"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Relates a device to its device type."
     },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "154"
+  }, {
+    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRegulatoryFramework",
+    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasRegulatoryFramework",
+      "en" : "has regulatory framework"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates a device to its regulatory framework."
+    },
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "155"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasManufacturer",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -7410,25 +7424,11 @@
       "IRI-based" : "hasManufacturer",
       "en" : "has manufacturer"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Relates a device to its manufacturer."
     },
-    "attributes" : [ "someValues", "external", "object" ],
-    "id" : "155"
-  }, {
-    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRiskClass",
-    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "53",
-    "label" : {
-      "IRI-based" : "hasRiskClass",
-      "en" : "has risk class"
-    },
-    "domain" : "29",
-    "comment" : {
-      "en" : "Relates a device to its risk classification."
-    },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "156"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRisk",
@@ -7442,7 +7442,7 @@
     "comment" : {
       "en" : "Relates an incident to an identified risk"
     },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "157"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasIncidentType",
@@ -7456,12 +7456,12 @@
     "comment" : {
       "en" : "Relates an incident to its incident type."
     },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "158"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#affectsDevice",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "29",
+    "range" : "31",
     "label" : {
       "IRI-based" : "affectsDevice",
       "en" : "affects device"
@@ -7470,26 +7470,26 @@
     "comment" : {
       "en" : "Relates an incident to the device involved."
     },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "159"
   }, {
-    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasSeverity",
+    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasProbability",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "100",
+    "range" : "35",
     "label" : {
-      "IRI-based" : "hasSeverity",
-      "en" : "has severity"
+      "IRI-based" : "hasProbability",
+      "en" : "has probability"
     },
     "domain" : "68",
     "comment" : {
-      "en" : "Relates a risk to its severity level."
+      "en" : "Relates a risk to its probability level."
     },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "160"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#countryReported",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "94",
+    "range" : "95",
     "label" : {
       "IRI-based" : "countryReported",
       "en" : "country reported"
@@ -7512,7 +7512,7 @@
     "comment" : {
       "en" : "Relates a corrective action to the incident it addresses."
     },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "162"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasActionType",
@@ -7526,12 +7526,12 @@
     "comment" : {
       "en" : "Relates a corrective action to its action type."
     },
-    "attributes" : [ "someValues", "external", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "163"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#scope",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "95",
+    "range" : "96",
     "label" : {
       "IRI-based" : "scope",
       "en" : "scope"
@@ -7550,11 +7550,11 @@
       "IRI-based" : "hasDeviceType",
       "en" : "has device type"
     },
-    "domain" : "29",
+    "domain" : "31",
     "comment" : {
       "en" : "Relates a device to its device type."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "165"
   }, {
     "range" : "51",
@@ -7568,7 +7568,7 @@
     "id" : "167"
   }, {
     "range" : "7",
-    "domain" : "72",
+    "domain" : "73",
     "attributes" : [ "object", "anonymous" ],
     "id" : "169"
   }, {
@@ -7577,8 +7577,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "170"
   }, {
-    "range" : "100",
-    "domain" : "99",
+    "range" : "69",
+    "domain" : "100",
     "attributes" : [ "object", "anonymous" ],
     "id" : "171"
   }, {
@@ -7602,11 +7602,11 @@
     "id" : "173"
   }, {
     "range" : "49",
-    "domain" : "69",
+    "domain" : "70",
     "attributes" : [ "object", "anonymous" ],
     "id" : "174"
   }, {
-    "range" : "100",
+    "range" : "69",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "175"

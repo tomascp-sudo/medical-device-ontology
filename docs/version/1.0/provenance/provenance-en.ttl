@@ -8,7 +8,7 @@
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl>;
-	 prov:wasGeneratedAt "2026-04-12";
+	 prov:wasGeneratedAt "2026-04-18T14:30:00";
 .
 :agent0 a prov:Agent; foaf:name "Diana Socola".
 :agent1 a prov:Agent; foaf:name "Tomas Cuevas".

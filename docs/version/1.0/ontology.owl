@@ -70,7 +70,7 @@ New classes, properties, and individuals can be incorporated as the domain evolv
         <dc:title xml:lang="en">Ontology for High-Risk Medical Devices and IVDs</dc:title>
         <dc:title>Medical Devices Classification and Safety Ontology</dc:title>
         <terms1:abstract>This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks.</terms1:abstract>
-        <terms1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-12</terms1:created>
+        <terms1:created>2026-04-18T14:30:00</terms1:created>
         <terms1:creator xml:lang="en">Diana Socola</terms1:creator>
         <terms1:creator xml:lang="en">Tomas Cuevas</terms1:creator>
         <terms1:license>https://creativecommons.org/licenses/by-sa/4.0/</terms1:license>

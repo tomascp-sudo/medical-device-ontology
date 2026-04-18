@@ -5,7 +5,7 @@
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/elements/1.1/title> "Ontology for High-Risk Medical Devices and IVDs"@en .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/elements/1.1/title> "Medical Devices Classification and Safety Ontology" .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/abstract> "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks." .
-<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/created> "2026-04-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/created> "2026-04-18T14:30:00" .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/creator> "Diana Socola"@en .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/creator> "Tomas Cuevas"@en .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" .
