@@ -2,12 +2,12 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-en.html> a prov:Entity;
-	 dc:title "Medical Devices Classification and Safety Ontology";
+<https://tomascp-sudo.github.io/medical-device-ontology/1.0/ontology.owl> a prov:Entity;
+	 dc:title "EUDAMED-Inspired Medical Device Ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl>;
+	 prov:specializationOf <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology>;
 .
 :agent0 a prov:Agent; foaf:name "Diana Socola".
 :agent1 a prov:Agent; foaf:name "Tomás Cuevas".
