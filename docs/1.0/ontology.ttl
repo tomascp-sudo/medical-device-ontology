@@ -9,9 +9,11 @@
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> rdf:type owl:Ontology ;
                                                                 owl:versionIRI <https://tomascp-sudo.github.io/medical-device-ontology/1.0/ontology.owl> ;
                                                                 <http://purl.org/dc/elements/1.1/description> "Ontology for representing medical devices, manufacturers, incidents, risks and corrective actions in regulatory surveillance scenarios." ,
-                                                                                                              "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework." ;
+                                                                                                              "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework." ,
+                                                                                                              "This ontology provides a semantic model of medical devices, their classification, associated risks, incidents and corrective actions in order to support knowledge representation and reasoning in regulatory surveillance scenarios." ;
                                                                 <http://purl.org/dc/elements/1.1/title> "EUDAMED-Inspired Medical Device Ontology" ;
-                                                                <http://purl.org/dc/terms/abstract> "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks." ;
+                                                                <http://purl.org/dc/terms/abstract> "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks." ,
+                                                                                                    "This ontology provides a semantic representation of medical devices, manufacturers, incidents, risks and corrective actions to support interoperability and reasoning in regulatory surveillance scenarios." ;
                                                                 <http://purl.org/dc/terms/creator> "Diana Socola"@en ,
                                                                                                    "Tomás Cuevas"@en ;
                                                                 <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
@@ -611,7 +613,8 @@ xsd:date rdf:type rdfs:Datatype .
                                     owl:onDataRange xsd:string
                                   ] ;
                   rdfs:comment "Action taken by the manufacturer to eliminate the cause of a detected nonconformity or other undesirable situation related to a medical device, including field safety corrective actions."@en ;
-                  rdfs:label "Corrective Action"@en .
+                  rdfs:label "Corrective Action"@en ;
+                  rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCorrective_and_preventive_action&sid=7760" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CybersecurityRisk
@@ -824,7 +827,8 @@ xsd:date rdf:type rdfs:Datatype .
                             owl:onDataRange xsd:string
                           ] ;
           rdfs:comment "Any malfunction or deterioration in the characteristics or performance of a device, or any inadequacy in the information supplied by the manufacturer, or any undesirable side-effect, that has or could have led to harm to a patient, user or other person."@en ;
-          rdfs:label "Incident"@en .
+          rdfs:label "Incident"@en ;
+          rdfs:seeAlso "http://purl.bioontology.org/ontology/SNOMEDCT/405533003" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InfectionRisk
@@ -890,7 +894,8 @@ xsd:date rdf:type rdfs:Datatype .
                                 owl:onDataRange xsd:string
                               ] ;
               rdfs:comment "The natural or legal person who manufactures or fully refurbishes a device or has a device designed, manufactured or fully refurbished, and markets that device under its name or trademark."@en ;
-              rdfs:label "Manufacturer"@en .
+              rdfs:label "Manufacturer"@en ;
+              rdfs:seeAlso "https://browser.ihtsdotools.org/?perspective=full&conceptId1=43309009&edition=MAIN&release=&languages=en" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MaterialRisk
@@ -967,7 +972,8 @@ xsd:date rdf:type rdfs:Datatype .
                         owl:onDataRange xsd:string
                       ] ;
       rdfs:comment "Combination of the probability of occurrence of harm and the severity of that harm. This concept is central to the risk management process required for medical devices under the MDR and IVDR."@en ;
-      rdfs:label "Risk"@en .
+      rdfs:label "Risk"@en ;
+      rdfs:seeAlso "https://snomedsns.es/search/405142001" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SafetyAlert
@@ -2269,7 +2275,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Ireland" ;
                       :eudamed_srn "SRN-IE-MED-0001" ;
                       :manufacturer_id "MAN-001" ;
-                      :name "Medtronic plc" .
+                      :name "Medtronic plc" ;
+                      rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FMedtronic&sid=7760" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002
@@ -2281,7 +2288,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0002" ;
                       :manufacturer_id "MAN-002" ;
-                      :name "Abbott Medical Devices" .
+                      :name "Abbott Medical Devices" ;
+                      rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAbbott_Laboratories&sid=7760" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003
@@ -2293,7 +2301,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0003" ;
                       :manufacturer_id "MAN-003" ;
-                      :name "Siemens Healthineers AG" .
+                      :name "Siemens Healthineers AG" ;
+                      rdfs:seeAlso "https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C200140" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004
@@ -2317,7 +2326,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0005" ;
                       :manufacturer_id "MAN-005" ;
-                      :name "Roche Diagnostics GmbH" .
+                      :name "Roche Diagnostics GmbH" ;
+                      rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FRoche_Diagnostics&sid=7760" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006
@@ -2329,7 +2339,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Ireland" ;
                       :eudamed_srn "SRN-IE-MED-0006" ;
                       :manufacturer_id "MAN-006" ;
-                      :name "Boston Scientific Corporation" .
+                      :name "Boston Scientific Corporation" ;
+                      rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBoston_Scientific&sid=7760" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007
@@ -2341,7 +2352,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Netherlands" ;
                       :eudamed_srn "SRN-NL-MED-0007" ;
                       :manufacturer_id "MAN-007" ;
-                      :name "Stryker Corporation" .
+                      :name "Stryker Corporation" ;
+                      rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FStryker_Corporation&sid=7760" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008
@@ -2353,7 +2365,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0008" ;
                       :manufacturer_id "MAN-008" ;
-                      :name "Biotronik SE & Co. KG" .
+                      :name "Biotronik SE & Co. KG" ;
+                      rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBiotronik&sid=7760" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009

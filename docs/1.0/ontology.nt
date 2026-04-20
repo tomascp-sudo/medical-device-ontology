@@ -2,8 +2,10 @@
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://www.w3.org/2002/07/owl#versionIRI> <https://tomascp-sudo.github.io/medical-device-ontology/1.0/ontology.owl> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://purl.org/dc/elements/1.1/description> "Ontology for representing medical devices, manufacturers, incidents, risks and corrective actions in regulatory surveillance scenarios." .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://purl.org/dc/elements/1.1/description> "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework." .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://purl.org/dc/elements/1.1/description> "This ontology provides a semantic model of medical devices, their classification, associated risks, incidents and corrective actions in order to support knowledge representation and reasoning in regulatory surveillance scenarios." .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://purl.org/dc/elements/1.1/title> "EUDAMED-Inspired Medical Device Ontology" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://purl.org/dc/terms/abstract> "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks." .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://purl.org/dc/terms/abstract> "This ontology provides a semantic representation of medical devices, manufacturers, incidents, risks and corrective actions to support interoperability and reasoning in regulatory surveillance scenarios." .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://purl.org/dc/terms/creator> "Diana Socola"@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://purl.org/dc/terms/creator> "Tomás Cuevas"@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" .
@@ -550,6 +552,7 @@ _:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/knowledg
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action taken by the manufacturer to eliminate the cause of a detected nonconformity or other undesirable situation related to a medical device, including field safety corrective actions."@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Corrective Action"@en .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCorrective_and_preventive_action&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CybersecurityRisk
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CybersecurityRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -762,6 +765,7 @@ _:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/knowled
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "Any malfunction or deterioration in the characteristics or performance of a device, or any inadequacy in the information supplied by the manufacturer, or any undesirable side-effect, that has or could have led to harm to a patient, user or other person."@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://purl.bioontology.org/ontology/SNOMEDCT/405533003" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InfectionRisk
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InfectionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -822,6 +826,7 @@ _:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/knowled
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "The natural or legal person who manufactures or fully refurbishes a device or has a device designed, manufactured or fully refurbished, and markets that device under its name or trademark."@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://browser.ihtsdotools.org/?perspective=full&conceptId1=43309009&edition=MAIN&release=&languages=en" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MaterialRisk
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MaterialRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -894,6 +899,7 @@ _:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/knowled
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "Combination of the probability of occurrence of harm and the severity of that harm. This concept is central to the risk management process required for medical devices under the MDR and IVDR."@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://snomedsns.es/search/405142001" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SafetyAlert
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2093,6 +2099,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-IE-MED-0001" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-001" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Medtronic plc" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FMedtronic&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2104,6 +2111,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-DE-MED-0002" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-002" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Abbott Medical Devices" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAbbott_Laboratories&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2115,6 +2123,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-DE-MED-0003" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-003" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Siemens Healthineers AG" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C200140" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2137,6 +2146,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-DE-MED-0005" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-005" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Roche Diagnostics GmbH" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FRoche_Diagnostics&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2148,6 +2158,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-IE-MED-0006" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-006" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Boston Scientific Corporation" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBoston_Scientific&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2159,6 +2170,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-NL-MED-0007" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-007" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Stryker Corporation" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FStryker_Corporation&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2170,6 +2182,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-DE-MED-0008" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-008" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Biotronik SE & Co. KG" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBiotronik&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

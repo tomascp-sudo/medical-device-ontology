@@ -940,12 +940,16 @@
     "@value" : "Ontology for representing medical devices, manufacturers, incidents, risks and corrective actions in regulatory surveillance scenarios."
   }, {
     "@value" : "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework."
+  }, {
+    "@value" : "This ontology provides a semantic model of medical devices, their classification, associated risks, incidents and corrective actions in order to support knowledge representation and reasoning in regulatory surveillance scenarios."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@value" : "EUDAMED-Inspired Medical Device Ontology"
   } ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@value" : "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks."
+  }, {
+    "@value" : "This ontology provides a semantic representation of medical devices, manufacturers, incidents, risks and corrective actions to support interoperability and reasoning in regulatory surveillance scenarios."
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "en",
@@ -1124,6 +1128,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Corrective Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCorrective_and_preventive_action&sid=7760"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid1"
@@ -3125,6 +3132,9 @@
     "@language" : "en",
     "@value" : "Incident"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "http://purl.bioontology.org/ontology/SNOMEDCT/405533003"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid32"
   }, {
@@ -4369,6 +4379,9 @@
     "@language" : "en",
     "@value" : "Manufacturer"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://browser.ihtsdotools.org/?perspective=full&conceptId1=43309009&edition=MAIN&release=&languages=en"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid44"
   }, {
@@ -4410,6 +4423,9 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FMedtronic&sid=7760"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002",
@@ -4437,6 +4453,9 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAbbott_Laboratories&sid=7760"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003",
@@ -4464,6 +4483,9 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C200140"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004",
@@ -4518,6 +4540,9 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FRoche_Diagnostics&sid=7760"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006",
@@ -4545,6 +4570,9 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBoston_Scientific&sid=7760"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007",
@@ -4572,6 +4600,9 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FStryker_Corporation&sid=7760"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008",
@@ -4599,6 +4630,9 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBiotronik&sid=7760"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009",
@@ -4917,6 +4951,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://snomedsns.es/search/405142001"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid55"

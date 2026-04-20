@@ -20,8 +20,10 @@
         <owl:versionIRI rdf:resource="https://tomascp-sudo.github.io/medical-device-ontology/1.0/ontology.owl"/>
         <dc:description>Ontology for representing medical devices, manufacturers, incidents, risks and corrective actions in regulatory surveillance scenarios.</dc:description>
         <dc:description>This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework.</dc:description>
+        <dc:description>This ontology provides a semantic model of medical devices, their classification, associated risks, incidents and corrective actions in order to support knowledge representation and reasoning in regulatory surveillance scenarios.</dc:description>
         <dc:title>EUDAMED-Inspired Medical Device Ontology</dc:title>
         <terms:abstract>This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks.</terms:abstract>
+        <terms:abstract>This ontology provides a semantic representation of medical devices, manufacturers, incidents, risks and corrective actions to support interoperability and reasoning in regulatory surveillance scenarios.</terms:abstract>
         <terms:creator xml:lang="en">Diana Socola</terms:creator>
         <terms:creator xml:lang="en">Tomás Cuevas</terms:creator>
         <terms:license>https://creativecommons.org/licenses/by-sa/4.0/</terms:license>
@@ -968,6 +970,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Action taken by the manufacturer to eliminate the cause of a detected nonconformity or other undesirable situation related to a medical device, including field safety corrective actions.</rdfs:comment>
         <rdfs:label xml:lang="en">Corrective Action</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCorrective_and_preventive_action&amp;sid=7760</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1290,6 +1293,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Any malfunction or deterioration in the characteristics or performance of a device, or any inadequacy in the information supplied by the manufacturer, or any undesirable side-effect, that has or could have led to harm to a patient, user or other person.</rdfs:comment>
         <rdfs:label xml:lang="en">Incident</rdfs:label>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/SNOMEDCT/405533003</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1394,6 +1398,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The natural or legal person who manufactures or fully refurbishes a device or has a device designed, manufactured or fully refurbished, and markets that device under its name or trademark.</rdfs:comment>
         <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
+        <rdfs:seeAlso>https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43309009&amp;edition=MAIN&amp;release=&amp;languages=en</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1518,6 +1523,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Combination of the probability of occurrence of harm and the severity of that harm. This concept is central to the risk management process required for medical devices under the MDR and IVDR.</rdfs:comment>
         <rdfs:label xml:lang="en">Risk</rdfs:label>
+        <rdfs:seeAlso>https://snomedsns.es/search/405142001</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3235,6 +3241,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         <eudamed_srn>SRN-IE-MED-0001</eudamed_srn>
         <manufacturer_id>MAN-001</manufacturer_id>
         <name>Medtronic plc</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FMedtronic&amp;sid=7760</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -3251,6 +3258,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         <eudamed_srn>SRN-DE-MED-0002</eudamed_srn>
         <manufacturer_id>MAN-002</manufacturer_id>
         <name>Abbott Medical Devices</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAbbott_Laboratories&amp;sid=7760</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -3267,6 +3275,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         <eudamed_srn>SRN-DE-MED-0003</eudamed_srn>
         <manufacturer_id>MAN-003</manufacturer_id>
         <name>Siemens Healthineers AG</name>
+        <rdfs:seeAlso>https://bioportal.bioontology.org/ontologies/NCIT?p=classes&amp;conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C200140</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -3299,6 +3308,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         <eudamed_srn>SRN-DE-MED-0005</eudamed_srn>
         <manufacturer_id>MAN-005</manufacturer_id>
         <name>Roche Diagnostics GmbH</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FRoche_Diagnostics&amp;sid=7760</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -3315,6 +3325,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         <eudamed_srn>SRN-IE-MED-0006</eudamed_srn>
         <manufacturer_id>MAN-006</manufacturer_id>
         <name>Boston Scientific Corporation</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBoston_Scientific&amp;sid=7760</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -3331,6 +3342,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         <eudamed_srn>SRN-NL-MED-0007</eudamed_srn>
         <manufacturer_id>MAN-007</manufacturer_id>
         <name>Stryker Corporation</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FStryker_Corporation&amp;sid=7760</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -3347,6 +3359,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         <eudamed_srn>SRN-DE-MED-0008</eudamed_srn>
         <manufacturer_id>MAN-008</manufacturer_id>
         <name>Biotronik SE &amp; Co. KG</name>
+        <rdfs:seeAlso>https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBiotronik&amp;sid=7760</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
