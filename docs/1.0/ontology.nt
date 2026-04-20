@@ -1,10 +1,15 @@
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/elements/1.1/description> "This ontology provides a semantic representation of the medical devices domain, with a focus on device classification, safety, incidents, and corrective actions.\nIt is built using OWL (Web Ontology Language) to ensure logical consistency and interoperability, and it incorporates SWRL rules to support inference and reasoning.\n\nCore Concepts\n\nMedicalDevice:\nRepresents the general concept of a medical device. It is the superclass for more specific types such as ImplantableDevice or ActiveImplant.\nEach device can be described through properties such as name, manufacturer, classification, and device type.\n\nImplantableDevice / ActiveImplant:\nThese classes represent specific categories of medical devices, especially those that are placed inside the human body or require an energy source to function.\nThey are relevant for determining risk level and regulatory classification.\n\nRiskClass:\nRepresents the regulatory classification of the device, such as Class I, Class IIa, Class IIb, or Class III.\nThese classes are used to organize devices according to their level of risk and control requirements.\n\nCorrectiveAction:\nRepresents actions taken in response to incidents, defects, or safety issues related to a medical device.\nThese actions help model post-market surveillance and device safety procedures.\n\nProperties\n\nObject Properties:\nDefine relationships between instances of different classes. Examples include:\n\nhasClassification – connects a medical device to its regulatory class\nhasCorrectiveAction – connects a device or incident to a corrective action\nmanufacturedBy – connects a medical device to its manufacturer\n\nData Properties:\nDefine literal attributes. Examples include:\n\nhasName – assigns a name to a medical device\nhasModel – represents the commercial or technical model of the device\nhasSerialNumber – identifies a specific device instance\nhasRiskLevel – expresses the level of risk associated with a device\n\nIndividuals\nThe ontology contains a set of individuals representing example devices, classifications, manufacturers, and corrective actions.\nThese individuals allow reasoning engines to infer new facts and validate the consistency of the ontology.\n\nRules and Inference\nUsing SWRL rules, the ontology supports rule-based reasoning to infer classifications, detect relations between device types and risk classes, and support safety analysis.\nInside Protégé, the reasoner used was Pellet.\n\nExtensibility\nThe ontology is designed to be extensible and adaptable.\nNew classes, properties, and individuals can be incorporated as the domain evolves."@en .
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/elements/1.1/title> "EUDAMED-Inspired Medical Device Ontology"@en .
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/abstract> "The Medical Devices Classification and Safety Ontology provides a framework for modeling key concepts, entities, and relationships within the domain of medical devices.\nIt captures knowledge about device types, regulatory classes, manufacturers, and corrective actions.\nUsing OWL and SWRL, the ontology supports intelligent reasoning over safety-related data and facilitates interoperability, analysis, and querying within medical device information systems."@en .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The authors of this ontology have been:\n\nDiana Alejandrina Socola\n\nTomás Cuevas" .
-<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "This is V1.0" .
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Devices Classification and Safety Ontology"@en .
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <http://www.w3.org/2002/07/owl#versionInfo> "Version 1.0" .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#schma:includedInDataCatalog> "This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions." .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#schma:includedInDataCatalog> "https://tomascp-sudo.github.io/medical-device-ontology/" .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#terms:created> "2026-04-21T00:30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix> "EUDAMED" .
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 # 
 # 
@@ -15,6 +20,15 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -23,6 +37,9 @@
 # 
 # https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#terms:created
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#terms:created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix
+<https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

@@ -7,21 +7,88 @@
 @base <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#> .
 
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl> rdf:type owl:Ontology ;
+                                                                       <http://purl.org/dc/elements/1.1/description> """This ontology provides a semantic representation of the medical devices domain, with a focus on device classification, safety, incidents, and corrective actions.
+It is built using OWL (Web Ontology Language) to ensure logical consistency and interoperability, and it incorporates SWRL rules to support inference and reasoning.
+
+Core Concepts
+
+MedicalDevice:
+Represents the general concept of a medical device. It is the superclass for more specific types such as ImplantableDevice or ActiveImplant.
+Each device can be described through properties such as name, manufacturer, classification, and device type.
+
+ImplantableDevice / ActiveImplant:
+These classes represent specific categories of medical devices, especially those that are placed inside the human body or require an energy source to function.
+They are relevant for determining risk level and regulatory classification.
+
+RiskClass:
+Represents the regulatory classification of the device, such as Class I, Class IIa, Class IIb, or Class III.
+These classes are used to organize devices according to their level of risk and control requirements.
+
+CorrectiveAction:
+Represents actions taken in response to incidents, defects, or safety issues related to a medical device.
+These actions help model post-market surveillance and device safety procedures.
+
+Properties
+
+Object Properties:
+Define relationships between instances of different classes. Examples include:
+
+hasClassification – connects a medical device to its regulatory class
+hasCorrectiveAction – connects a device or incident to a corrective action
+manufacturedBy – connects a medical device to its manufacturer
+
+Data Properties:
+Define literal attributes. Examples include:
+
+hasName – assigns a name to a medical device
+hasModel – represents the commercial or technical model of the device
+hasSerialNumber – identifies a specific device instance
+hasRiskLevel – expresses the level of risk associated with a device
+
+Individuals
+The ontology contains a set of individuals representing example devices, classifications, manufacturers, and corrective actions.
+These individuals allow reasoning engines to infer new facts and validate the consistency of the ontology.
+
+Rules and Inference
+Using SWRL rules, the ontology supports rule-based reasoning to infer classifications, detect relations between device types and risk classes, and support safety analysis.
+Inside Protégé, the reasoner used was Pellet.
+
+Extensibility
+The ontology is designed to be extensible and adaptable.
+New classes, properties, and individuals can be incorporated as the domain evolves."""@en ;
+                                                                       <http://purl.org/dc/elements/1.1/title> "EUDAMED-Inspired Medical Device Ontology"@en ;
+                                                                       <http://purl.org/dc/terms/abstract> """The Medical Devices Classification and Safety Ontology provides a framework for modeling key concepts, entities, and relationships within the domain of medical devices.
+It captures knowledge about device types, regulatory classes, manufacturers, and corrective actions.
+Using OWL and SWRL, the ontology supports intelligent reasoning over safety-related data and facilitates interoperability, analysis, and querying within medical device information systems."""@en ;
                                                                        <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
                                                                        rdfs:isDefinedBy """The authors of this ontology have been:
 
 Diana Alejandrina Socola
 
-Tomás Cuevas""" ,
-                                                                                        "This is V1.0" ;
+Tomás Cuevas""" ;
+                                                                       rdfs:label "Medical Devices Classification and Safety Ontology"@en ;
+                                                                       owl:versionInfo "Version 1.0" ;
                                                                        :schma:includedInDataCatalog "This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions." ,
                                                                                                     "https://tomascp-sudo.github.io/medical-device-ontology/" ;
                                                                        :terms:created "2026-04-21T00:30"^^xsd:date ;
+                                                                       :vann:preferredNamespacePrefix "EUDAMED" ;
                                                                        <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
@@ -33,6 +100,10 @@ Tomás Cuevas""" ,
 
 ###  https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#terms:created
 :terms:created rdf:type owl:AnnotationProperty .
+
+
+###  https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix
+:vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/mod#createdWith
