@@ -112,10 +112,13 @@
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#risk_category> .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident or device to its corresponding category" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has category" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident> .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incident_type> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its device type."@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "has device type"@en .
 # 
@@ -1281,6 +1284,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)00380740009095" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1297,6 +1301,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)00380740009112" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002> <http://www.w3.org/2000/01/rdf-schema#label> "Micra AV Transcatheter Pacing System"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1313,6 +1318,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)00800002222291" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003> <http://www.w3.org/2000/01/rdf-schema#label> "Portico Transcatheter Heart Valve"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1329,6 +1335,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)08714729002817" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004> <http://www.w3.org/2000/01/rdf-schema#label> "SYNERGY Stent System"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1345,6 +1352,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)08714729004873" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005> <http://www.w3.org/2000/01/rdf-schema#label> "ACUITY X4 Quadripolar LV Lead"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1361,6 +1369,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)08718998000001" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006> <http://www.w3.org/2000/01/rdf-schema#label> "STELLAREX Drug-Coated Balloon"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1377,6 +1386,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)04054839450001" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007> <http://www.w3.org/2000/01/rdf-schema#label> "ACUSON Sequoia Ultrasound"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1393,6 +1403,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)04054839460002" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008> <http://www.w3.org/2000/01/rdf-schema#label> "MAGNETOM Vida MRI System"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1409,6 +1420,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)07612345001001" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009> <http://www.w3.org/2000/01/rdf-schema#label> "Persona Knee System"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1425,6 +1437,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)09876543002002" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010> <http://www.w3.org/2000/01/rdf-schema#label> "TRITON Total Hip System"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1441,6 +1454,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)05391520001011" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011> <http://www.w3.org/2000/01/rdf-schema#label> "Iluvien Intravitreal Implant"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1457,6 +1471,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)04012099001012" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012> <http://www.w3.org/2000/01/rdf-schema#label> "Viva Cardiac Resynchronization Defibrillator"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1473,6 +1488,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)04046539001013" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013> <http://www.w3.org/2000/01/rdf-schema#label> "ATERA Mechanical Ventilator"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1489,6 +1505,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)08718998001014" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014> <http://www.w3.org/2000/01/rdf-schema#label> "Lumify Portable Ultrasound"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1505,6 +1522,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)04547597001015" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015> <http://www.w3.org/2000/01/rdf-schema#label> "Hemodialysis Machine 5008S"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1521,6 +1539,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)04015630001016" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016> <http://www.w3.org/2000/01/rdf-schema#label> "cobas e 801 Immunoassay Analyzer"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1537,6 +1556,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)04015630001017" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017> <http://www.w3.org/2000/01/rdf-schema#label> "cobas SARS-CoV-2 RT-PCR Test"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1553,6 +1573,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)03760027001018" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018> <http://www.w3.org/2000/01/rdf-schema#label> "VIDAS HIV DUO Ultra"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1569,6 +1590,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)07000087001019" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019> <http://www.w3.org/2000/01/rdf-schema#label> "PROGENSA PCA3 Assay"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1585,6 +1607,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)00800002001020" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020> <http://www.w3.org/2000/01/rdf-schema#label> "Harmony Prenatal Test"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1601,6 +1624,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)07300000001021" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021> <http://www.w3.org/2000/01/rdf-schema#label> "OPTIGA Glucose Monitoring System"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1617,6 +1641,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)07300000001022" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022> <http://www.w3.org/2000/01/rdf-schema#label> "BeneVision N1 Patient Monitor"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1633,6 +1658,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)04012099001023" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023> <http://www.w3.org/2000/01/rdf-schema#label> "Tivoli II Cochlear Implant"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1649,6 +1675,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)00800002001024" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024> <http://www.w3.org/2000/01/rdf-schema#label> "Infusion Pump Plum 360"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1665,6 +1692,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di> "(01)05391520001025" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025> <http://www.w3.org/2000/01/rdf-schema#label> "ValveXpert Transcatheter Mitral Valve"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DiagnosticError
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DiagnosticError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2100,6 +2128,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-IE-MED-0001" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-001" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Medtronic plc" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FMedtronic&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002
@@ -2112,6 +2141,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-DE-MED-0002" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-002" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Abbott Medical Devices" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.w3.org/2000/01/rdf-schema#label> "Abbott Medical Devices"@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAbbott_Laboratories&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003
@@ -2124,6 +2154,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-DE-MED-0003" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-003" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Siemens Healthineers AG" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.w3.org/2000/01/rdf-schema#label> "Siemens Healthineers AG"@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C200140" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004
@@ -2136,6 +2167,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-NL-MED-0004" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-004" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Philips Medical Systems" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004> <http://www.w3.org/2000/01/rdf-schema#label> "Philips Medical Systems"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2147,6 +2179,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-DE-MED-0005" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-005" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Roche Diagnostics GmbH" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.w3.org/2000/01/rdf-schema#label> "Roche Diagnostics GmbH"@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FRoche_Diagnostics&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006
@@ -2159,6 +2192,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-IE-MED-0006" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-006" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Boston Scientific Corporation" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.w3.org/2000/01/rdf-schema#label> "Boston Scientific Corporation"@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBoston_Scientific&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007
@@ -2171,6 +2205,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-NL-MED-0007" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-007" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Stryker Corporation" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.w3.org/2000/01/rdf-schema#label> "Stryker Corporation"@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FStryker_Corporation&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008
@@ -2183,6 +2218,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-DE-MED-0008" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-008" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Biotronik SE & Co. KG" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.w3.org/2000/01/rdf-schema#label> "Biotronik SE & Co. KG"@en .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBiotronik&sid=7760" .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009
@@ -2195,6 +2231,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-SE-MED-0009" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-009" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "GE HealthCare Technologies" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009> <http://www.w3.org/2000/01/rdf-schema#label> "GE HealthCare Technologies"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2206,6 +2243,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-CH-MED-0010" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-010" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Zimmer Biomet Holdings" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010> <http://www.w3.org/2000/01/rdf-schema#label> "Zimmer Biomet Holdings"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2217,6 +2255,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-UK-MED-0011" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-011" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "LivaNova PLC" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011> <http://www.w3.org/2000/01/rdf-schema#label> "LivaNova PLC"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2228,6 +2267,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-DE-MED-0012" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-012" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Drägerwerk AG & Co. KGaA" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012> <http://www.w3.org/2000/01/rdf-schema#label> "Drägerwerk AG & Co. KGaA"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2239,6 +2279,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-FR-MED-0013" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-013" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Nipro Corporation" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013> <http://www.w3.org/2000/01/rdf-schema#label> "Nipro Corporation"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2250,6 +2291,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-BE-MED-0014" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-014" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "Hologic Inc." .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014> <http://www.w3.org/2000/01/rdf-schema#label> "Hologic Inc."@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2261,6 +2303,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn> "SRN-FR-MED-0015" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id> "MAN-015" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015> <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name> "bioMérieux SA" .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015> <http://www.w3.org/2000/01/rdf-schema#label> "bioMérieux SA"@en .
 # 
 # http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MaterialRisk
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MaterialRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

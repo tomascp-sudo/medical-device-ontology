@@ -1885,6 +1885,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HeartMate 3 LVAD"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002",
@@ -1931,6 +1935,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Micra AV Transcatheter Pacing System"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003",
@@ -1977,6 +1985,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Portico Transcatheter Heart Valve"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004",
@@ -2023,6 +2035,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SYNERGY Stent System"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005",
@@ -2069,6 +2085,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ACUITY X4 Quadripolar LV Lead"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006",
@@ -2115,6 +2135,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "STELLAREX Drug-Coated Balloon"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007",
@@ -2161,6 +2185,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ACUSON Sequoia Ultrasound"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008",
@@ -2207,6 +2235,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MAGNETOM Vida MRI System"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009",
@@ -2253,6 +2285,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Persona Knee System"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010",
@@ -2299,6 +2335,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TRITON Total Hip System"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011",
@@ -2345,6 +2385,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Iluvien Intravitreal Implant"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012",
@@ -2391,6 +2435,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Viva Cardiac Resynchronization Defibrillator"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013",
@@ -2437,6 +2485,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ATERA Mechanical Ventilator"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014",
@@ -2483,6 +2535,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lumify Portable Ultrasound"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015",
@@ -2529,6 +2585,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hemodialysis Machine 5008S"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016",
@@ -2575,6 +2635,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cobas e 801 Immunoassay Analyzer"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017",
@@ -2621,6 +2685,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cobas SARS-CoV-2 RT-PCR Test"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018",
@@ -2667,6 +2735,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "VIDAS HIV DUO Ultra"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019",
@@ -2713,6 +2785,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PROGENSA PCA3 Assay"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020",
@@ -2759,6 +2835,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Harmony Prenatal Test"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021",
@@ -2805,6 +2885,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OPTIGA Glucose Monitoring System"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022",
@@ -2851,6 +2935,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BeneVision N1 Patient Monitor"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023",
@@ -2897,6 +2985,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tivoli II Cochlear Implant"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024",
@@ -2943,6 +3035,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infusion Pump Plum 360"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025",
@@ -2989,6 +3085,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ValveXpert Transcatheter Mitral Valve"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DiagnosticError",
@@ -4426,6 +4526,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medtronic plc"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FMedtronic&sid=7760"
   } ]
@@ -4455,6 +4559,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Abbott Medical Devices"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAbbott_Laboratories&sid=7760"
@@ -4486,6 +4594,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Siemens Healthineers AG"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C200140"
   } ]
@@ -4515,6 +4627,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Philips Medical Systems"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005",
@@ -4542,6 +4658,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Roche Diagnostics GmbH"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FRoche_Diagnostics&sid=7760"
@@ -4573,6 +4693,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Boston Scientific Corporation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBoston_Scientific&sid=7760"
   } ]
@@ -4602,6 +4726,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stryker Corporation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FStryker_Corporation&sid=7760"
@@ -4633,6 +4761,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Biotronik SE & Co. KG"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBiotronik&sid=7760"
   } ]
@@ -4662,6 +4794,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GE HealthCare Technologies"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010",
@@ -4689,6 +4825,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Zimmer Biomet Holdings"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011",
@@ -4716,6 +4856,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LivaNova PLC"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012",
@@ -4743,6 +4887,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Drägerwerk AG & Co. KGaA"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013",
@@ -4770,6 +4918,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nipro Corporation"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014",
@@ -4797,6 +4949,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hologic Inc."
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015",
@@ -4824,6 +4980,10 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bioMérieux SA"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MaterialRisk",
@@ -6078,6 +6238,9 @@
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an incident or device to its corresponding category"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk"
   } ],
@@ -6094,9 +6257,15 @@
     "@language" : "en",
     "@value" : "Relates a device to its device type."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has device type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incident_type"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasIncidentType",

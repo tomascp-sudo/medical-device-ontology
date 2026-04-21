@@ -125,11 +125,14 @@ xsd:date rdf:type rdfs:Datatype .
 :hasCategory rdf:type owl:ObjectProperty ;
              rdfs:domain :Risk ;
              rdfs:range :risk_category ;
+             rdfs:comment "Relates an incident or device to its corresponding category" ;
              rdfs:label "has category" .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType
 :hasDeviceType rdf:type owl:ObjectProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range :incident_type ;
                rdfs:comment "Relates a device to its device type."@en ;
                rdfs:label "has device type"@en .
 
@@ -1400,7 +1403,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)00380740009095" .
+                :udi:di "(01)00380740009095" ;
+                rdfs:label "HeartMate 3 LVAD"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002
@@ -1417,7 +1421,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)00380740009112" .
+                :udi:di "(01)00380740009112" ;
+                rdfs:label "Micra AV Transcatheter Pacing System"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003
@@ -1434,7 +1439,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)00800002222291" .
+                :udi:di "(01)00800002222291" ;
+                rdfs:label "Portico Transcatheter Heart Valve"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004
@@ -1451,7 +1457,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)08714729002817" .
+                :udi:di "(01)08714729002817" ;
+                rdfs:label "SYNERGY Stent System"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005
@@ -1468,7 +1475,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)08714729004873" .
+                :udi:di "(01)08714729004873" ;
+                rdfs:label "ACUITY X4 Quadripolar LV Lead"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006
@@ -1485,7 +1493,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)08718998000001" .
+                :udi:di "(01)08718998000001" ;
+                rdfs:label "STELLAREX Drug-Coated Balloon"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007
@@ -1502,7 +1511,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "true"^^xsd:boolean ;
-                :udi:di "(01)04054839450001" .
+                :udi:di "(01)04054839450001" ;
+                rdfs:label "ACUSON Sequoia Ultrasound"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008
@@ -1519,7 +1529,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "true"^^xsd:boolean ;
-                :udi:di "(01)04054839460002" .
+                :udi:di "(01)04054839460002" ;
+                rdfs:label "MAGNETOM Vida MRI System"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009
@@ -1536,7 +1547,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)07612345001001" .
+                :udi:di "(01)07612345001001" ;
+                rdfs:label "Persona Knee System"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010
@@ -1553,7 +1565,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)09876543002002" .
+                :udi:di "(01)09876543002002" ;
+                rdfs:label "TRITON Total Hip System"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011
@@ -1570,7 +1583,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)05391520001011" .
+                :udi:di "(01)05391520001011" ;
+                rdfs:label "Iluvien Intravitreal Implant"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012
@@ -1587,7 +1601,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)04012099001012" .
+                :udi:di "(01)04012099001012" ;
+                rdfs:label "Viva Cardiac Resynchronization Defibrillator"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013
@@ -1604,7 +1619,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "true"^^xsd:boolean ;
-                :udi:di "(01)04046539001013" .
+                :udi:di "(01)04046539001013" ;
+                rdfs:label "ATERA Mechanical Ventilator"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014
@@ -1621,7 +1637,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "true"^^xsd:boolean ;
-                :udi:di "(01)08718998001014" .
+                :udi:di "(01)08718998001014" ;
+                rdfs:label "Lumify Portable Ultrasound"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015
@@ -1638,7 +1655,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "true"^^xsd:boolean ;
-                :udi:di "(01)04547597001015" .
+                :udi:di "(01)04547597001015" ;
+                rdfs:label "Hemodialysis Machine 5008S"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016
@@ -1655,7 +1673,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "true"^^xsd:boolean ;
                 :is_reusable "true"^^xsd:boolean ;
-                :udi:di "(01)04015630001016" .
+                :udi:di "(01)04015630001016" ;
+                rdfs:label "cobas e 801 Immunoassay Analyzer"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017
@@ -1672,7 +1691,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "true"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)04015630001017" .
+                :udi:di "(01)04015630001017" ;
+                rdfs:label "cobas SARS-CoV-2 RT-PCR Test"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018
@@ -1689,7 +1709,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "true"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)03760027001018" .
+                :udi:di "(01)03760027001018" ;
+                rdfs:label "VIDAS HIV DUO Ultra"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019
@@ -1706,7 +1727,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "true"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)07000087001019" .
+                :udi:di "(01)07000087001019" ;
+                rdfs:label "PROGENSA PCA3 Assay"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020
@@ -1723,7 +1745,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "true"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)00800002001020" .
+                :udi:di "(01)00800002001020" ;
+                rdfs:label "Harmony Prenatal Test"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021
@@ -1740,7 +1763,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "true"^^xsd:boolean ;
                 :is_reusable "true"^^xsd:boolean ;
-                :udi:di "(01)07300000001021" .
+                :udi:di "(01)07300000001021" ;
+                rdfs:label "OPTIGA Glucose Monitoring System"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022
@@ -1757,7 +1781,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "true"^^xsd:boolean ;
-                :udi:di "(01)07300000001022" .
+                :udi:di "(01)07300000001022" ;
+                rdfs:label "BeneVision N1 Patient Monitor"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023
@@ -1774,7 +1799,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)04012099001023" .
+                :udi:di "(01)04012099001023" ;
+                rdfs:label "Tivoli II Cochlear Implant"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024
@@ -1791,7 +1817,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "false"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "true"^^xsd:boolean ;
-                :udi:di "(01)00800002001024" .
+                :udi:di "(01)00800002001024" ;
+                rdfs:label "Infusion Pump Plum 360"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025
@@ -1808,7 +1835,8 @@ xsd:date rdf:type rdfs:Datatype .
                 :is_implantable "true"^^xsd:boolean ;
                 :is_ivd "false"^^xsd:boolean ;
                 :is_reusable "false"^^xsd:boolean ;
-                :udi:di "(01)05391520001025" .
+                :udi:di "(01)05391520001025" ;
+                rdfs:label "ValveXpert Transcatheter Mitral Valve"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DiagnosticError
@@ -2277,6 +2305,7 @@ xsd:date rdf:type rdfs:Datatype .
                       :eudamed_srn "SRN-IE-MED-0001" ;
                       :manufacturer_id "MAN-001" ;
                       :name "Medtronic plc" ;
+                      rdfs:label "Medtronic plc"@en ;
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FMedtronic&sid=7760" .
 
 
@@ -2290,6 +2319,7 @@ xsd:date rdf:type rdfs:Datatype .
                       :eudamed_srn "SRN-DE-MED-0002" ;
                       :manufacturer_id "MAN-002" ;
                       :name "Abbott Medical Devices" ;
+                      rdfs:label "Abbott Medical Devices"@en ;
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAbbott_Laboratories&sid=7760" .
 
 
@@ -2303,6 +2333,7 @@ xsd:date rdf:type rdfs:Datatype .
                       :eudamed_srn "SRN-DE-MED-0003" ;
                       :manufacturer_id "MAN-003" ;
                       :name "Siemens Healthineers AG" ;
+                      rdfs:label "Siemens Healthineers AG"@en ;
                       rdfs:seeAlso "https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C200140" .
 
 
@@ -2315,7 +2346,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Netherlands" ;
                       :eudamed_srn "SRN-NL-MED-0004" ;
                       :manufacturer_id "MAN-004" ;
-                      :name "Philips Medical Systems" .
+                      :name "Philips Medical Systems" ;
+                      rdfs:label "Philips Medical Systems"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005
@@ -2328,6 +2360,7 @@ xsd:date rdf:type rdfs:Datatype .
                       :eudamed_srn "SRN-DE-MED-0005" ;
                       :manufacturer_id "MAN-005" ;
                       :name "Roche Diagnostics GmbH" ;
+                      rdfs:label "Roche Diagnostics GmbH"@en ;
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FRoche_Diagnostics&sid=7760" .
 
 
@@ -2341,6 +2374,7 @@ xsd:date rdf:type rdfs:Datatype .
                       :eudamed_srn "SRN-IE-MED-0006" ;
                       :manufacturer_id "MAN-006" ;
                       :name "Boston Scientific Corporation" ;
+                      rdfs:label "Boston Scientific Corporation"@en ;
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBoston_Scientific&sid=7760" .
 
 
@@ -2354,6 +2388,7 @@ xsd:date rdf:type rdfs:Datatype .
                       :eudamed_srn "SRN-NL-MED-0007" ;
                       :manufacturer_id "MAN-007" ;
                       :name "Stryker Corporation" ;
+                      rdfs:label "Stryker Corporation"@en ;
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FStryker_Corporation&sid=7760" .
 
 
@@ -2367,6 +2402,7 @@ xsd:date rdf:type rdfs:Datatype .
                       :eudamed_srn "SRN-DE-MED-0008" ;
                       :manufacturer_id "MAN-008" ;
                       :name "Biotronik SE & Co. KG" ;
+                      rdfs:label "Biotronik SE & Co. KG"@en ;
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBiotronik&sid=7760" .
 
 
@@ -2379,7 +2415,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Sweden" ;
                       :eudamed_srn "SRN-SE-MED-0009" ;
                       :manufacturer_id "MAN-009" ;
-                      :name "GE HealthCare Technologies" .
+                      :name "GE HealthCare Technologies" ;
+                      rdfs:label "GE HealthCare Technologies"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010
@@ -2391,7 +2428,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Switzerland" ;
                       :eudamed_srn "SRN-CH-MED-0010" ;
                       :manufacturer_id "MAN-010" ;
-                      :name "Zimmer Biomet Holdings" .
+                      :name "Zimmer Biomet Holdings" ;
+                      rdfs:label "Zimmer Biomet Holdings"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011
@@ -2403,7 +2441,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "United Kingdom" ;
                       :eudamed_srn "SRN-UK-MED-0011" ;
                       :manufacturer_id "MAN-011" ;
-                      :name "LivaNova PLC" .
+                      :name "LivaNova PLC" ;
+                      rdfs:label "LivaNova PLC"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012
@@ -2415,7 +2454,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0012" ;
                       :manufacturer_id "MAN-012" ;
-                      :name "Drägerwerk AG & Co. KGaA" .
+                      :name "Drägerwerk AG & Co. KGaA" ;
+                      rdfs:label "Drägerwerk AG & Co. KGaA"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013
@@ -2427,7 +2467,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "France" ;
                       :eudamed_srn "SRN-FR-MED-0013" ;
                       :manufacturer_id "MAN-013" ;
-                      :name "Nipro Corporation" .
+                      :name "Nipro Corporation" ;
+                      rdfs:label "Nipro Corporation"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014
@@ -2439,7 +2480,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "Belgium" ;
                       :eudamed_srn "SRN-BE-MED-0014" ;
                       :manufacturer_id "MAN-014" ;
-                      :name "Hologic Inc." .
+                      :name "Hologic Inc." ;
+                      rdfs:label "Hologic Inc."@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015
@@ -2451,7 +2493,8 @@ xsd:date rdf:type rdfs:Datatype .
                       :country "France" ;
                       :eudamed_srn "SRN-FR-MED-0015" ;
                       :manufacturer_id "MAN-015" ;
-                      :name "bioMérieux SA" .
+                      :name "bioMérieux SA" ;
+                      rdfs:label "bioMérieux SA"@en .
 
 
 ###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MaterialRisk
