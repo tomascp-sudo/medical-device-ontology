@@ -16,7 +16,7 @@
       "undefined" : "Medical Devices Classification and Safety Ontology"
     },
     "comments" : {
-      "undefined" : "This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions."
+      "undefined" : "Ontology about medical devices, their classification, incidents, risks and corrective actions."
     },
     "other" : {
       "license" : [ {
@@ -36,33 +36,38 @@
         "value" : "Tomás Cuevas",
         "type" : "label"
       } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "label"
+      }, {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "The authors of this ontology have been:\n\nDiana Alejandrina Socola\n\nTomás Cuevas",
         "type" : "label"
       } ],
-      "createdWith" : [ {
-        "identifier" : "createdWith",
-        "language" : "undefined",
-        "value" : "https://chowlk.linkeddata.es/",
-        "type" : "iri"
-      } ],
-      "includedInDataCatalog" : [ {
-        "identifier" : "includedInDataCatalog",
-        "language" : "undefined",
-        "value" : "This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions.",
-        "type" : "label"
-      }, {
-        "identifier" : "includedInDataCatalog",
-        "language" : "undefined",
-        "value" : "https://tomascp-sudo.github.io/medical-device-ontology/",
-        "type" : "label"
-      } ],
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
         "value" : "2026-04-21T00:30",
+        "type" : "label"
+      } ],
+      "includedInDataCatalog" : [ {
+        "identifier" : "includedInDataCatalog",
+        "language" : "undefined",
+        "value" : "https://tomascp-sudo.github.io/medical-device-ontology/",
+        "type" : "label"
+      }, {
+        "identifier" : "includedInDataCatalog",
+        "language" : "undefined",
+        "value" : "This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions.",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -113,7 +118,7 @@
     "id" : "7",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "11",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "13",
@@ -194,7 +199,7 @@
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "44",
@@ -299,7 +304,7 @@
     "id" : "96",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "10",
+    "id" : "12",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "139",
@@ -386,7 +391,7 @@
     "id" : "166",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "190",
@@ -450,8 +455,8 @@
     "comment" : {
       "en" : "Field safety corrective action consisting in the removal of a medical device from the market or from use due to safety or performance concerns."
     },
-    "id" : "11",
-    "superClasses" : [ "12" ]
+    "id" : "8",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -578,12 +583,6 @@
         "IRI-based" : "Manufacturer_MAN_013"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "Manufacturer_MAN_014"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "annotations" : {
@@ -596,6 +595,12 @@
       },
       "labels" : {
         "IRI-based" : "Manufacturer_MAN_003"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "Manufacturer_MAN_014"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015",
@@ -897,11 +902,11 @@
       "IRI-based" : "action_type",
       "en" : "action_type"
     },
-    "subClasses" : [ "72", "11", "85", "71" ],
+    "subClasses" : [ "72", "8", "85", "71" ],
     "comment" : {
       "en" : "Type of corrective or preventive action taken by the manufacturer in response to a medical device incident or risk."
     },
-    "id" : "12"
+    "id" : "9"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#low",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -979,7 +984,7 @@
       "en" : "Communication issued by the manufacturer to inform users, distributors or competent authorities about a potential risk associated with a medical device."
     },
     "id" : "71",
-    "superClasses" : [ "12" ]
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#medium",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -1086,13 +1091,13 @@
       "IRI-based" : "HighRiskIncident",
       "en" : "HighRiskIncident"
     },
-    "intersection" : [ "9" ],
+    "intersection" : [ "11" ],
     "comment" : {
       "en" : "Any incident that meets those conditions will be automatically inferred to be a HighRiskIncident"
     },
     "attributes" : [ "intersection" ],
     "id" : "118",
-    "superClasses" : [ "9" ]
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1253,7 +1258,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "10",
+    "id" : "12",
     "label" : {
       "IRI-based" : "date"
     }
@@ -1366,16 +1371,16 @@
         "IRI-based" : "CorrectiveAction_FSCA_002"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_001",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "CorrectiveAction_FSCA_001"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_012",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "CorrectiveAction_FSCA_012"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_001",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "CorrectiveAction_FSCA_001"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_004",
@@ -1390,16 +1395,16 @@
         "IRI-based" : "CorrectiveAction_FSCA_015"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_003",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "CorrectiveAction_FSCA_003"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_014",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "CorrectiveAction_FSCA_014"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_003",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "CorrectiveAction_FSCA_003"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_006",
@@ -1522,7 +1527,7 @@
       "en" : "Represents an in situ correction corrective action type."
     },
     "id" : "85",
-    "superClasses" : [ "12" ]
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActiveDevice",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -1553,22 +1558,16 @@
       "en" : "Risk"
     },
     "individuals" : [ {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_019",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "Risk_RSK_019"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_008",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "Risk_RSK_008"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_018",
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_019",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
-        "IRI-based" : "Risk_RSK_018"
+        "IRI-based" : "Risk_RSK_019"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_007",
@@ -1577,22 +1576,28 @@
         "IRI-based" : "Risk_RSK_007"
       }
     }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_018",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "Risk_RSK_018"
+      }
+    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_009",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "Risk_RSK_009"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_015",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "Risk_RSK_015"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_004",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "Risk_RSK_004"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_015",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "Risk_RSK_015"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_014",
@@ -1619,16 +1624,16 @@
         "IRI-based" : "Risk_RSK_017"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_005",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "Risk_RSK_005"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_016",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "Risk_RSK_016"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_005",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "Risk_RSK_005"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_011",
@@ -1655,16 +1660,16 @@
         "IRI-based" : "Risk_RSK_013"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_001",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "Risk_RSK_001"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_012",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "Risk_RSK_012"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_001",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "Risk_RSK_001"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_020",
@@ -1791,16 +1796,16 @@
         "IRI-based" : "Device_DEV_009"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "Device_DEV_003"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "Device_DEV_025"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "Device_DEV_003"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004",
@@ -1821,16 +1826,16 @@
         "IRI-based" : "Device_DEV_001"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "Device_DEV_002"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "Device_DEV_024"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "Device_DEV_002"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007",
@@ -1970,16 +1975,16 @@
       "en" : "Incident"
     },
     "individuals" : [ {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_017",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "Incident_INC_017"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_006",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "Incident_INC_006"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_017",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "Incident_INC_017"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_007",
@@ -1994,16 +1999,16 @@
         "IRI-based" : "Incident_INC_018"
       }
     }, {
-      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_015",
-      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-      "labels" : {
-        "IRI-based" : "Incident_INC_015"
-      }
-    }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_004",
       "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
       "labels" : {
         "IRI-based" : "Incident_INC_004"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_015",
+      "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+      "labels" : {
+        "IRI-based" : "Incident_INC_015"
       }
     }, {
       "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_016",
@@ -2094,7 +2099,7 @@
     "comment" : {
       "en" : "Any malfunction or deterioration in the characteristics or performance of a device, or any inadequacy in the information supplied by the manufacturer, or any undesirable side-effect, that has or could have led to harm to a patient, user or other person."
     },
-    "id" : "9"
+    "id" : "11"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#HighRiskImplantableDevice",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -2135,7 +2140,7 @@
       "en" : "Represents a user notice corrective action type."
     },
     "id" : "72",
-    "superClasses" : [ "12" ]
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ImplantableDevice",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -2167,7 +2172,7 @@
     "id" : "0",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "8",
+    "id" : "10",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "29",
@@ -2297,10 +2302,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "131",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "132",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "136",
     "type" : "owl:datatypeProperty"
@@ -2803,18 +2808,18 @@
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#event_date",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "10",
+    "range" : "12",
     "label" : {
       "IRI-based" : "event_date",
       "en" : "event_date"
     },
     "maxCardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Specifies the date on which an incident occurred."
     },
     "attributes" : [ "datatype" ],
-    "id" : "8"
+    "id" : "10"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#corrective_action_taken",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
@@ -2824,7 +2829,7 @@
       "en" : "corrective_action_taken"
     },
     "maxCardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Indicates whether a corrective action has been taken for an incident."
     },
@@ -2919,7 +2924,7 @@
     "id" : "70"
   }, {
     "range" : "72",
-    "domain" : "11",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
     "id" : "73"
   }, {
@@ -2941,13 +2946,13 @@
       "en" : "outcome"
     },
     "maxCardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
     "id" : "80"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasActionType",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "12",
+    "range" : "9",
     "label" : {
       "IRI-based" : "hasActionType",
       "en" : "has action type"
@@ -2993,7 +2998,7 @@
       "en" : "eudamed_incident_ref"
     },
     "maxCardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Specifies the EUDAMED reference identifier of an incident."
     },
@@ -3008,7 +3013,7 @@
       "en" : "patient_age"
     },
     "maxCardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
     "id" : "91"
   }, {
@@ -3019,7 +3024,7 @@
       "IRI-based" : "affectsDevice",
       "en" : "affects device"
     },
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Relates an incident to the device involved."
     },
@@ -3148,7 +3153,7 @@
       "en" : "country_report"
     },
     "maxCardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Specifies the country in which an incident was reported."
     },
@@ -3200,6 +3205,20 @@
     "attributes" : [ "datatype" ],
     "id" : "129"
   }, {
+    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType",
+    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "hasDeviceType",
+      "en" : "has device type"
+    },
+    "domain" : "112",
+    "comment" : {
+      "en" : "Relates a device to its device type."
+    },
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#scope",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
     "range" : "122",
@@ -3213,20 +3232,6 @@
       "en" : "Specifies the scope of a corrective action."
     },
     "attributes" : [ "datatype" ],
-    "id" : "131"
-  }, {
-    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType",
-    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "112",
-    "label" : {
-      "IRI-based" : "hasDeviceType",
-      "en" : "has device type"
-    },
-    "domain" : "112",
-    "comment" : {
-      "en" : "Relates a device to its device type."
-    },
-    "attributes" : [ "object" ],
     "id" : "132"
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_active",
@@ -3302,7 +3307,7 @@
       "en" : "report_date"
     },
     "maxCardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Specifies the datum of the  an incident was reported."
     },
@@ -3319,7 +3324,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "152"
   }, {
-    "range" : "9",
+    "range" : "11",
     "domain" : "118",
     "attributes" : [ "anonymous", "object" ],
     "id" : "153"
@@ -3401,7 +3406,7 @@
       "IRI-based" : "hasIncidentType",
       "en" : "has incident type"
     },
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Relates an incident to its incident type."
     },
@@ -3485,7 +3490,7 @@
       "en" : "detection_date"
     },
     "maxCardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Specifies the date on which an incident was detected."
     },
@@ -3592,21 +3597,6 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "196"
   }, {
-    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reporting_entity",
-    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "127",
-    "label" : {
-      "IRI-based" : "reporting_entity",
-      "en" : "reporting_entity"
-    },
-    "maxCardinality" : "1",
-    "domain" : "9",
-    "comment" : {
-      "en" : "describe the manufacturer who repoted incident"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "197"
-  }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#contact_email",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
     "range" : "34",
@@ -3618,6 +3608,21 @@
     "domain" : "14",
     "comment" : {
       "en" : "Specifies the email assigned to a manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reporting_entity",
+    "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "reporting_entity",
+      "en" : "reporting_entity"
+    },
+    "maxCardinality" : "1",
+    "domain" : "11",
+    "comment" : {
+      "en" : "describe the manufacturer who repoted incident"
     },
     "attributes" : [ "datatype" ],
     "id" : "198"
@@ -3663,7 +3668,7 @@
   }, {
     "iri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#addressesIncident",
     "baseIri" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology",
-    "range" : "9",
+    "range" : "11",
     "label" : {
       "IRI-based" : "addressesIncident",
       "en" : "addresses incident"
@@ -3914,7 +3919,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "239"
   }, {
-    "range" : "12",
+    "range" : "9",
     "domain" : "72",
     "attributes" : [ "anonymous", "object" ],
     "id" : "240"
@@ -3924,8 +3929,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "241"
   }, {
-    "range" : "12",
-    "domain" : "11",
+    "range" : "9",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
     "id" : "242"
   }, {
@@ -3934,7 +3939,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "243"
   }, {
-    "range" : "12",
+    "range" : "9",
     "domain" : "85",
     "attributes" : [ "anonymous", "object" ],
     "id" : "244"
@@ -3944,7 +3949,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "245"
   }, {
-    "range" : "12",
+    "range" : "9",
     "domain" : "71",
     "attributes" : [ "anonymous", "object" ],
     "id" : "246"
@@ -3979,9 +3984,9 @@
     "range" : "140",
     "label" : {
       "IRI-based" : "incidentDescription",
-      "en" : "Provides a textual description of an incident."
+      "en" : "incidentDescription"
     },
-    "domain" : "9",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
     "id" : "252"
   }, {
@@ -4012,7 +4017,7 @@
       "IRI-based" : "hasRisk",
       "en" : "has risk"
     },
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Relates an incident to an identified risk"
     },
@@ -4072,7 +4077,7 @@
       "undefined" : "incident_id"
     },
     "cardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
     "id" : "265"
   }, {
@@ -4116,13 +4121,13 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "273"
   }, {
-    "range" : "11",
+    "range" : "8",
     "domain" : "85",
     "attributes" : [ "anonymous", "object" ],
     "id" : "274"
   }, {
     "range" : "71",
-    "domain" : "11",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
     "id" : "275"
   }, {
@@ -4169,7 +4174,7 @@
       "en" : "patient_sex"
     },
     "maxCardinality" : "1",
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Specifies the sex of the patient involved in an incident."
     },
@@ -4308,7 +4313,7 @@
       "IRI-based" : "reportedBy",
       "en" : "reported by"
     },
-    "domain" : "9",
+    "domain" : "11",
     "comment" : {
       "en" : "Relates a manufacturer  who was reported an incident"
     },

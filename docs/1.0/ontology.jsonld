@@ -992,6 +992,8 @@
   } ],
   "https://w3id.org/mod#createdWith" : [ {
     "@id" : "https://chowlk.linkeddata.es/"
+  }, {
+    "@value" : "https://chowlk.linkeddata.es/"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActiveDevice",

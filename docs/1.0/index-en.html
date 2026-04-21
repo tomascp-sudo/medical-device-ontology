@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology","name":"EUDAMED-Inspired Medical Device Ontology", "headline":"This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks.", "dateReleased":"Tue Apr 21 01:47:32 CEST 2026", "version":"Version 1.0", "license":"https://creativecommons.org/licenses/by-sa/4.0/", "author":[{"@type":"Person","name":"Diana Socola"},{"@type":"Person","name":"Tomás Cuevas"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology","name":"EUDAMED-Inspired Medical Device Ontology", "headline":"This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks.", "dateReleased":"2026-04-21T02:00", "version":"Version 1.0", "license":"https://creativecommons.org/licenses/by-sa/4.0/", "author":[{"@type":"Person","name":"Diana Socola"},{"@type":"Person","name":"Tomás Cuevas"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -66,6 +66,7 @@ $(function(){
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>EUDAMED-Inspired Medical Device Ontology</h1>
+<h2>Release: 2026-04-21T02:00</h2>
 
 
 <dl>
@@ -1330,13 +1331,13 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#d4e6522">Rule #1</a>
+      <a href="#d4e6525">Rule #1</a>
    </li>
    <li>
-      <a href="#d4e6593">Rule #2</a>
+      <a href="#d4e6596">Rule #2</a>
    </li>
    <li>
-      <a href="#d4e6706">Rule #3</a>
+      <a href="#d4e6709">Rule #3</a>
    </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
 </div>
@@ -8854,19 +8855,19 @@ This section provides details for each class and property defined by Medical Dev
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="swrlrules">
  <h3 id="swrlrules" class="list">SWRL rules</h3>
  <ul class="hlist">
-  <li><a href="#d4e6522">Rule #1</a></li>
-  <li><a href="#d4e6593">Rule #2</a></li>
-  <li><a href="#d4e6706">Rule #3</a></li>
+  <li><a href="#d4e6525">Rule #1</a></li>
+  <li><a href="#d4e6596">Rule #2</a></li>
+  <li><a href="#d4e6709">Rule #3</a></li>
  </ul>
- <div class="entity" id="d4e6522">
+ <div class="entity" id="d4e6525">
   <h3>Rule #1<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p><a href="#hasActionType" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasActionType">has action type</a> <sup class="type-op" title="object property">op</sup>(?ca,?t) , <a href="#Recall" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Recall">Recall</a> <sup class="type-c" title="class">c</sup>(?t) -&gt; <a href="#RecallCorrectiveAction" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#RecallCorrectiveAction">RecallCorrectiveAction</a> <sup class="type-c" title="class">c</sup>(?ca)</p>
  </div>
- <div class="entity" id="d4e6593">
+ <div class="entity" id="d4e6596">
   <h3>Rule #2<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p><a href="#hasDeviceType" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType">has device type</a> <sup class="type-op" title="object property">op</sup>(?d,?t) , <a href="#ImplantableDevice" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ImplantableDevice">Implantable Device</a> <sup class="type-c" title="class">c</sup>(?t) , <a href="#harRiskClass" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#harRiskClass">har risk class</a> <sup class="type-op" title="object property">op</sup>(?d,?c) , <a href="#ClassIII" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIII">ClassIII</a> <sup class="type-c" title="class">c</sup>(?c) -&gt; <a href="#HighRiskImplantableDevice" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#HighRiskImplantableDevice">HighRiskImplantableDevice</a> <sup class="type-c" title="class">c</sup>(?d)</p>
  </div>
- <div class="entity" id="d4e6706">
+ <div class="entity" id="d4e6709">
   <h3>Rule #3<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p><a href="#hasRisk" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup>(?i,?r) , <a href="#hasProbability" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasProbability">has probability</a> <sup class="type-op" title="object property">op</sup>(?r,?p) , <a href="#high" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#high">high</a> <sup class="type-c" title="class">c</sup>(?p) , <a href="#hasSeverity" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasSeverity">has severity</a> <sup class="type-op" title="object property">op</sup>(?r,?s) , <a href="#serious" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#serious">serious</a> <sup class="type-c" title="class">c</sup>(?s) -&gt; <a href="#HighRiskIncident" title="http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#HighRiskIncident">HighRiskIncident</a> <sup class="type-c" title="class">c</sup>(?i)</p>
  </div>

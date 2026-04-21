@@ -30,7 +30,8 @@ Tomás Cuevas""" ;
                                                                                                                                                                   "https://tomascp-sudo.github.io/medical-device-ontology/" ;
                                                                 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#terms:created> "2026-04-21T00:30"^^xsd:date ;
                                                                 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix> "EUDAMED" ;
-                                                                <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+                                                                <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> ,
+                                                                                                   "https://chowlk.linkeddata.es/" .
 
 #################################################################
 #    Annotation properties

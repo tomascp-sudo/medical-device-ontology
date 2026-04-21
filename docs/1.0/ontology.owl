@@ -41,6 +41,7 @@ Tomás Cuevas</rdfs:isDefinedBy>
         <terms1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-21T00:30</terms1:created>
         <vann:preferredNamespacePrefix>EUDAMED</vann:preferredNamespacePrefix>
         <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+        <mod:createdWith>https://chowlk.linkeddata.es/</mod:createdWith>
     </owl:Ontology>
     
 

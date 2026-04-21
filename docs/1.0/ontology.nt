@@ -19,6 +19,7 @@
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#terms:created> "2026-04-21T00:30"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix> "EUDAMED" .
 <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> <https://w3id.org/mod#createdWith> "https://chowlk.linkeddata.es/" .
 # 
 # 
 # #################################################################
