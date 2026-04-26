@@ -1,31 +1,31 @@
-@prefix : <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#> .
+@prefix : <https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#> .
+@base <https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#> .
 
-<http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology> rdf:type owl:Ontology ;
-                                                                owl:versionIRI <https://tomascp-sudo.github.io/medical-device-ontology/1.0/ontology.owl> ;
-                                                                <http://purl.org/dc/elements/1.1/contributor> "UOC - Universitat Oberta de Catalunya"@en ;
-                                                                <http://purl.org/dc/elements/1.1/description> "Ontology for representing medical devices, manufacturers, incidents, risks and corrective actions in regulatory surveillance scenarios." ,
-                                                                                                              "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework." ;
-                                                                <http://purl.org/dc/elements/1.1/title> "EUDAMED-Inspired Medical Device Ontology"@en ;
-                                                                <http://purl.org/dc/terms/abstract> "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks." ;
-                                                                <http://purl.org/dc/terms/created> "2026-04-26" ;
-                                                                <http://purl.org/dc/terms/creator> "Diana Socola"@en ,
-                                                                                                   "Tomás Cuevas"@en ;
-                                                                <http://purl.org/dc/terms/issued> "2026-04-26"@en ;
-                                                                <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
-                                                                :logo "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Small_logo_UOC.svg/3840px-Small_logo_UOC.svg.png" ;
-                                                                :status "published" ;
-                                                                rdfs:comment "Ontology about medical devices, their classification, incidents, risks and corrective actions." ;
-                                                                rdfs:label "Medical Devices Classification and Safety Ontology"@en ;
-                                                                owl:versionInfo "Version 1.0" ;
-                                                                <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#schma:includedInDataCatalog> "This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions." ;
-                                                                <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix> "EUDAMED" ;
-                                                                <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+<https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl> rdf:type owl:Ontology ;
+                                                                         owl:versionIRI <https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology-1.0.owl> ;
+                                                                         <http://purl.org/dc/elements/1.1/contributor> "UOC - Universitat Oberta de Catalunya"@en ;
+                                                                         <http://purl.org/dc/elements/1.1/description> "Ontology for representing medical devices, manufacturers, incidents, risks and corrective actions in regulatory surveillance scenarios." ,
+                                                                                                                       "This ontology models relationships between devices, manufacturers, risks, incidents and field safety corrective actions (FSCA), enabling integrated regulatory surveillance within a single semantic framework." ;
+                                                                         <http://purl.org/dc/elements/1.1/title> "EUDAMED-Inspired Medical Device Ontology"@en ;
+                                                                         <http://purl.org/dc/terms/abstract> "This ontology provides a semantic model for high-risk medical devices and in vitro diagnostic devices, including their manufacturers, risk classes, incidents, and field safety corrective actions. It supports formal knowledge representation, reasoning, and interoperability in regulatory surveillance scenarios under MDR and IVDR frameworks." ;
+                                                                         <http://purl.org/dc/terms/created> "2026-04-26" ;
+                                                                         <http://purl.org/dc/terms/creator> "Diana Socola"@en ,
+                                                                                                            "Tomás Cuevas"@en ;
+                                                                         <http://purl.org/dc/terms/issued> "2026-04-26"@en ;
+                                                                         <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
+                                                                         rdfs:comment "Ontology about medical devices, their classification, incidents, risks and corrective actions." ;
+                                                                         rdfs:label "Medical Devices Classification and Safety Ontology"@en ;
+                                                                         owl:versionInfo "Version 1.0" ;
+                                                                         <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#schma:includedInDataCatalog> "This ontology is about medical devices, their classification, and the safety mechanisms associated with their use, including incidents and corrective actions." ;
+                                                                         <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix> "EUDAMED" ;
+                                                                         :logo "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Small_logo_UOC.svg/3840px-Small_logo_UOC.svg.png" ;
+                                                                         :status "published" ;
+                                                                         <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 
 #################################################################
 #    Annotation properties
@@ -63,14 +63,6 @@
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#logo
-:logo rdf:type owl:AnnotationProperty .
-
-
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#status
-:status rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/2000/01/rdf-schema#comment
 rdfs:comment rdf:type owl:AnnotationProperty .
 
@@ -85,6 +77,14 @@ rdfs:comment rdf:type owl:AnnotationProperty .
 
 ###  https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix
 <https://tomascp-sudo.github.io/medical-device-ontology/ontology.owl#vann:preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#logo
+:logo rdf:type owl:AnnotationProperty .
+
+
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#status
+:status rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/mod#createdWith
@@ -103,7 +103,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#actionIssuedBy
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#actionIssuedBy
 :actionIssuedBy rdf:type owl:ObjectProperty ;
                 rdfs:domain :CorrectiveAction ;
                 rdfs:range :Manufacturer ;
@@ -111,7 +111,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "actionIssuedBy"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#addressesIncident
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#addressesIncident
 :addressesIncident rdf:type owl:ObjectProperty ;
                    rdfs:domain :CorrectiveAction ;
                    rdfs:range :Incident ;
@@ -119,7 +119,7 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "addresses incident"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#affectsDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#affectsDevice
 :affectsDevice rdf:type owl:ObjectProperty ;
                rdfs:domain :Incident ;
                rdfs:range :Device ;
@@ -127,7 +127,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "affects device"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#harRiskClass
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#harRiskClass
 :harRiskClass rdf:type owl:ObjectProperty ;
               rdfs:domain :Device ;
               rdfs:range :risk_class ;
@@ -135,7 +135,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "har risk class"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasActionType
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasActionType
 :hasActionType rdf:type owl:ObjectProperty ;
                rdfs:domain :CorrectiveAction ;
                rdfs:range :action_type ;
@@ -143,7 +143,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "has action type"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasCategory
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasCategory
 :hasCategory rdf:type owl:ObjectProperty ;
              rdfs:domain :Risk ;
              rdfs:range :risk_category ;
@@ -151,7 +151,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "has category" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasDeviceType
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasDeviceType
 :hasDeviceType rdf:type owl:ObjectProperty ;
                rdfs:domain :Device ;
                rdfs:range :device_type ;
@@ -159,7 +159,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "has device type"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasIncidentType
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasIncidentType
 :hasIncidentType rdf:type owl:ObjectProperty ;
                  rdfs:domain :Incident ;
                  rdfs:range :incident_type ;
@@ -167,7 +167,7 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "has incident type"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasManufacturer
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasManufacturer
 :hasManufacturer rdf:type owl:ObjectProperty ;
                  rdfs:domain :Device ;
                  rdfs:range :Manufacturer ;
@@ -175,7 +175,7 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "has manufacturer"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasProbability
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasProbability
 :hasProbability rdf:type owl:ObjectProperty ;
                 rdfs:domain :Risk ;
                 rdfs:range :probability ;
@@ -183,7 +183,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "has probability"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRegulatoryFramework
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasRegulatoryFramework
 :hasRegulatoryFramework rdf:type owl:ObjectProperty ;
                         rdfs:domain :Device ;
                         rdfs:range :regulatory_framework ;
@@ -191,7 +191,7 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:label "has regulatory framework"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasRisk
 :hasRisk rdf:type owl:ObjectProperty ;
          rdfs:domain :Incident ;
          rdfs:range :Risk ;
@@ -199,7 +199,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "has risk"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasSeverity
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasSeverity
 :hasSeverity rdf:type owl:ObjectProperty ;
              rdfs:domain :Risk ;
              rdfs:range :severity ;
@@ -207,7 +207,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "has severity"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasStatus
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasStatus
 :hasStatus rdf:type owl:ObjectProperty ;
            rdfs:domain :CorrectiveAction ;
            rdfs:range :status ;
@@ -215,7 +215,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "has status"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#hasType
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#hasType
 :hasType rdf:type owl:ObjectProperty ;
          rdfs:domain :Risk ;
          rdfs:range :risk_type ;
@@ -223,7 +223,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "has type"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reportedBy
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#reportedBy
 :reportedBy rdf:type owl:ObjectProperty ;
             rdfs:domain :Incident ;
             rdfs:range :Manufacturer ;
@@ -235,7 +235,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#action_date
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#action_date
 :action_date rdf:type owl:DatatypeProperty ;
              rdfs:domain :CorrectiveAction ;
              rdfs:range xsd:date ;
@@ -243,7 +243,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "action_date"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#authorization_number
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#authorization_number
 :authorization_number rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Manufacturer ;
                       rdfs:range xsd:string ;
@@ -251,7 +251,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:label "authorization_number"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#closure_date
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#closure_date
 :closure_date rdf:type owl:DatatypeProperty ;
               rdfs:domain :CorrectiveAction ;
               rdfs:range xsd:date ;
@@ -259,7 +259,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "closure_date"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#competent_authority
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#competent_authority
 :competent_authority rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Manufacturer ;
                      rdfs:range xsd:string ;
@@ -267,7 +267,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:label "competent_authority"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#contact_email
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#contact_email
 :contact_email rdf:type owl:DatatypeProperty ;
                rdfs:domain :Manufacturer ;
                rdfs:range xsd:string ;
@@ -275,7 +275,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "contact_email"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#correctiveActionDescription
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#correctiveActionDescription
 :correctiveActionDescription rdf:type owl:DatatypeProperty ;
                              rdfs:domain :CorrectiveAction ;
                              rdfs:range xsd:string ;
@@ -283,7 +283,7 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:label "correctiveActionDescription"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#corrective_action_taken
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#corrective_action_taken
 :corrective_action_taken rdf:type owl:DatatypeProperty ;
                          rdfs:domain :Incident ;
                          rdfs:range xsd:boolean ;
@@ -291,7 +291,7 @@ xsd:date rdf:type rdfs:Datatype .
                          rdfs:label "corrective_action_taken"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#countries_affected
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#countries_affected
 :countries_affected rdf:type owl:DatatypeProperty ;
                     rdfs:domain :CorrectiveAction ;
                     rdfs:range xsd:string ;
@@ -299,7 +299,7 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:label "countries_affected"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#country
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#country
 :country rdf:type owl:DatatypeProperty ;
          rdfs:domain :Manufacturer ;
          rdfs:range xsd:string ;
@@ -307,7 +307,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "country"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#country_report
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#country_report
 :country_report rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Incident ;
                 rdfs:range xsd:string ;
@@ -315,7 +315,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "country_report"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#detection_date
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#detection_date
 :detection_date rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Incident ;
                 rdfs:range xsd:date ;
@@ -323,7 +323,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "detection_date"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#device_id
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#device_id
 :device_id rdf:type owl:DatatypeProperty ;
            rdfs:domain :Device ;
            rdfs:range xsd:string ;
@@ -331,7 +331,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "device_id"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#device_name
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#device_name
 :device_name rdf:type owl:DatatypeProperty ;
              rdfs:domain :Device ;
              rdfs:range xsd:string ;
@@ -339,7 +339,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "device_name"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#devices_affected
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#devices_affected
 :devices_affected rdf:type owl:DatatypeProperty ;
                   rdfs:domain :CorrectiveAction ;
                   rdfs:range xsd:integer ;
@@ -347,7 +347,7 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "devices_affected"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_fsca_ref
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#eudamed_fsca_ref
 :eudamed_fsca_ref rdf:type owl:DatatypeProperty ;
                   rdfs:domain :CorrectiveAction ;
                   rdfs:range xsd:string ;
@@ -355,7 +355,7 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "eudamed_fsca_ref"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_incident_ref
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#eudamed_incident_ref
 :eudamed_incident_ref rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Incident ;
                       rdfs:range xsd:string ;
@@ -363,7 +363,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:label "eudamed_incident_ref"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#eudamed_srn
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#eudamed_srn
 :eudamed_srn rdf:type owl:DatatypeProperty ;
              rdfs:domain :Manufacturer ;
              rdfs:range xsd:string ;
@@ -371,7 +371,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "eudamed_srn"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#event_date
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#event_date
 :event_date rdf:type owl:DatatypeProperty ;
             rdfs:domain :Incident ;
             rdfs:range xsd:date ;
@@ -379,7 +379,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "event_date"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#fsca_id
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#fsca_id
 :fsca_id rdf:type owl:DatatypeProperty ;
          rdfs:domain :CorrectiveAction ;
          rdfs:range xsd:string ;
@@ -387,7 +387,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "fsca_id"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#imdrs_code
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#imdrs_code
 :imdrs_code rdf:type owl:DatatypeProperty ;
             rdfs:domain :Risk ;
             rdfs:range xsd:string ;
@@ -395,7 +395,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "imdrs_code"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incidentDescription
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#incidentDescription
 :incidentDescription rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Incident ;
                      rdfs:range xsd:string ;
@@ -403,7 +403,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:label "incidentDescription"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incident_id
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#incident_id
 :incident_id rdf:type owl:DatatypeProperty ;
              rdfs:domain :Incident ;
              rdfs:range xsd:string ;
@@ -411,7 +411,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "incident_id" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#intended_purpose
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#intended_purpose
 :intended_purpose rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Device ;
                   rdfs:range xsd:string ;
@@ -419,7 +419,7 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "intended_purpose"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_active
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#is_active
 :is_active rdf:type owl:DatatypeProperty ;
            rdfs:domain :Device ;
            rdfs:range xsd:boolean ;
@@ -427,7 +427,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "is_active"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_implantable
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#is_implantable
 :is_implantable rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Device ;
                 rdfs:range xsd:boolean ;
@@ -435,7 +435,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "is_implantable" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_ivd
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#is_ivd
 :is_ivd rdf:type owl:DatatypeProperty ;
         rdfs:domain :Device ;
         rdfs:range xsd:boolean ;
@@ -443,7 +443,7 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "is_ivd"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#is_reusable
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#is_reusable
 :is_reusable rdf:type owl:DatatypeProperty ;
              rdfs:domain :Device ;
              rdfs:range xsd:boolean ;
@@ -451,7 +451,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "is_reusable"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#manufacturer_id
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#manufacturer_id
 :manufacturer_id rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Manufacturer ;
                  rdfs:range xsd:string ;
@@ -459,7 +459,7 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "manufacturer_id"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#name
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#name
 :name rdf:type owl:DatatypeProperty ;
       rdfs:domain :Manufacturer ;
       rdfs:range xsd:string ;
@@ -467,7 +467,7 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:label "name"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#outcome
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#outcome
 :outcome rdf:type owl:DatatypeProperty ;
          rdfs:domain :Incident ;
          rdfs:range xsd:string ;
@@ -475,7 +475,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "outcome"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#patient_age
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#patient_age
 :patient_age rdf:type owl:DatatypeProperty ;
              rdfs:domain :Incident ;
              rdfs:range xsd:integer ;
@@ -483,7 +483,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "patient_age"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#patient_sex
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#patient_sex
 :patient_sex rdf:type owl:DatatypeProperty ;
              rdfs:domain :Incident ;
              rdfs:range xsd:string ;
@@ -491,7 +491,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "patient_sex"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#report_date
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#report_date
 :report_date rdf:type owl:DatatypeProperty ;
              rdfs:domain :Incident ;
              rdfs:range xsd:date ;
@@ -499,7 +499,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "report_date"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#reporting_entity
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#reporting_entity
 :reporting_entity rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Incident ;
                   rdfs:range xsd:string ;
@@ -507,7 +507,7 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "reporting_entity"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#requiresImplantCard
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#requiresImplantCard
 :requiresImplantCard rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Device ;
                      rdfs:range xsd:boolean ;
@@ -515,7 +515,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:label "requiresImplantCard"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#requiresUrgentReview
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#requiresUrgentReview
 :requiresUrgentReview rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Incident ;
                       rdfs:range xsd:boolean ;
@@ -523,7 +523,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:label "requiresUrgentReview"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#riskDescription
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#riskDescription
 :riskDescription rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Risk ;
                  rdfs:range xsd:string ;
@@ -531,7 +531,7 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "riskDescription"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#risk_id
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#risk_id
 :risk_id rdf:type owl:DatatypeProperty ;
          rdfs:domain :Risk ;
          rdfs:range xsd:string ;
@@ -539,7 +539,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "risk_id"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#risk_name
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#risk_name
 :risk_name rdf:type owl:DatatypeProperty ;
            rdfs:domain :Risk ;
            rdfs:range xsd:string ;
@@ -547,7 +547,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "risk_name"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#scope
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#scope
 :scope rdf:type owl:DatatypeProperty ;
        rdfs:domain :CorrectiveAction ;
        rdfs:range xsd:string ;
@@ -555,7 +555,7 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:label "scope"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#udi:di
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#udi:di
 :udi:di rdf:type owl:DatatypeProperty ;
         rdfs:domain :Device ;
         rdfs:range xsd:string ;
@@ -567,53 +567,53 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActiveDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ActiveDevice
 :ActiveDevice rdf:type owl:Class ;
               rdfs:subClassOf :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActiveImplant
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ActiveImplant
 :ActiveImplant rdf:type owl:Class ;
                rdfs:subClassOf :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassC
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassC
 :ClassC rdf:type owl:Class ;
         rdfs:subClassOf :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassD
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassD
 :ClassD rdf:type owl:Class ;
         rdfs:subClassOf :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIII
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassIII
 :ClassIII rdf:type owl:Class ;
           rdfs:subClassOf :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIIa
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassIIa
 :ClassIIa rdf:type owl:Class ;
           rdfs:subClassOf :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIIb
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassIIb
 :ClassIIb rdf:type owl:Class ;
           rdfs:subClassOf :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Closed
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Closed
 :Closed rdf:type owl:Class ;
         rdfs:subClassOf :status ;
         owl:disjointWith :Open .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ContaminationRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ContaminationRisk
 :ContaminationRisk rdf:type owl:Class ;
                    rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction
 :CorrectiveAction rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty :fsca_id ;
@@ -660,12 +660,12 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCorrective_and_preventive_action&sid=7760" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CybersecurityRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CybersecurityRisk
 :CybersecurityRisk rdf:type owl:Class ;
                    rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device
 :Device rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :device_id ;
@@ -712,32 +712,32 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:seeAlso "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/uxp/3844" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DeviceFailure
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DeviceFailure
 :DeviceFailure rdf:type owl:Class ;
                rdfs:subClassOf :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DevicePerformance
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DevicePerformance
 :DevicePerformance rdf:type owl:Class ;
                    rdfs:subClassOf :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DeviceSafety
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DeviceSafety
 :DeviceSafety rdf:type owl:Class ;
               rdfs:subClassOf :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DiagnosticError
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DiagnosticError
 :DiagnosticError rdf:type owl:Class ;
                  rdfs:subClassOf :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DiagnosticRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DiagnosticRisk
 :DiagnosticRisk rdf:type owl:Class ;
                 rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#HighRiskImplantableDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#HighRiskImplantableDevice
 :HighRiskImplantableDevice rdf:type owl:Class ;
                            owl:equivalentClass [ owl:intersectionOf ( :Device
                                                                       [ rdf:type owl:Restriction ;
@@ -796,7 +796,7 @@ xsd:date rdf:type rdfs:Datatype .
                            rdfs:label "HighRiskImplantableDevice"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#HighRiskIncident
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#HighRiskIncident
 :HighRiskIncident rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( :Incident
                                                              [ rdf:type owl:Restriction ;
@@ -888,13 +888,13 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "HighRiskIncident"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#IVDR
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#IVDR
 :IVDR rdf:type owl:Class ;
       rdfs:subClassOf :regulatory_framework ;
       owl:disjointWith :MDR .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ImplantableActiveDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ImplantableActiveDevice
 :ImplantableActiveDevice rdf:type owl:Class ;
                          rdfs:subClassOf :device_type ;
                          owl:disjointWith :InVitroDiagnosticDevice ,
@@ -902,22 +902,22 @@ xsd:date rdf:type rdfs:Datatype .
                                           :SingleUseDevice .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ImplantableDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ImplantableDevice
 :ImplantableDevice rdf:type owl:Class ;
                    rdfs:subClassOf :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InSituCorrection
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InSituCorrection
 :InSituCorrection rdf:type owl:Class ;
                   rdfs:subClassOf :action_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InVitroDiagnosticDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InVitroDiagnosticDevice
 :InVitroDiagnosticDevice rdf:type owl:Class ;
                          rdfs:subClassOf :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident
 :Incident rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :incident_id ;
@@ -984,32 +984,32 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:seeAlso "http://purl.bioontology.org/ontology/SNOMEDCT/405533003" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InfectionRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InfectionRisk
 :InfectionRisk rdf:type owl:Class ;
                rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InjuryRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InjuryRisk
 :InjuryRisk rdf:type owl:Class ;
             rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InterferenceRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InterferenceRisk
 :InterferenceRisk rdf:type owl:Class ;
                   rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MDR
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#MDR
 :MDR rdf:type owl:Class ;
      rdfs:subClassOf :regulatory_framework .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MalfunctionRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#MalfunctionRisk
 :MalfunctionRisk rdf:type owl:Class ;
                  rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer
 :Manufacturer rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty :manufacturer_id ;
@@ -1051,43 +1051,43 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:seeAlso "https://browser.ihtsdotools.org/?perspective=full&conceptId1=43309009&edition=MAIN&release=&languages=en" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MaterialRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#MaterialRisk
 :MaterialRisk rdf:type owl:Class ;
               rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#NearMissIncident
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#NearMissIncident
 :NearMissIncident rdf:type owl:Class ;
                   rdfs:subClassOf :incident_type ;
                   owl:disjointWith :SeriousIncident .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Open
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Open
 :Open rdf:type owl:Class ;
       rdfs:subClassOf :status .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#PatientHarm
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#PatientHarm
 :PatientHarm rdf:type owl:Class ;
              rdfs:subClassOf :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ProductQuality
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ProductQuality
 :ProductQuality rdf:type owl:Class ;
                 rdfs:subClassOf :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#RadiationRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#RadiationRisk
 :RadiationRisk rdf:type owl:Class ;
                rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Recall
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Recall
 :Recall rdf:type owl:Class ;
         rdfs:subClassOf :action_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#RecallCorrectiveAction
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#RecallCorrectiveAction
 :RecallCorrectiveAction rdf:type owl:Class ;
                         owl:equivalentClass [ owl:intersectionOf ( :CorrectiveAction
                                                                    [ rdf:type owl:Restriction ;
@@ -1146,7 +1146,7 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:label "RecallCorrectiveAction"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk
 :Risk rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
                         owl:onProperty :risk_id ;
@@ -1173,121 +1173,121 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:seeAlso "https://snomedsns.es/search/405142001" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SafetyAlert
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SafetyAlert
 :SafetyAlert rdf:type owl:Class ;
              rdfs:subClassOf :action_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SelfTestDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SelfTestDevice
 :SelfTestDevice rdf:type owl:Class ;
                 rdfs:subClassOf :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SeriousIncident
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SeriousIncident
 :SeriousIncident rdf:type owl:Class ;
                  rdfs:subClassOf :incident_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SingleUseDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SingleUseDevice
 :SingleUseDevice rdf:type owl:Class ;
                  rdfs:subClassOf :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SoftwareRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SoftwareRisk
 :SoftwareRisk rdf:type owl:Class ;
               rdfs:subClassOf :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#UserNotice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#UserNotice
 :UserNotice rdf:type owl:Class ;
             rdfs:subClassOf :action_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#action_type
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#action_type
 :action_type rdf:type owl:Class ;
              rdfs:comment "Type of corrective or preventive action taken by the manufacturer in response to a medical device incident or risk."@en ;
              rdfs:label "action_type"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#critical
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#critical
 :critical rdf:type owl:Class ;
           rdfs:subClassOf :severity .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#device_type
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#device_type
 :device_type rdf:type owl:Class ;
              rdfs:comment "Represents the type of medical device."@en ;
              rdfs:label "device_type"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#high
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#high
 :high rdf:type owl:Class ;
       rdfs:subClassOf :probability .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#incident_type
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#incident_type
 :incident_type rdf:type owl:Class ;
                rdfs:comment "Represents the type of incident associated with a medical device."@en ;
                rdfs:label "incident_type"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#low
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#low
 :low rdf:type owl:Class ;
      rdfs:subClassOf :probability .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#medium
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#medium
 :medium rdf:type owl:Class ;
         rdfs:subClassOf :probability .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#moderate
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#moderate
 :moderate rdf:type owl:Class ;
           rdfs:subClassOf :severity .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#probability
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#probability
 :probability rdf:type owl:Class ;
              rdfs:comment "Estimate of the likelihood of occurrence of harm associated with a hazard or risk in the context of medical device risk management." ;
              rdfs:label "probability" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#regulatory_framework
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#regulatory_framework
 :regulatory_framework rdf:type owl:Class ;
                       rdfs:comment "The applicable European Union legal framework for medical devices, primarily Regulation (EU) 2017/745 (MDR) or Regulation (EU) 2017/746 (IVDR)."@en ;
                       rdfs:label "regulatory_framework"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#risk_category
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#risk_category
 :risk_category rdf:type owl:Class ;
                rdfs:comment "represents the risk category applicable in the European Union"@en ;
                rdfs:label "risk_category"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#risk_class
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#risk_class
 :risk_class rdf:type owl:Class ;
             rdfs:comment "Classification of a medical device according to its inherent risk level as defined in Annex VIII of the MDR or Annex VIII of the IVDR."@en ;
             rdfs:label "risk_class"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#risk_type
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#risk_type
 :risk_type rdf:type owl:Class ;
            rdfs:comment "Classification of the nature or source of a risk associated with the use or failure of a medical device."@en ;
            rdfs:label "risk_type"@en .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#serious
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#serious
 :serious rdf:type owl:Class ;
          rdfs:subClassOf :severity .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#severity
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#severity
 :severity rdf:type owl:Class ;
           rdfs:comment "Measure of the possible consequences of a hazard or risk on the health of patients, users or other persons." ;
           rdfs:label "severity" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#status
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#status
 :status rdf:type owl:Class .
 
 
@@ -1295,52 +1295,52 @@ xsd:date rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActiveDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ActiveDevice
 :ActiveDevice rdf:type owl:NamedIndividual ,
                        :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ActiveImplant
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ActiveImplant
 :ActiveImplant rdf:type owl:NamedIndividual ,
                         :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassC
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassC
 :ClassC rdf:type owl:NamedIndividual ,
                  :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassD
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassD
 :ClassD rdf:type owl:NamedIndividual ,
                  :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIII
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassIII
 :ClassIII rdf:type owl:NamedIndividual ,
                    :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIIa
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassIIa
 :ClassIIa rdf:type owl:NamedIndividual ,
                    :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ClassIIb
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ClassIIb
 :ClassIIb rdf:type owl:NamedIndividual ,
                    :risk_class .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Closed
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Closed
 :Closed rdf:type owl:NamedIndividual ,
                  :status .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ContaminationRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ContaminationRisk
 :ContaminationRisk rdf:type owl:NamedIndividual ,
                             :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_001
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_001
 :CorrectiveAction_FSCA_001 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1396,7 +1396,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "All HeartMate 3 LVAD units implanted since 2020" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_002
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_002
 :CorrectiveAction_FSCA_002 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1453,7 +1453,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "Micra AV lots manufactured between 2022-09 and 2023-03" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_003
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_003
 :CorrectiveAction_FSCA_003 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1510,7 +1510,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "Portico THV sizes 23mm and 25mm from lots before 2023-11" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_004
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_004
 :CorrectiveAction_FSCA_004 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1566,7 +1566,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "All ACUITY X4 quadripolar LV leads" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_005
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_005
 :CorrectiveAction_FSCA_005 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1623,7 +1623,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "Persona Knee tibial inserts with lot numbers PN-2019-* to PN-2021-*" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_006
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_006
 :CorrectiveAction_FSCA_006 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1679,7 +1679,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "TRITON Total Hip ceramic-on-ceramic 28mm heads from lots TH-2020-* and TH-2021-*" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_007
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_007
 :CorrectiveAction_FSCA_007 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1736,7 +1736,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "All Viva CRT-D devices" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_008
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_008
 :CorrectiveAction_FSCA_008 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1793,7 +1793,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "ATERA ventilators with software version 2.1.3" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_009
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_009
 :CorrectiveAction_FSCA_009 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1850,7 +1850,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "All cobas e 801 immunoassay analysers" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_010
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_010
 :CorrectiveAction_FSCA_010 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1906,7 +1906,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "cobas SARS-CoV-2 RT-PCR reagent lot numbers CV-2024-0312 to CV-2024-0318" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_011
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_011
 :CorrectiveAction_FSCA_011 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -1962,7 +1962,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "All OPTIGA CGM sensors from manufacturing site GE-SGP-2" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_012
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_012
 :CorrectiveAction_FSCA_012 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -2019,7 +2019,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "Plum 360 infusion pumps with drug library version 4.2.1" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_013
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_013
 :CorrectiveAction_FSCA_013 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -2075,7 +2075,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "All HeartMate 3 LVAD units with outflow graft lot OG-2022-*" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_014
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_014
 :CorrectiveAction_FSCA_014 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -2132,7 +2132,7 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "All Iluvien intravitreal implants" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CorrectiveAction_FSCA_015
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CorrectiveAction_FSCA_015
 :CorrectiveAction_FSCA_015 rdf:type owl:NamedIndividual ,
                                     :CorrectiveAction ,
                                     [ rdf:type owl:Restriction ;
@@ -2188,27 +2188,27 @@ xsd:date rdf:type rdfs:Datatype .
                            :scope "All 5008S hemodialysis machines with network connectivity module v2.x" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#CybersecurityRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#CybersecurityRisk
 :CybersecurityRisk rdf:type owl:NamedIndividual ,
                             :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DeviceFailure
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DeviceFailure
 :DeviceFailure rdf:type owl:NamedIndividual ,
                         :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DevicePerformance
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DevicePerformance
 :DevicePerformance rdf:type owl:NamedIndividual ,
                             :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DeviceSafety
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DeviceSafety
 :DeviceSafety rdf:type owl:NamedIndividual ,
                        :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_001
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_001
 :Device_DEV_001 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2265,7 +2265,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)00380740009095" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_002
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_002
 :Device_DEV_002 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2322,7 +2322,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)00380740009112" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_003
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_003
 :Device_DEV_003 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2380,7 +2380,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)00800002222291" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_004
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_004
 :Device_DEV_004 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2437,7 +2437,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)08714729002817" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_005
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_005
 :Device_DEV_005 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2494,7 +2494,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)08714729004873" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_006
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_006
 :Device_DEV_006 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2551,7 +2551,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)08718998000001" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_007
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_007
 :Device_DEV_007 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2608,7 +2608,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)04054839450001" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_008
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_008
 :Device_DEV_008 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2665,7 +2665,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)04054839460002" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_009
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_009
 :Device_DEV_009 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2723,7 +2723,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)07612345001001" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_010
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_010
 :Device_DEV_010 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2781,7 +2781,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)09876543002002" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_011
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_011
 :Device_DEV_011 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2838,7 +2838,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)05391520001011" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_012
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_012
 :Device_DEV_012 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2895,7 +2895,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)04012099001012" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_013
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_013
 :Device_DEV_013 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -2952,7 +2952,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)04046539001013" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_014
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_014
 :Device_DEV_014 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3009,7 +3009,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)08718998001014" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_015
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_015
 :Device_DEV_015 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3066,7 +3066,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)04547597001015" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_016
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_016
 :Device_DEV_016 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3123,7 +3123,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)04015630001016" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_017
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_017
 :Device_DEV_017 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3180,7 +3180,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)04015630001017" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_018
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_018
 :Device_DEV_018 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3237,7 +3237,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)03760027001018" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_019
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_019
 :Device_DEV_019 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3294,7 +3294,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)07000087001019" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_020
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_020
 :Device_DEV_020 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3351,7 +3351,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)00800002001020" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_021
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_021
 :Device_DEV_021 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3408,7 +3408,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)07300000001021" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_022
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_022
 :Device_DEV_022 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3465,7 +3465,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)07300000001022" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_023
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_023
 :Device_DEV_023 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3522,7 +3522,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)04012099001023" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_024
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_024
 :Device_DEV_024 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3579,7 +3579,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)00800002001024" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Device_DEV_025
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Device_DEV_025
 :Device_DEV_025 rdf:type owl:NamedIndividual ,
                          :Device ,
                          [ rdf:type owl:Restriction ;
@@ -3637,42 +3637,42 @@ xsd:date rdf:type rdfs:Datatype .
                 :udi:di "(01)05391520001025" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DiagnosticError
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DiagnosticError
 :DiagnosticError rdf:type owl:NamedIndividual ,
                           :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#DiagnosticRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#DiagnosticRisk
 :DiagnosticRisk rdf:type owl:NamedIndividual ,
                          :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#IVDR
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#IVDR
 :IVDR rdf:type owl:NamedIndividual ,
                :regulatory_framework .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ImplantableActiveDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ImplantableActiveDevice
 :ImplantableActiveDevice rdf:type owl:NamedIndividual ,
                                   :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ImplantableDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ImplantableDevice
 :ImplantableDevice rdf:type owl:NamedIndividual ,
                             :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InSituCorrection
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InSituCorrection
 :InSituCorrection rdf:type owl:NamedIndividual ,
                            :action_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InVitroDiagnosticDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InVitroDiagnosticDevice
 :InVitroDiagnosticDevice rdf:type owl:NamedIndividual ,
                                   :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_001
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_001
 :Incident_INC_001 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -3753,7 +3753,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-001" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_002
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_002
 :Incident_INC_002 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -3834,7 +3834,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-001" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_003
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_003
 :Incident_INC_003 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -3915,7 +3915,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-002" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_004
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_004
 :Incident_INC_004 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -3996,7 +3996,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-006" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_005
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_005
 :Incident_INC_005 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4077,7 +4077,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-006" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_006
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_006
 :Incident_INC_006 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4156,7 +4156,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-003" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_007
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_007
 :Incident_INC_007 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4237,7 +4237,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-010" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_008
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_008
 :Incident_INC_008 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4318,7 +4318,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-007" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_009
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_009
 :Incident_INC_009 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4399,7 +4399,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-008" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_010
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_010
 :Incident_INC_010 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4478,7 +4478,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-012" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_011
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_011
 :Incident_INC_011 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4557,7 +4557,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-005" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_012
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_012
 :Incident_INC_012 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4636,7 +4636,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-005" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_013
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_013
 :Incident_INC_013 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4715,7 +4715,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-015" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_014
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_014
 :Incident_INC_014 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4796,7 +4796,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-009" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_015
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_015
 :Incident_INC_015 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4877,7 +4877,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-002" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_016
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_016
 :Incident_INC_016 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -4958,7 +4958,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-001" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_017
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_017
 :Incident_INC_017 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -5039,7 +5039,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-011" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_018
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_018
 :Incident_INC_018 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -5118,7 +5118,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-013" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_019
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_019
 :Incident_INC_019 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -5199,7 +5199,7 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-008" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Incident_INC_020
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Incident_INC_020
 :Incident_INC_020 rdf:type owl:NamedIndividual ,
                            :Incident ,
                            [ rdf:type owl:Restriction ;
@@ -5280,32 +5280,32 @@ xsd:date rdf:type rdfs:Datatype .
                   :reporting_entity "MAN-003" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InfectionRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InfectionRisk
 :InfectionRisk rdf:type owl:NamedIndividual ,
                         :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InjuryRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InjuryRisk
 :InjuryRisk rdf:type owl:NamedIndividual ,
                      :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#InterferenceRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#InterferenceRisk
 :InterferenceRisk rdf:type owl:NamedIndividual ,
                            :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MDR
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#MDR
 :MDR rdf:type owl:NamedIndividual ,
               :regulatory_framework .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MalfunctionRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#MalfunctionRisk
 :MalfunctionRisk rdf:type owl:NamedIndividual ,
                           :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_001
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_001
 :Manufacturer_MAN_001 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5345,7 +5345,7 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "IE/2017/001234" ;
                       :competent_authority "Health Products Regulatory Authority (HPRA)" ;
-                      :contact_email "regulatory@medtronic.com" ;
+                      :contact_email "regulatory"@medtronic.com ;
                       :country "Ireland" ;
                       :eudamed_srn "SRN-IE-MED-0001" ;
                       :manufacturer_id "MAN-001" ;
@@ -5353,7 +5353,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FMedtronic&sid=7760" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_002
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_002
 :Manufacturer_MAN_002 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5393,7 +5393,7 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "DE/2017/005678" ;
                       :competent_authority "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)" ;
-                      :contact_email "regulatory@abbott.com" ;
+                      :contact_email "regulatory"@abbott.com ;
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0002" ;
                       :manufacturer_id "MAN-002" ;
@@ -5401,7 +5401,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAbbott_Laboratories&sid=7760" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_003
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_003
 :Manufacturer_MAN_003 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5441,7 +5441,7 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "DE/2017/009012" ;
                       :competent_authority "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)" ;
-                      :contact_email "regulatory@siemens-healthineers.com" ;
+                      :contact_email "regulatory"@siemens-healthineers.com ;
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0003" ;
                       :manufacturer_id "MAN-003" ;
@@ -5449,7 +5449,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:seeAlso "https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C200140" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_004
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_004
 :Manufacturer_MAN_004 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5489,14 +5489,14 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "NL/2017/003456" ;
                       :competent_authority "Rijksinstituut voor Volksgezondheid en Milieu (RIVM)" ;
-                      :contact_email "regulatory@philips.com" ;
+                      :contact_email "regulatory"@philips.com ;
                       :country "Netherlands" ;
                       :eudamed_srn "SRN-NL-MED-0004" ;
                       :manufacturer_id "MAN-004" ;
                       :name "Philips Medical Systems" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_005
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_005
 :Manufacturer_MAN_005 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5536,7 +5536,7 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "DE/2017/007890" ;
                       :competent_authority "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)" ;
-                      :contact_email "regulatory@roche.com" ;
+                      :contact_email "regulatory"@roche.com ;
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0005" ;
                       :manufacturer_id "MAN-005" ;
@@ -5544,7 +5544,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FRoche_Diagnostics&sid=7760" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_006
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_006
 :Manufacturer_MAN_006 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5584,7 +5584,7 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "IE/2017/002345" ;
                       :competent_authority "Health Products Regulatory Authority (HPRA)" ;
-                      :contact_email "regulatory@bsci.com" ;
+                      :contact_email "regulatory"@bsci.com ;
                       :country "Ireland" ;
                       :eudamed_srn "SRN-IE-MED-0006" ;
                       :manufacturer_id "MAN-006" ;
@@ -5592,7 +5592,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBoston_Scientific&sid=7760" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_007
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_007
 :Manufacturer_MAN_007 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5632,7 +5632,7 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "NL/2017/006789" ;
                       :competent_authority "Rijksinstituut voor Volksgezondheid en Milieu (RIVM)" ;
-                      :contact_email "regulatory@stryker.com" ;
+                      :contact_email "regulatory"@stryker.com ;
                       :country "Netherlands" ;
                       :eudamed_srn "SRN-NL-MED-0007" ;
                       :manufacturer_id "MAN-007" ;
@@ -5640,7 +5640,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FStryker_Corporation&sid=7760" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_008
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_008
 :Manufacturer_MAN_008 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5680,7 +5680,7 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "DE/2017/004567" ;
                       :competent_authority "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)" ;
-                      :contact_email "regulatory@biotronik.com" ;
+                      :contact_email "regulatory"@biotronik.com ;
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0008" ;
                       :manufacturer_id "MAN-008" ;
@@ -5688,7 +5688,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:seeAlso "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FBiotronik&sid=7760" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_009
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_009
 :Manufacturer_MAN_009 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5728,14 +5728,14 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "SE/2017/008901" ;
                       :competent_authority "Läkemedelsverket (MPA)" ;
-                      :contact_email "regulatory@gehealthcare.com" ;
+                      :contact_email "regulatory"@gehealthcare.com ;
                       :country "Sweden" ;
                       :eudamed_srn "SRN-SE-MED-0009" ;
                       :manufacturer_id "MAN-009" ;
                       :name "GE HealthCare Technologies" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_010
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_010
 :Manufacturer_MAN_010 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5775,14 +5775,14 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "CH/2017/001122" ;
                       :competent_authority "Swissmedic" ;
-                      :contact_email "regulatory@zimmerbiomet.com" ;
+                      :contact_email "regulatory"@zimmerbiomet.com ;
                       :country "Switzerland" ;
                       :eudamed_srn "SRN-CH-MED-0010" ;
                       :manufacturer_id "MAN-010" ;
                       :name "Zimmer Biomet Holdings" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_011
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_011
 :Manufacturer_MAN_011 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5822,14 +5822,14 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "UK/2017/003344" ;
                       :competent_authority "Medicines and Healthcare products Regulatory Agency (MHRA)" ;
-                      :contact_email "regulatory@livanova.com" ;
+                      :contact_email "regulatory"@livanova.com ;
                       :country "United Kingdom" ;
                       :eudamed_srn "SRN-UK-MED-0011" ;
                       :manufacturer_id "MAN-011" ;
                       :name "LivaNova PLC" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_012
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_012
 :Manufacturer_MAN_012 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5869,14 +5869,14 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "DE/2017/005566" ;
                       :competent_authority "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)" ;
-                      :contact_email "regulatory@draeger.com" ;
+                      :contact_email "regulatory"@draeger.com ;
                       :country "Germany" ;
                       :eudamed_srn "SRN-DE-MED-0012" ;
                       :manufacturer_id "MAN-012" ;
                       :name "Drägerwerk AG & Co. KGaA" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_013
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_013
 :Manufacturer_MAN_013 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5916,14 +5916,14 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "FR/2017/007788" ;
                       :competent_authority "Agence nationale de sécurité du médicament (ANSM)" ;
-                      :contact_email "regulatory@nipro.com" ;
+                      :contact_email "regulatory"@nipro.com ;
                       :country "France" ;
                       :eudamed_srn "SRN-FR-MED-0013" ;
                       :manufacturer_id "MAN-013" ;
                       :name "Nipro Corporation" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_014
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_014
 :Manufacturer_MAN_014 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -5963,14 +5963,14 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "BE/2017/009900" ;
                       :competent_authority "Agence fédérale des médicaments et des produits de santé (AFMPS)" ;
-                      :contact_email "regulatory@hologic.com" ;
+                      :contact_email "regulatory"@hologic.com ;
                       :country "Belgium" ;
                       :eudamed_srn "SRN-BE-MED-0014" ;
                       :manufacturer_id "MAN-014" ;
                       :name "Hologic Inc." .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Manufacturer_MAN_015
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Manufacturer_MAN_015
 :Manufacturer_MAN_015 rdf:type owl:NamedIndividual ,
                                :Manufacturer ,
                                [ rdf:type owl:Restriction ;
@@ -6010,49 +6010,49 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                       :authorization_number "FR/2017/002211" ;
                       :competent_authority "Agence nationale de sécurité du médicament (ANSM)" ;
-                      :contact_email "regulatory@biomerieux.com" ;
+                      :contact_email "regulatory"@biomerieux.com ;
                       :country "France" ;
                       :eudamed_srn "SRN-FR-MED-0015" ;
                       :manufacturer_id "MAN-015" ;
                       :name "bioMérieux SA" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#MaterialRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#MaterialRisk
 :MaterialRisk rdf:type owl:NamedIndividual ,
                        :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#NearMissIncident
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#NearMissIncident
 :NearMissIncident rdf:type owl:NamedIndividual ,
                            :incident_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Open
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Open
 :Open rdf:type owl:NamedIndividual ,
                :status .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#PatientHarm
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#PatientHarm
 :PatientHarm rdf:type owl:NamedIndividual ,
                       :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#ProductQuality
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#ProductQuality
 :ProductQuality rdf:type owl:NamedIndividual ,
                          :risk_category .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#RadiationRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#RadiationRisk
 :RadiationRisk rdf:type owl:NamedIndividual ,
                         :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Recall
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Recall
 :Recall rdf:type owl:NamedIndividual ,
                  :action_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_001
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_001
 :Risk_RSK_001 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6085,7 +6085,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Device failure - electrical" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_002
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_002
 :Risk_RSK_002 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6118,7 +6118,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Device failure - mechanical" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_003
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_003
 :Risk_RSK_003 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6151,7 +6151,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Thrombosis - device-related" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_004
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_004
 :Risk_RSK_004 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6184,7 +6184,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Hemolysis - pump-induced" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_005
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_005
 :Risk_RSK_005 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6217,7 +6217,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Device migration - implant" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_006
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_006
 :Risk_RSK_006 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6250,7 +6250,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Lead dislodgement" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_007
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_007
 :Risk_RSK_007 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6283,7 +6283,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Infection - device-related" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_008
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_008
 :Risk_RSK_008 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6316,7 +6316,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Biofilm formation" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_009
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_009
 :Risk_RSK_009 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6349,7 +6349,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Battery depletion - premature" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_010
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_010
 :Risk_RSK_010 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6382,7 +6382,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Software malfunction" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_011
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_011
 :Risk_RSK_011 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6415,7 +6415,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Radiation overdose" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_012
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_012
 :Risk_RSK_012 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6448,7 +6448,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Metallic artifact - MRI" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_013
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_013
 :Risk_RSK_013 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6481,7 +6481,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Electromagnetic interference" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_014
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_014
 :Risk_RSK_014 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6514,7 +6514,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "False positive result" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_015
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_015
 :Risk_RSK_015 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6547,7 +6547,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "False negative result" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_016
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_016
 :Risk_RSK_016 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6580,7 +6580,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Cross-reactivity" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_017
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_017
 :Risk_RSK_017 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6613,7 +6613,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Contamination - reagent" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_018
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_018
 :Risk_RSK_018 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6646,7 +6646,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Cybersecurity vulnerability" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_019
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_019
 :Risk_RSK_019 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6679,7 +6679,7 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Wear debris - joint implant" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#Risk_RSK_020
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#Risk_RSK_020
 :Risk_RSK_020 rdf:type owl:NamedIndividual ,
                        :Risk ,
                        [ rdf:type owl:Restriction ;
@@ -6712,62 +6712,62 @@ xsd:date rdf:type rdfs:Datatype .
               :risk_name "Corrosion - metallic implant" .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SafetyAlert
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SafetyAlert
 :SafetyAlert rdf:type owl:NamedIndividual ,
                       :action_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SelfTestDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SelfTestDevice
 :SelfTestDevice rdf:type owl:NamedIndividual ,
                          :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SeriousIncident
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SeriousIncident
 :SeriousIncident rdf:type owl:NamedIndividual ,
                           :incident_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SingleUseDevice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SingleUseDevice
 :SingleUseDevice rdf:type owl:NamedIndividual ,
                           :device_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#SoftwareRisk
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#SoftwareRisk
 :SoftwareRisk rdf:type owl:NamedIndividual ,
                        :risk_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#UserNotice
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#UserNotice
 :UserNotice rdf:type owl:NamedIndividual ,
                      :action_type .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#critical
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#critical
 :critical rdf:type owl:NamedIndividual ,
                    :severity .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#high
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#high
 :high rdf:type owl:NamedIndividual ,
                :probability .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#low
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#low
 :low rdf:type owl:NamedIndividual ,
               :probability .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#medium
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#medium
 :medium rdf:type owl:NamedIndividual ,
                  :probability .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#moderate
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#moderate
 :moderate rdf:type owl:NamedIndividual ,
                    :severity .
 
 
-###  http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology#serious
+###  https://tomascp-sudo.github.io/medicalDeviceOntology/1.0/ontology.owl#serious
 :serious rdf:type owl:NamedIndividual ,
                   :severity .
 
@@ -7794,11 +7794,11 @@ xsd:date rdf:type rdfs:Datatype .
 
 <urn:swrl:var#d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-<urn:swrl:var#i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-
 <urn:swrl:var#m> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 <urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 <urn:swrl:var#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
@@ -7821,6 +7821,39 @@ xsd:date rdf:type rdfs:Datatype .
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :RecallCorrectiveAction ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#ca>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasManufacturer ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :addressesIncident ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#i>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :affectsDevice ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :actionIssuedBy ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
@@ -7861,54 +7894,21 @@ xsd:date rdf:type rdfs:Datatype .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :affectsDevice ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d>
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasManufacturer ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
-                                                                ] ;
-                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :addressesIncident ;
-                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
-                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#i>
-                                                                           ] ;
-                                                                 rdf:rest rdf:nil
-                                                               ]
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :actionIssuedBy ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRisk ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasProbability ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSeverity ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> :high
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :serious
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSeverity ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasProbability ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> ;
-                                                                             <http://www.w3.org/2003/11/swrl#argument2> :serious
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :high
                                                                            ] ;
                                                                  rdf:rest rdf:nil
                                                                ]
