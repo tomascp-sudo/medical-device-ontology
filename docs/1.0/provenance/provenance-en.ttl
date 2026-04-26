@@ -6,9 +6,11 @@
 	 dc:title "EUDAMED-Inspired Medical Device Ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <http://www.uoc.edu/knowledgeManagement/medicalDeviceOntology>;
-	 prov:wasGeneratedAt "2026-04-21T21:20";
+	 prov:wasGeneratedAt "2026-04-26";
 .
 :agent0 a prov:Agent; foaf:name "Diana Socola".
 :agent1 a prov:Agent; foaf:name "Tomás Cuevas".
+:agent2 a prov:Agent; foaf:name "UOC - Universitat Oberta de Catalunya".
